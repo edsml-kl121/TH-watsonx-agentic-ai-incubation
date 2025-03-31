@@ -52,6 +52,23 @@ def create_inventory_agent():
 
 # Task Definition
 def create_inventory_task(agent, current_inventory, historic_data, forecast):
+    def calculate_reorder_quantity(forecast, inventory, historic_sales):
+        # Step 1: Calculate shortfall
+        shortfall = forecast - inventory
+        
+        # Step 2: Safety stock logic
+        if shortfall <= historic_sales:
+            safety_stock = 0.1 * historic_sales  # 10% of historic sales
+            reorder_quantity = shortfall + safety_stock
+        else:
+            safety_stock = 0
+            reorder_quantity = shortfall
+        
+        return {
+            "Shortfall": shortfall,
+            "Safety Stock": safety_stock,
+            "Reorder Quantity": reorder_quantity
+        }
     return Task(
         description=f"""
 Given the following data:
@@ -60,7 +77,7 @@ Given the following data:
 - Forecasted Quantity for next month: {forecast}
 
 Determine the optimal reorder quantity to ensure sufficient stock while minimizing excess inventory.
-Strictly follow the Instructions for calculating the optimal reorder quantity:
+Below are the Instructions for calculating the optimal reorder quantity:
 1. Shortfall calculation.
     - Shortfall = Forecast - Inventory
 2. Saftey stock calculation
@@ -69,6 +86,8 @@ Strictly follow the Instructions for calculating the optimal reorder quantity:
         Reorder Quantity = Shortfall + Safety Stock
     - If shortfall > historic sales:
         Reorder Quantity = Shortfall
+
+Using above formula, the calculated reorder_quantity is: {calculate_reorder_quantity(forecast, current_inventory, historic_data)}
 
 Provide a structured response in JSON format with:
 1. "reorder_quantity": An integer representing the reorder quantity.
@@ -81,6 +100,8 @@ Provide a structured response in JSON format with:
         }''',
         agent=agent
     )
+
+
 
 # def create_inventory_task(agent, current_inventory, historic_data, forecast):
 #     return Task(
