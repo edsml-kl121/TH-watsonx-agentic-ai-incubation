@@ -1,0 +1,26 @@
+[
+    {
+        "question": "หากการขอจัดซื้อมีมูลค่าเกิน $50,000 จะต้องได้รับการอนุมัติจากใครบ้าง?",
+        "correct_answer": "หากการขอจัดซื้อมีมูลค่าเกิน $50,000 จะต้องได้รับการอนุมัติจากฝ่ายบริหารระดับสูงเพิ่มเติมจากผู้จัดการฝ่ายจัดซื้อ",
+        "correct_answer_document_ids": [
+            "Procurement Requisition Rules.docx",
+            "Supplier Sales Report for Procurement.docx"
+        ]
+    },
+    {
+        "question": "ผู้จัดจำหน่ายรายใดมีอัตราการคืนสินค้าสูงกว่า และควรดำเนินการอย่างไร?",
+        "correct_answer": "Excelentia Supplies มีอัตราการคืนสินค้าสูงกว่าที่ 2% ควรมีการทบทวนกระบวนการควบคุมคุณภาพ",
+        "correct_answer_document_ids": [
+            "Supplier Sales Report for Procurement.docx",
+            "Procurement Requisition Rules.docx"
+        ]
+    },
+    {
+        "question": "ควรสั่งซื้อสินค้า Product A และ Product B บ่อยแค่ไหนเพื่อรักษาระดับสินค้าคงคลัง?",
+        "correct_answer": "ควรสั่งซื้อสินค้า Product A และ Product B ทุก 30 วัน เพื่อรักษาระดับสินค้าคงคลังและป้องกันการหยุดชะงักของซัพพลายเชน",
+        "correct_answer_document_ids": [
+            "Procurement Requisition Rules.docx",
+            "Supplier Sales Report for Procurement.docx"
+        ]
+    }
+]

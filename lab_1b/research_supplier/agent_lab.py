@@ -6,6 +6,7 @@ from simple_salesforce import Salesforce
 load_dotenv()
 username = os.environ.get('SF_USERNAME', '')
 password = os.environ.get('SF_PASSWORD', '')
+WATSONX_DEPLOYMENT_ID = os.environ.get('WATSONX_DEPLOYMENT_ID', '')
 token = os.environ.get('SF_TOKEN', '')
 ibm_api_key = os.environ.get('WATSONX_API_KEY', '')
 
@@ -31,7 +32,7 @@ def run_agent_model(mltoken, query, role='user'):
     # NOTE:  manually define and pass the array(s) of values to be scored in the next line
     payload_scoring = {"messages":[{"content":query,"role":role}]}
 
-    response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/ead4e562-e23c-4ac7-9de7-65d930640435/ai_service?version=2021-05-01', json=payload_scoring,
+    response_scoring = requests.post(f'https://us-south.ml.cloud.ibm.com/ml/v4/deployments/{WATSONX_DEPLOYMENT_ID}/ai_service?version=2021-05-01', json=payload_scoring,
     headers={'Authorization': 'Bearer ' + mltoken})
 
     print("Scoring response")
@@ -60,8 +61,12 @@ def get_all_price_book():
     return products
 
 def research_suppliers(user_query):
+    # user query: "Research the suppliers for Xtralife.", "Supplier for Xtralife"
+    # web search, procuement rules, sales reviews, pricing from salesforce
     products = get_all_price_book()
-    prompt = f" {user_query} Rate the suppliers from top to bottom based on best to worst choice and also share the reasoning. The pricing information for suppliers is as follows: {products}. Look into the procurement rules and sales reviews of these suppliers into account as well."
+    prompt = f" {user_query} ให้คะแนนซัพพลายเออร์จากบนลงล่างโดยพิจารณาจากตัวเลือกที่ดีที่สุดไปจนถึงแย่ที่สุด พร้อมทั้งแบ่งปันเหตุผลด้วย ข้อมูลราคาสำหรับซัพพลายเออร์ ทั้งหมด: {products}. พิจารณาข้อกำหนดและบทวิจารณ์การขายของซัพพลายเออร์เหล่านี้ด้วย"
+    print(prompt)
+    # prompt = f"ผู้จัดจำหน่ายรายใดระหว่าง Excelentia Supplies และ Global Office Supplies เป็นตัวเลือกที่เหมาะสมในการซื้อผลิตภัณฑ์ Xtralife ช่วยให้รายการข้อดีและข้อเสียของผู้จัดจำหน่ายแต่ละราย"
     token = generate_bearer_token()
     response = run_agent_model (token, prompt)
     print(response)
