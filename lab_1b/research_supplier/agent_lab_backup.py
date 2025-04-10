@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 from simple_salesforce import Salesforce
 
 load_dotenv()
-# username = os.environ.get('SF_USERNAME', '')
-# password = os.environ.get('SF_PASSWORD', '')
+username = os.environ.get('SF_USERNAME', '')
+password = os.environ.get('SF_PASSWORD', '')
 WATSONX_DEPLOYMENT_ID = os.environ.get('WATSONX_DEPLOYMENT_ID', '')
 token = os.environ.get('SF_TOKEN', '')
 ibm_api_key = os.environ.get('WATSONX_API_KEY', '')
@@ -14,10 +14,10 @@ unit_price_query = """SELECT Id, Name, UnitPrice, IsActive, PriceBook2Id FROM Pr
 pb_query = """SELECT Id, Name from Pricebook2 WHERE Id = '{text}'"""
 
 #######SALESFORCE CREDENTIALS########
-# try:        
-#     sf = Salesforce(username=username, password=password, security_token=token)
-# except:
-#     print("Ensure you have entered the correct credentials for Salesforce")
+try:        
+    sf = Salesforce(username=username, password=password, security_token=token)
+except:
+    print("Ensure you have entered the correct credentials for Salesforce")
 
 def generate_bearer_token():
 #you must manually set API_KEY below using information retrieved from your IBM Cloud account (https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-authentication.html?context=wx)
@@ -43,28 +43,28 @@ def run_agent_model(mltoken, query, role='user'):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-# def get_all_price_book():
-#     result = sf.query(unit_price_query)
-#     products = []
+def get_all_price_book():
+    result = sf.query(unit_price_query)
+    products = []
 
-#     for row in result["records"]:
-#         pb_query_replaced = pb_query.format(text=row["Pricebook2Id"])
-#         pb_result = sf.query(pb_query_replaced)
-#         pricebook_name = pb_result["records"][0]["Name"] if pb_result["records"] else "Unknown"
+    for row in result["records"]:
+        pb_query_replaced = pb_query.format(text=row["Pricebook2Id"])
+        pb_result = sf.query(pb_query_replaced)
+        pricebook_name = pb_result["records"][0]["Name"] if pb_result["records"] else "Unknown"
 
-#         products.append({
-#             #"Product Name": row["Name"],
-#             "Unit Price": row["UnitPrice"],
-#             #"Pricebook ID": row["Pricebook2Id"],
-#             "Pricebook Name": pricebook_name
-#         })
-#     return products
+        products.append({
+            #"Product Name": row["Name"],
+            "Unit Price": row["UnitPrice"],
+            #"Pricebook ID": row["Pricebook2Id"],
+            "Pricebook Name": pricebook_name
+        })
+    return products
 
 def research_suppliers(user_query):
     # user query: "Research the suppliers for Xtralife.", "Supplier for Xtralife"
     # web search, procuement rules, sales reviews, pricing from salesforce
-    # products = get_all_price_book()
-    prompt = f" {user_query} ให้คะแนนซัพพลายเออร์จากบนลงล่างโดยพิจารณาจากตัวเลือกที่ดีที่สุดไปจนถึงแย่ที่สุด พร้อมทั้งแบ่งปันเหตุผลด้วย ข้อมูลราคาสำหรับซัพพลายเออร์ ทั้งหมด: [{{'Unit Price': 61.5, 'Pricebook Name': 'Excelentia Supplies'}}, {{'Unit Price': 76.9, 'Pricebook Name': 'Global Office Solutions'}}, {{'Unit Price': 92.3, 'Pricebook Name': 'CGV Supplier'}}]. พิจารณาข้อกำหนดและบทวิจารณ์การขายของซัพพลายเออร์เหล่านี้ด้วย"
+    products = get_all_price_book()
+    prompt = f" {user_query} ให้คะแนนซัพพลายเออร์จากบนลงล่างโดยพิจารณาจากตัวเลือกที่ดีที่สุดไปจนถึงแย่ที่สุด พร้อมทั้งแบ่งปันเหตุผลด้วย ข้อมูลราคาสำหรับซัพพลายเออร์ ทั้งหมด: {products}. พิจารณาข้อกำหนดและบทวิจารณ์การขายของซัพพลายเออร์เหล่านี้ด้วย"
     print(prompt)
     # prompt = f"ผู้จัดจำหน่ายรายใดระหว่าง Excelentia Supplies และ Global Office Supplies เป็นตัวเลือกที่เหมาะสมในการซื้อผลิตภัณฑ์ Xtralife ช่วยให้รายการข้อดีและข้อเสียของผู้จัดจำหน่ายแต่ละราย"
     token = generate_bearer_token()
