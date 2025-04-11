@@ -1,0 +1,110 @@
+
+package uab.reorder_automation.reorder_automation.ordermet;
+
+
+class Error
+        property ads.typeId "2"
+        #de.generated
+{
+    string code
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "code"
+                #update;
+    string message
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    Error(string code, string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Error()
+                #dataio.default;
+}
+
+class Input
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonPropertyOrder "{product,supplier,reorder_qty,value,variable 5}"
+        #de.generated
+{
+    string product
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "product"
+                #update;
+    string reorder_qty
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "reorder_qty"
+                #update;
+    string supplier
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "supplier"
+                #update;
+    string value
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "value"
+                #update;
+    string variable_5
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "variable 5"
+                #update;
+    Input(string product, string supplier, string reorder_qty, string value, string variable_5)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Input()
+                #dataio.default;
+}
+
+class Output
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonIgnoreProperties {
+            ignoreUnknown "true"
+        }
+        #de.generated
+{
+    uab.reorder_automation.reorder_automation.ordermet.Error error
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "error"
+                #update;
+    string generatedText
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "generated_text"
+                #update;
+    java.lang.Integer generatedTokenCount
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "generated_token_count"
+                #update;
+    java.lang.Integer inputTokenCount
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "input_token_count"
+                #update;
+    string stopReason
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "stop_reason"
+                #update;
+    Output(string generatedText, java.lang.Integer generatedTokenCount, java.lang.Integer inputTokenCount, string stopReason, uab.reorder_automation.reorder_automation.ordermet.Error error)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Output()
+                #dataio.default;
+    boolean inError()
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
+                    $target "BOM"
+                }
+                #pureFunction;
+    static Output run(uab.reorder_automation.reorder_automation.ordermet.Input input)
+                #pureFunction;
+    static Output run(com.ibm.decision.run.RunContext runContext, uab.reorder_automation.reorder_automation.ordermet.Input input)
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    providerInfoId "f8fc9623-3e4e-457c-b7a5-ee52da230cb7"
+                }
+                #pureFunction;
+}
+

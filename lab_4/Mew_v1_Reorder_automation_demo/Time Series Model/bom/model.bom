@@ -1,0 +1,99 @@
+
+package uab.reorder_automation.reorder_automation.timeseriesmodel;
+
+
+class Error
+        property ads.typeId "2"
+        #de.generated
+{
+    string code
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "code"
+                #update;
+    string message
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    Error(string code, string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Error()
+                #dataio.default;
+}
+
+class Input
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonPropertyOrder "{Quantity,Sales}"
+        #de.generated
+{
+    java.lang.Integer quantity
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Quantity"
+                #update;
+    java.lang.Integer sales
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Sales"
+                #update;
+    Input(java.lang.Integer quantity, java.lang.Integer sales)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Input()
+                #dataio.default;
+}
+
+class Output
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonIgnoreProperties {
+            ignoreUnknown "true"
+        }
+        #de.generated
+{
+    uab.reorder_automation.reorder_automation.timeseriesmodel.Error error
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "error"
+                #update;
+    java.util.List prediction domain 0,* class java.lang.Double
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "prediction"
+                #update;
+    Output(java.util.List prediction domain 0,* class java.lang.Double, 
+        uab.reorder_automation.reorder_automation.timeseriesmodel.Error error)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Output()
+                #dataio.default;
+    void addTo_prediction(java.lang.Double prediction)
+                property collectionAttribute "prediction"
+                #update;
+    void clear_prediction()
+                property collectionAttribute "prediction"
+                #update;
+    boolean inError()
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
+                    $target "BOM"
+                }
+                #pureFunction;
+    void removeFrom_prediction(java.lang.Double prediction)
+                property collectionAttribute "prediction"
+                #update;
+    static Output run(uab.reorder_automation.reorder_automation.timeseriesmodel.Input input)
+                #pureFunction;
+    static Output run(com.ibm.decision.run.RunContext runContext, uab.reorder_automation.reorder_automation.timeseriesmodel.Input input)
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    providerInfoId "60189562-05e9-4b45-8db9-33a4830c0141"
+                }
+                #pureFunction;
+    void set_prediction(java.util.Collection prediction domain 0,* class java.lang.Double)
+                property collectionAttribute "prediction"
+                #update;
+}
+

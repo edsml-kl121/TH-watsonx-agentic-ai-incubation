@@ -1,0 +1,35 @@
+
+# uab.reorder_automation.reorder_automation.getsuppliername.Error
+uab.reorder_automation.reorder_automation.getsuppliername.Error#concept.label = Output error
+uab.reorder_automation.reorder_automation.getsuppliername.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = a new {Output error} where {0, code} {1, message} 
+uab.reorder_automation.reorder_automation.getsuppliername.Error.code#phrase.action = set the code of {this} to {code}
+uab.reorder_automation.reorder_automation.getsuppliername.Error.code#phrase.navigation = {code} of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Error.message#phrase.action = set the message of {this} to {message}
+uab.reorder_automation.reorder_automation.getsuppliername.Error.message#phrase.navigation = {message} of {this}
+
+# uab.reorder_automation.reorder_automation.getsuppliername.Input
+uab.reorder_automation.reorder_automation.getsuppliername.Input#concept.label = ML model input
+uab.reorder_automation.reorder_automation.getsuppliername.Input.Input(java.lang.String)#phrase.navigation = a new {ML model input} where {0, recommendation} 
+uab.reorder_automation.reorder_automation.getsuppliername.Input.recommendation#phrase.action = set the recommendation of {this} to {recommendation}
+uab.reorder_automation.reorder_automation.getsuppliername.Input.recommendation#phrase.navigation = {recommendation} of {this}
+
+# uab.reorder_automation.reorder_automation.getsuppliername.Output
+uab.reorder_automation.reorder_automation.getsuppliername.Output#concept.label = ML model output
+uab.reorder_automation.reorder_automation.getsuppliername.Output.Output(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,uab.reorder_automation.reorder_automation.getsuppliername.Error)#phrase.navigation = a new {ML model output} where {0, generated text} {1, generated token count} {2, input token count} {3, stop reason} {4, error} 
+uab.reorder_automation.reorder_automation.getsuppliername.Output.error#phrase.action = set the error of {this} to {error}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.error#phrase.clearer = clear the error of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.error#phrase.navigation = {error} of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.generatedText#phrase.action = set the generated text of {this} to {generated text}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.generatedText#phrase.navigation = {generated text} of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.generatedTokenCount#phrase.action = set the generated token count of {this} to {generated token count}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.generatedTokenCount#phrase.addition_setter = add {generated token count} to the generated token count of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.generatedTokenCount#phrase.navigation = {generated token count} of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.generatedTokenCount#phrase.subtraction_setter = subtract {generated token count} from the generated token count of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.inError()#phrase.navigation = {this} is in error
+uab.reorder_automation.reorder_automation.getsuppliername.Output.inputTokenCount#phrase.action = set the input token count of {this} to {input token count}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.inputTokenCount#phrase.addition_setter = add {input token count} to the input token count of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.inputTokenCount#phrase.navigation = {input token count} of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.inputTokenCount#phrase.subtraction_setter = subtract {input token count} from the input token count of {this}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.run(uab.reorder_automation.reorder_automation.getsuppliername.Input)#phrase.navigation = predict({0})
+uab.reorder_automation.reorder_automation.getsuppliername.Output.stopReason#phrase.action = set the stop reason of {this} to {stop reason}
+uab.reorder_automation.reorder_automation.getsuppliername.Output.stopReason#phrase.navigation = {stop reason} of {this}

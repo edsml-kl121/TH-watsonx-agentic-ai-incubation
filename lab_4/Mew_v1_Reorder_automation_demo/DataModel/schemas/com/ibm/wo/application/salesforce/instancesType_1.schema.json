@@ -1,0 +1,130 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/instancesType_1.schema.json",
+  "x-ibm-json-name" : "instancesType_1",
+  "x-ibm-package-name" : "com.ibm.wo.application.salesforce",
+  "type" : "object",
+  "title" : "instancesType_1",
+  "x-ibm-original-json-name" : "retrievewithwhere_Product2.instancesType",
+  "properties" : {
+    "CreatedById" : {
+      "title" : "Created by ID",
+      "type" : [ "string", "null" ]
+    },
+    "CreatedDate" : {
+      "title" : "Created date",
+      "type" : [ "string", "null" ],
+      "format" : "date-time",
+      "examples" : [ "2025-04-01T01:59:44Z" ]
+    },
+    "Description" : {
+      "title" : "Product description",
+      "type" : [ "string", "null" ]
+    },
+    "DisplayUrl" : {
+      "title" : "Display URL",
+      "type" : [ "string", "null" ]
+    },
+    "ExternalDataSourceId" : {
+      "title" : "External data source ID",
+      "type" : [ "string", "null" ]
+    },
+    "ExternalId" : {
+      "title" : "External ID",
+      "type" : [ "string", "null" ]
+    },
+    "Family" : {
+      "title" : "family",
+      "oneOf" : [ {
+        "$ref" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/FamilyType.schema.json"
+      }, {
+        "type" : "null"
+      } ]
+    },
+    "Id" : {
+      "title" : "Product ID",
+      "type" : [ "string", "null" ]
+    },
+    "IsActive" : {
+      "title" : "Active",
+      "type" : "boolean"
+    },
+    "IsArchived" : {
+      "title" : "Archived",
+      "type" : "boolean"
+    },
+    "IsDeleted" : {
+      "title" : "Deleted",
+      "type" : "boolean"
+    },
+    "LastModifiedById" : {
+      "title" : "Last modified by ID",
+      "type" : [ "string", "null" ]
+    },
+    "LastModifiedDate" : {
+      "title" : "Last modified date",
+      "type" : [ "string", "null" ],
+      "format" : "date-time",
+      "examples" : [ "2025-04-01T01:59:44Z" ]
+    },
+    "LastReferencedDate" : {
+      "title" : "Last referenced date",
+      "type" : [ "string", "null" ],
+      "format" : "date-time",
+      "examples" : [ "2025-04-01T01:59:44Z" ]
+    },
+    "LastViewedDate" : {
+      "title" : "Last viewed date",
+      "type" : [ "string", "null" ],
+      "format" : "date-time",
+      "examples" : [ "2025-04-01T01:59:44Z" ]
+    },
+    "Name" : {
+      "title" : "Product name",
+      "type" : [ "string", "null" ]
+    },
+    "ProductClass" : {
+      "title" : "product class",
+      "oneOf" : [ {
+        "$ref" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/ProductClassType.schema.json"
+      }, {
+        "type" : "null"
+      } ]
+    },
+    "ProductCode" : {
+      "title" : "Product code",
+      "type" : [ "string", "null" ]
+    },
+    "Product_Amount__c" : {
+      "title" : "Product Amount",
+      "type" : "number",
+      "format" : "double"
+    },
+    "QuantityUnitOfMeasure" : {
+      "title" : "quantity unit of measure",
+      "oneOf" : [ {
+        "$ref" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/QuantityUnitOfMeasureType.schema.json"
+      }, {
+        "type" : "null"
+      } ]
+    },
+    "StockKeepingUnit" : {
+      "title" : "Product SKU",
+      "type" : [ "string", "null" ]
+    },
+    "SystemModstamp" : {
+      "title" : "System modstamp",
+      "type" : [ "string", "null" ],
+      "format" : "date-time",
+      "examples" : [ "2025-04-01T01:59:44Z" ]
+    },
+    "Type" : {
+      "title" : "type",
+      "oneOf" : [ {
+        "$ref" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/TypeType_1.schema.json"
+      }, {
+        "type" : "null"
+      } ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "description" : "",
+  "groupId" : "uab.reorder_automation.reorder_automation",
+  "locale" : "en_US",
+  "properties" : {
+    "refactoringEnabled" : false,
+    "tags" : [ ]
+  },
+  "extraProperties" : { }
+}

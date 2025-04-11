@@ -1,0 +1,115 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.2dbdb753-46ae-4543-b924-11a35080f76f",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "Create a new order in Salesforce" ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.461f3b06-9615-450b-8b8b-2535364b2012",
+      "declaredType" : "interface",
+      "id" : "_c313467f-1cf0-46be-bddb-c8006e12d40a",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.573b4883-e498-48b7-87ee-80ad1c095abc" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "createOrder",
+              "name" : "createOrder",
+              "isCollection" : false,
+              "description" : "Order created successfully",
+              "httpResponseCode" : "200",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_2f74e8e6-75b4-4c93-8538-4f24f600831e",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912/createOrder_200Type_1.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/529b51c9-7c3e-4e93-af78-47f9defe4c76.xsd}createOrder_200Type"
+            } ],
+            "input" : [ {
+              "path" : "account_id",
+              "name" : "account_id",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_ee5390f3-375c-489e-b15c-35d3d2bc4adf",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "date",
+              "name" : "date",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_1a2a62a2-7631-4c8b-bc77-585ebbddc0cb",
+              "isOptional" : false,
+              "typeRefPO" : "date",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}date"
+            }, {
+              "path" : "status",
+              "name" : "status",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_a7c9b9e1-e60b-4633-9aa2-b2fef296c70c",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "Pricebook2Id",
+              "name" : "Pricebook2Id",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_ea12d386-4c64-4a74-bb39-f35ff252a081",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "Create a new order in Salesforce" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "createOrder",
+        "id" : "_3f399909-31b2-4c59-9c4b-c06db532cec8"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "skillId" : "Salesforce-Custom-Skills-Version2__1.0.0__createOrder",
+            "invocationType" : "SKILL",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.2dbdb753-46ae-4543-b924-11a35080f76f",
+            "displayVersion" : "head",
+            "name" : "Salesforce Custom Skills Version2",
+            "project" : "Salesforce-Custom-Skills-Version2__1.0.0__createOrder",
+            "applicationId" : "app-c73451bc04c84958aa4a049c338df912",
+            "canUseDefaultVersion" : true,
+            "type" : "workflow",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/529b51c9-7c3e-4e93-af78-47f9defe4c76Service}6023.17137ddc-3bc4-4b55-892d-be708fbece17",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "Salesforce Custom Skills Version2",
+          "interfaceRef" : "_c313467f-1cf0-46be-bddb-c8006e12d40a",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_9d1f7072-7cf7-4a8c-8782-b18fcc3b9400"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/529b51c9-7c3e-4e93-af78-47f9defe4c76Service",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_3e3f63b9-cbb2-420c-a01c-d8a6222d0015"
+  },
+  "poId" : "1.53dc7fbb-b0e6-4d48-9d1c-c6af9ff16d88",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery203706776416859322.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/529b51c9-7c3e-4e93-af78-47f9defe4c76.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/529b51c9-7c3e-4e93-af78-47f9defe4c76Service}createOrderRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/529b51c9-7c3e-4e93-af78-47f9defe4c76Service}createOrderResponseMsg" ]
+}

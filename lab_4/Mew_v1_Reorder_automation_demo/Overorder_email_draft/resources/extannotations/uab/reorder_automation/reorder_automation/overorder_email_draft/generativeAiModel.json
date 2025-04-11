@@ -1,0 +1,29 @@
+{
+  "prompt" : {
+    "input" : "GEnerate an email according to the order details. This email is to be sent to the finance team for approval as the budget for this order is over the budget of $50000. Use the details below to draft the email. Make sure the email is professional\n\nOrder details:\nProduct: Xtralife\nSupplier: {{supplier}}\nOrder value : {{value}}\nOrder quantity: {{reorder_qty}}",
+    "variables" : [ {
+      "id" : 1,
+      "name" : "reorder_qty",
+      "type" : "string",
+      "default_value" : "220"
+    }, {
+      "id" : 2,
+      "name" : "value",
+      "type" : "string",
+      "default_value" : "80000"
+    }, {
+      "id" : 3,
+      "name" : "supplier",
+      "type" : "string",
+      "default_value" : "abc"
+    } ],
+    "examples" : [ ],
+    "instruction" : "Generate an email according to the order details."
+  },
+  "parameters" : {
+    "max_new_tokens" : 100,
+    "min_new_tokens" : 1,
+    "stop_sequences" : [ ]
+  },
+  "model_id" : "ibm/granite-3-8b-instruct"
+}

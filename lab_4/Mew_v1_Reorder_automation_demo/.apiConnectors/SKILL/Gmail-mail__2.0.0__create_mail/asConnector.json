@@ -1,0 +1,138 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.b131a97b-0c15-4e14-82a0-73848825dc7a",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "This OpenAPI document describes the operations that the gmail mail runtime APIs support." ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.6311fb81-161e-402a-a886-98e08a4b94f0",
+      "declaredType" : "interface",
+      "id" : "_e36ffb62-58be-49bb-b7b7-eb1425d49384",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.156133ca-1220-4937-b042-e2d3cd597fa4" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "id",
+              "name" : "id",
+              "isCollection" : false,
+              "description" : "The unique identifier of an email message",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_2169bac0-31bd-4c21-8d80-bacd675f7063",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "input" : [ {
+              "path" : "CC",
+              "name" : "CC",
+              "isCollection" : false,
+              "description" : "The email addresses of the carbon-copy (Cc) recipients whom you intend to apprise of the email. Use comma between each email address.",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_bb2a29c5-3aad-4749-8c62-88ee5414c8af",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "To",
+              "name" : "To",
+              "isCollection" : false,
+              "description" : "The email addresses of one or more recipients. Use comma between each email address.",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_e245f1e7-a0f7-490c-ba4d-3e0a8e896127",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "BCC",
+              "name" : "BCC",
+              "isCollection" : false,
+              "description" : "The email addresses of the blind carbon copy (Bcc) recipients whom you intend to apprise of the email privately. Use comma between each email address.",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_99c91e3b-f4b8-4a2e-8d6c-32a9bffa76e9",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "Subject",
+              "name" : "Subject",
+              "isCollection" : false,
+              "description" : "A phrase that summarizes the email content",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_f800b1d6-3090-4623-9b72-4b506a694c71",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "Attachments",
+              "name" : "Attachments",
+              "isCollection" : true,
+              "description" : "One or more files to attach to the email",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_c234d0f0-e4e0-48ab-b85f-2ac3b6cabc47",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/gmail/AttachmentsType.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/fc2d8dbf-3404-457c-a884-1b9145709e8e.xsd}AttachmentsType"
+            }, {
+              "path" : "richTextBody",
+              "name" : "richTextBody",
+              "isCollection" : false,
+              "description" : "The body content of the email",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_918b6939-7c11-46c7-af7e-7f497d8ff838",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/gmail/richTextBodyType.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/fc2d8dbf-3404-457c-a884-1b9145709e8e.xsd}richTextBodyType"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "from Gmail" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "create_mail",
+        "id" : "_a9a84d18-0e7d-47f8-8315-f5aed8f0c7b0"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "skillId" : "Gmail-mail__2.0.0__create_mail",
+            "invocationType" : "SKILL",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.b131a97b-0c15-4e14-82a0-73848825dc7a",
+            "displayVersion" : "head",
+            "name" : "Gmail mail",
+            "project" : "Gmail-mail__2.0.0__create_mail",
+            "applicationId" : "gmail",
+            "canUseDefaultVersion" : true,
+            "type" : "workflow",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/fc2d8dbf-3404-457c-a884-1b9145709e8eService}6023.72890312-b2e5-452f-b447-07ebd677f040",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "Gmail mail",
+          "interfaceRef" : "_e36ffb62-58be-49bb-b7b7-eb1425d49384",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_2d927083-2384-4aa9-8b7f-8802f1ad01dc"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/fc2d8dbf-3404-457c-a884-1b9145709e8eService",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_76643df5-7391-4f41-a18c-ae1bbeeca64d"
+  },
+  "poId" : "1.50bbdb3c-cdec-4ec7-8a6d-0adfeb794fdb",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery2383113143272000508.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/fc2d8dbf-3404-457c-a884-1b9145709e8e.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/fc2d8dbf-3404-457c-a884-1b9145709e8eService}create_mailRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/fc2d8dbf-3404-457c-a884-1b9145709e8eService}create_mailResponseMsg" ]
+}

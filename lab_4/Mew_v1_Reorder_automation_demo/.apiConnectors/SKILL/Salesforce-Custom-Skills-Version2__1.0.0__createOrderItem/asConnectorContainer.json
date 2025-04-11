@@ -1,0 +1,138 @@
+{
+  "root_poid" : "1.bf192c66-1cae-4330-b5d4-ab6eae392889",
+  "artifacts" : [ {
+    "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.110379ef-589d-4685-8a1b-32051b6d826e",
+    "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+      "consumeDefaultVersion" : true
+    },
+    "type" : "BPMService",
+    "definitions" : {
+      "rootElement" : [ {
+        "documentation" : [ {
+          "content" : [ "An API for managing orders and price books in Salesforce." ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "IFace.59cbb738-4b38-498f-bbc1-accf458095ae",
+        "declaredType" : "interface",
+        "id" : "_14d4f81f-013b-436a-bb84-b1d9d369b005",
+        "operation" : [ {
+          "extensionElements" : {
+            "sfPOId" : [ "1.fa4142f1-4bfd-4e01-85c8-8ead17518507" ],
+            "businessSignature" : [ {
+              "output" : [ {
+                "path" : "createOrderItem",
+                "name" : "createOrderItem",
+                "isCollection" : false,
+                "description" : "Order item created successfully",
+                "httpResponseCode" : "200",
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_58b0a495-b2fc-4ba2-b606-c863268df045",
+                "isOptional" : false,
+                "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912/createOrderItem_200Type_1.schema.json",
+                "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/f454e469-38c7-4b4f-af72-a41ee39ca7d6.xsd}createOrderItem_200Type"
+              } ],
+              "input" : [ {
+                "path" : "order",
+                "name" : "order",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_7326e498-bb7e-4fa8-a6c6-85a49ef315fa",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "pricebook_id",
+                "name" : "pricebook_id",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_2f156640-751c-4a99-8ade-b46320ee2673",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "quantity",
+                "name" : "quantity",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_496f5b8f-5a3d-45e9-bb68-669b03dcf8bd",
+                "isOptional" : false,
+                "typeRefPO" : "integer",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}int"
+              } ],
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+            } ]
+          },
+          "documentation" : [ {
+            "content" : [ "An API for managing orders and price books in Salesforce." ],
+            "textFormat" : "text/plain"
+          } ],
+          "name" : "createOrderItem",
+          "id" : "_2a233579-d966-477c-88d9-880f5bc893e0"
+        } ]
+      }, {
+        "extensionElements" : {
+          "externalService" : [ {
+            "automationServiceRestBinding" : {
+              "skillId" : "Salesforce-Custom-Skills-Version2__1.0.0__createOrderItem",
+              "invocationType" : "SKILL",
+              "org" : "uab",
+              "bindingEnvVarSetRef" : "62.110379ef-589d-4685-8a1b-32051b6d826e",
+              "displayVersion" : "head",
+              "name" : "Salesforce Custom Skills Version2",
+              "project" : "Salesforce-Custom-Skills-Version2__1.0.0__createOrderItem",
+              "applicationId" : "app-c73451bc04c84958aa4a049c338df912",
+              "canUseDefaultVersion" : true,
+              "type" : "workflow",
+              "version" : "head",
+              "restBinding" : {
+                "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/f454e469-38c7-4b4f-af72-a41ee39ca7d6Service}6023.ef21674d-6280-469f-8807-401eb4752e17",
+                "openAPIVersion" : "v3"
+              }
+            },
+            "cachingType" : false,
+            "name" : "Salesforce Custom Skills Version2",
+            "interfaceRef" : "_14d4f81f-013b-436a-bb84-b1d9d369b005",
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+            "id" : "_95e052f1-03d0-45c5-95b5-10eab03374ea"
+          } ]
+        },
+        "declaredType" : "endPoint"
+      } ],
+      "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/f454e469-38c7-4b4f-af72-a41ee39ca7d6Service",
+      "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+      "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+      "id" : "_4714c652-7430-4535-8fdc-17a3180aeb31"
+    },
+    "poId" : "1.bf192c66-1cae-4330-b5d4-ab6eae392889",
+    "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery5851073233144371008.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/f454e469-38c7-4b4f-af72-a41ee39ca7d6.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/f454e469-38c7-4b4f-af72-a41ee39ca7d6Service}createOrderItemRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/f454e469-38c7-4b4f-af72-a41ee39ca7d6Service}createOrderItemResponseMsg" ]
+  }, {
+    "WSDL_DATA" : {
+      "repoUrl" : "repo://6023.ef21674d-6280-469f-8807-401eb4752e17/.wsdl",
+      "uid" : "6023.ef21674d-6280-469f-8807-401eb4752e17",
+      "referenceLocation" : [ {
+        "absoluteLocation" : "repo://6023.6cc9e787-e694-4ebe-adca-c0b7dbb608ae/a41ee39ca7d6.xsd",
+        "relativeLocation" : "/f454e469-38c7-4b4f-af72-a41ee39ca7d6.xsd"
+      } ],
+      "data" : "{\"openapi\":\"3.0.1\",\"info\":{\"title\":\"Salesforce Custom Skills Version2\",\"description\":\"An API for managing orders and price books in Salesforce.\",\"version\":\"1.0.0\",\"x-ibm-skill-type\":\"imported\",\"x-ibm-annotations\":\"true\",\"x-ibm-skill-subtype\":\"public\",\"x-ibm-application-id\":\"app-c73451bc04c84958aa4a049c338df912\",\"x-ibm-application-name\":\"Salesforce Custom Skills Version2\"},\"servers\":[{\"url\":\"https://dl.watson-orchestrate.ibm.com/asb/uabskillproxy\"}],\"security\":[{\"IBM-WO-JWT\":[]}],\"paths\":{\"/invoke/skill/Salesforce-Custom-Skills-Version2__1.0.0__createOrderItem\":{\"post\":{\"tags\":[\"Salesforce\"],\"summary\":\"Create an order item in salesforce\",\"description\":\"An API for managing orders and price books in Salesforce.\",\"operationId\":\"createOrderItem\",\"parameters\":[{\"name\":\"order\",\"in\":\"query\",\"required\":true,\"style\":\"form\",\"explode\":true,\"schema\":{\"type\":\"string\",\"description\":\"Order ID\"},\"x-ibm-order\":1,\"x-ibm-multiline\":\"false\"},{\"name\":\"pricebook_id\",\"in\":\"query\",\"required\":true,\"style\":\"form\",\"explode\":true,\"schema\":{\"type\":\"string\",\"description\":\"Pricebook ID\"},\"x-ibm-order\":2,\"x-ibm-multiline\":\"false\"},{\"name\":\"quantity\",\"in\":\"query\",\"required\":true,\"style\":\"form\",\"explode\":true,\"schema\":{\"type\":\"integer\",\"description\":\"Quantity of items\"},\"x-ibm-order\":3,\"x-ibm-multiline\":\"false\"}],\"responses\":{\"200\":{\"description\":\"Order item created successfully\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"message\":{\"type\":\"string\",\"description\":\"Response message\",\"x-ibm-order\":1}}}}}}},\"x-ibm-nl-entities\":{\"entities\":[]},\"x-ibm-next-actions\":[],\"x-ibm-nl-intent-examples\":[\"Create an order item in salesforce\"],\"x-ibm-conversational-skill\":true}}},\"components\":{\"schemas\":{\"OrdersResponse\":{\"type\":\"object\",\"properties\":{\"order_result\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Id\":{\"type\":\"string\"},\"OrderNumber\":{\"type\":\"string\"},\"TotalAmount\":{\"type\":\"number\"}}}}}},\"NewOrderResponse\":{\"type\":\"object\",\"properties\":{\"order_id\":{\"type\":\"string\",\"description\":\"ID of the newly created order\"}}},\"OrderItemResponse\":{\"type\":\"object\",\"properties\":{\"message\":{\"type\":\"string\",\"description\":\"Response message\"}}},\"PriceBooksResponse\":{\"type\":\"object\",\"properties\":{\"price_books\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"uab_Product_Name\":{\"type\":\"string\",\"x-ibm-original-property-name\":\"Product Name\"},\"uab_Unit_Price\":{\"type\":\"number\",\"x-ibm-original-property-name\":\"Unit Price\"},\"uab_Pricebook_ID\":{\"type\":\"string\",\"x-ibm-original-property-name\":\"Pricebook ID\"},\"uab_Pricebook_Name\":{\"type\":\"string\",\"x-ibm-original-property-name\":\"Pricebook Name\"}}}}}}},\"securitySchemes\":{\"IBM-WO-JWT\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"IBM-Watsonx-Orchestrate-JWT\"}}}}",
+      "namespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/f454e469-38c7-4b4f-af72-a41ee39ca7d6Service",
+      "type" : "swagger",
+      "url" : "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery5851073233144371008.json"
+    },
+    "type" : "BPMService",
+    "definitions" : "{\"openapi\":\"3.0.1\",\"info\":{\"title\":\"Salesforce Custom Skills Version2\",\"description\":\"An API for managing orders and price books in Salesforce.\",\"version\":\"1.0.0\",\"x-ibm-skill-type\":\"imported\",\"x-ibm-annotations\":\"true\",\"x-ibm-skill-subtype\":\"public\",\"x-ibm-application-id\":\"app-c73451bc04c84958aa4a049c338df912\",\"x-ibm-application-name\":\"Salesforce Custom Skills Version2\"},\"servers\":[{\"url\":\"https://dl.watson-orchestrate.ibm.com/asb/uabskillproxy\"}],\"security\":[{\"IBM-WO-JWT\":[]}],\"paths\":{\"/invoke/skill/Salesforce-Custom-Skills-Version2__1.0.0__createOrderItem\":{\"post\":{\"tags\":[\"Salesforce\"],\"summary\":\"Create an order item in salesforce\",\"description\":\"An API for managing orders and price books in Salesforce.\",\"operationId\":\"createOrderItem\",\"parameters\":[{\"name\":\"order\",\"in\":\"query\",\"required\":true,\"style\":\"form\",\"explode\":true,\"schema\":{\"type\":\"string\",\"description\":\"Order ID\"},\"x-ibm-order\":1,\"x-ibm-multiline\":\"false\"},{\"name\":\"pricebook_id\",\"in\":\"query\",\"required\":true,\"style\":\"form\",\"explode\":true,\"schema\":{\"type\":\"string\",\"description\":\"Pricebook ID\"},\"x-ibm-order\":2,\"x-ibm-multiline\":\"false\"},{\"name\":\"quantity\",\"in\":\"query\",\"required\":true,\"style\":\"form\",\"explode\":true,\"schema\":{\"type\":\"integer\",\"description\":\"Quantity of items\"},\"x-ibm-order\":3,\"x-ibm-multiline\":\"false\"}],\"responses\":{\"200\":{\"description\":\"Order item created successfully\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"message\":{\"type\":\"string\",\"description\":\"Response message\",\"x-ibm-order\":1}}}}}}},\"x-ibm-nl-entities\":{\"entities\":[]},\"x-ibm-next-actions\":[],\"x-ibm-nl-intent-examples\":[\"Create an order item in salesforce\"],\"x-ibm-conversational-skill\":true}}},\"components\":{\"schemas\":{\"OrdersResponse\":{\"type\":\"object\",\"properties\":{\"order_result\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Id\":{\"type\":\"string\"},\"OrderNumber\":{\"type\":\"string\"},\"TotalAmount\":{\"type\":\"number\"}}}}}},\"NewOrderResponse\":{\"type\":\"object\",\"properties\":{\"order_id\":{\"type\":\"string\",\"description\":\"ID of the newly created order\"}}},\"OrderItemResponse\":{\"type\":\"object\",\"properties\":{\"message\":{\"type\":\"string\",\"description\":\"Response message\"}}},\"PriceBooksResponse\":{\"type\":\"object\",\"properties\":{\"price_books\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"uab_Product_Name\":{\"type\":\"string\",\"x-ibm-original-property-name\":\"Product Name\"},\"uab_Unit_Price\":{\"type\":\"number\",\"x-ibm-original-property-name\":\"Unit Price\"},\"uab_Pricebook_ID\":{\"type\":\"string\",\"x-ibm-original-property-name\":\"Pricebook ID\"},\"uab_Pricebook_Name\":{\"type\":\"string\",\"x-ibm-original-property-name\":\"Pricebook Name\"}}}}}}},\"securitySchemes\":{\"IBM-WO-JWT\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"IBM-Watsonx-Orchestrate-JWT\"}}}}",
+    "poId" : "6023.ef21674d-6280-469f-8807-401eb4752e17"
+  }, {
+    "WSDL_DATA" : {
+      "repoUrl" : "repo://6023.6cc9e787-e694-4ebe-adca-c0b7dbb608ae/a41ee39ca7d6.xsd",
+      "uid" : "6023.6cc9e787-e694-4ebe-adca-c0b7dbb608ae",
+      "referenceLocation" : [ ],
+      "data" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/f454e469-38c7-4b4f-af72-a41ee39ca7d6.xsd\" xmlns:ibmbpm=\"http://lombardi.ibm.com/schema/\" targetNamespace=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/f454e469-38c7-4b4f-af72-a41ee39ca7d6.xsd\">\n  <xsd:element name=\"createOrderItemRequest\" type=\"createOrderItemRequest\"/>\n  <xsd:element name=\"createOrderItemResponse\" type=\"createOrderItemResponse\"/>\n  <xsd:complexType name=\"createOrderItemRequest\">\n    <xsd:sequence>\n      <xsd:element name=\"order\" type=\"xsd:string\"/>\n      <xsd:element name=\"pricebook_id\" type=\"xsd:string\"/>\n      <xsd:element name=\"quantity\" type=\"xsd:int\"/>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"createOrderItemResponse\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"createOrderItem\" type=\"createOrderItem_200Type\" xpathBeforeFlattening=\"/xsd:schema/xsd:complexType[@name='createOrderItemResponse']/xsd:sequence/xsd:element[@name='createOrderItem']\">\n        <xsd:annotation alternateOldName=\"createOrderItem_200\" optional=\"true\" responseCode=\"200\">\n          <xsd:documentation>Order item created successfully</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"createOrderItem_200Type\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\">\n          <xsd:documentation>Response message</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n</xsd:schema>\n",
+      "namespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/f454e469-38c7-4b4f-af72-a41ee39ca7d6.xsd",
+      "type" : "xsd",
+      "url" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/f454e469-38c7-4b4f-af72-a41ee39ca7d6.xsd"
+    },
+    "type" : "BPMService",
+    "definitions" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/f454e469-38c7-4b4f-af72-a41ee39ca7d6.xsd\" xmlns:ibmbpm=\"http://lombardi.ibm.com/schema/\" targetNamespace=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/f454e469-38c7-4b4f-af72-a41ee39ca7d6.xsd\">\n  <xsd:element name=\"createOrderItemRequest\" type=\"createOrderItemRequest\"/>\n  <xsd:element name=\"createOrderItemResponse\" type=\"createOrderItemResponse\"/>\n  <xsd:complexType name=\"createOrderItemRequest\">\n    <xsd:sequence>\n      <xsd:element name=\"order\" type=\"xsd:string\"/>\n      <xsd:element name=\"pricebook_id\" type=\"xsd:string\"/>\n      <xsd:element name=\"quantity\" type=\"xsd:int\"/>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"createOrderItemResponse\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"createOrderItem\" type=\"createOrderItem_200Type\" xpathBeforeFlattening=\"/xsd:schema/xsd:complexType[@name='createOrderItemResponse']/xsd:sequence/xsd:element[@name='createOrderItem']\">\n        <xsd:annotation alternateOldName=\"createOrderItem_200\" optional=\"true\" responseCode=\"200\">\n          <xsd:documentation>Order item created successfully</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"createOrderItem_200Type\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\">\n          <xsd:documentation>Response message</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n</xsd:schema>\n",
+    "poId" : "6023.6cc9e787-e694-4ebe-adca-c0b7dbb608ae"
+  } ]
+}

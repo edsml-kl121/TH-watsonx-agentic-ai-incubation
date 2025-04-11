@@ -1,0 +1,106 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.78626428-e0ac-4a49-8f11-8395c8c7234e",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "This OpenAPI document describes the operations that the salesforce Product2 runtime APIs support." ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.3c1344c2-c0d6-4d34-af4a-f2e4a5f9436d",
+      "declaredType" : "interface",
+      "id" : "_643ad24f-ff1b-4950-baba-a1aac289f7cf",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.837a26f7-5c85-4905-9b06-1c15c4fbce3e" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "next",
+              "name" : "next",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_12d8e106-57de-474c-855f-314d9481a332",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/nextType_1.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/896a6f5d-b71c-41b0-8f56-b773971df6e4.xsd}nextType"
+            }, {
+              "path" : "instances",
+              "name" : "instances",
+              "isCollection" : true,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_eea84c1f-e9d0-4874-b049-fb386098db72",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/instancesType_1.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/896a6f5d-b71c-41b0-8f56-b773971df6e4.xsd}instancesType"
+            } ],
+            "input" : [ {
+              "path" : "next_page_token",
+              "name" : "next_page_token",
+              "isCollection" : false,
+              "description" : "token to obtain next set of records",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_db677a35-714e-4731-acf8-ff2274272ee0",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "filter",
+              "name" : "filter",
+              "isCollection" : false,
+              "description" : "The [`filter`](https://loopback.io/doc/en/lb4/Where-filter.html) is a type of filter clause that consists of one or more logical conditions to match, it is a way of achieving subsetting of data based on the specified conditions",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_c19c335b-526d-401a-8704-da8f5afd00ed",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "from Salesforce" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "retrievewithwhere_Product2",
+        "id" : "_3aa1f751-6e5c-4fe6-9f38-478301a37b78"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "skillId" : "Salesforce-Product2__7.0.0__retrievewithwhere_Product2",
+            "invocationType" : "SKILL",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.78626428-e0ac-4a49-8f11-8395c8c7234e",
+            "displayVersion" : "head",
+            "name" : "Salesforce Product2",
+            "project" : "Salesforce-Product2__7.0.0__retrievewithwhere_Product2",
+            "applicationId" : "salesforce",
+            "canUseDefaultVersion" : true,
+            "type" : "workflow",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/896a6f5d-b71c-41b0-8f56-b773971df6e4Service}6023.f94322f5-815d-4928-b9ff-bb6ebe62b953",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "Salesforce Product2",
+          "interfaceRef" : "_643ad24f-ff1b-4950-baba-a1aac289f7cf",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_d8faeeb8-ba1d-4eeb-9d30-243deaa538e8"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/896a6f5d-b71c-41b0-8f56-b773971df6e4Service",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_963d9116-1ee1-4a97-8fa9-57d37863629f"
+  },
+  "poId" : "1.0457f33b-626a-4cb5-8b3d-2090af18c08f",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery6401754569379480680.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/896a6f5d-b71c-41b0-8f56-b773971df6e4.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/896a6f5d-b71c-41b0-8f56-b773971df6e4Service}retrievewithwhere_Product2RequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/896a6f5d-b71c-41b0-8f56-b773971df6e4Service}retrievewithwhere_Product2ResponseMsg" ]
+}

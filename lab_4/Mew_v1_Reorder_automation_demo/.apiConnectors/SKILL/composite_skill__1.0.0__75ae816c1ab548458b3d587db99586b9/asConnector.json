@@ -1,0 +1,109 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.3fd4ebb8-5ae0-47ae-8c4c-cdc8fa3f2ab7",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "" ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.e5f067e7-03c1-4c3d-a0c1-a49e83db5108",
+      "declaredType" : "interface",
+      "id" : "_5ac386b7-6ee7-4751-8e39-94d9b4db22ed",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.613fae45-0e8f-47fd-a5d3-cbb5416e515e" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "_5ae816c1ab548458b3d587db99586b9",
+              "name" : "_5ae816c1ab548458b3d587db99586b9",
+              "isCollection" : false,
+              "description" : "Successful execution",
+              "httpResponseCode" : "200",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_6595070d-740d-488e-a9c9-f28f1cda1b0b",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/composite_skill/_5ae816c1ab548458b3d587db99586b9_200Type.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/04fdbd4d-384f-4136-a5f7-486b82bc57d0.xsd}_5ae816c1ab548458b3d587db99586b9_200Type"
+            } ],
+            "input" : [ {
+              "path" : "accountName",
+              "name" : "accountName",
+              "isCollection" : false,
+              "description" : "Account name",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_aa3dbb55-60e8-41e6-af9d-3df54eb98b9d",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "next_page_token",
+              "name" : "next_page_token",
+              "isCollection" : false,
+              "description" : "token to obtain next set of records",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_201fdba6-52e3-472b-b168-75be60158b3f",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "filter",
+              "name" : "filter",
+              "isCollection" : false,
+              "description" : "The [`filter`](https://loopback.io/doc/en/lb4/Where-filter.html) is a type of filter clause that consists of one or more logical conditions to match, it is a way of achieving subsetting of data based on the specified conditions",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_1695390d-9089-4310-9ac2-bcdd039ed7d9",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "75ae816c1ab548458b3d587db99586b9",
+        "id" : "_947d3411-dc64-43d4-a825-e44baccddf6c"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "skillId" : "composite_skill__1.0.0__75ae816c1ab548458b3d587db99586b9",
+            "invocationType" : "SKILL",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.3fd4ebb8-5ae0-47ae-8c4c-cdc8fa3f2ab7",
+            "displayVersion" : "head",
+            "name" : "Initiate Replenishment",
+            "project" : "composite_skill__1.0.0__75ae816c1ab548458b3d587db99586b9",
+            "applicationId" : "composite_skill",
+            "canUseDefaultVersion" : true,
+            "type" : "workflow",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/04fdbd4d-384f-4136-a5f7-486b82bc57d0Service}6023.bedcc00b-d97f-404c-b167-7b467ca64e51",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "Initiate Replenishment",
+          "interfaceRef" : "_5ac386b7-6ee7-4751-8e39-94d9b4db22ed",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_fd7c25c4-2012-48e2-8342-289e91e9302c"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/04fdbd4d-384f-4136-a5f7-486b82bc57d0Service",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_e81b2892-3225-4916-823b-648051797681"
+  },
+  "poId" : "1.b143d8b7-83a4-47d4-a352-803476322cd0",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery896124571742749117.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/04fdbd4d-384f-4136-a5f7-486b82bc57d0.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/04fdbd4d-384f-4136-a5f7-486b82bc57d0Service}75ae816c1ab548458b3d587db99586b9RequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/04fdbd4d-384f-4136-a5f7-486b82bc57d0Service}75ae816c1ab548458b3d587db99586b9ResponseMsg" ]
+}

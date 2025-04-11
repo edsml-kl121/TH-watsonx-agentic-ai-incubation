@@ -1,0 +1,29 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364/New_orderType.schema.json",
+  "x-ibm-json-name" : "New_orderType",
+  "x-ibm-package-name" : "com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364",
+  "type" : "object",
+  "title" : "New_orderType",
+  "x-ibm-original-json-name" : "createOrder.New_orderType",
+  "properties" : {
+    "AccountId" : {
+      "title" : "AccountId",
+      "type" : [ "string", "null" ]
+    },
+    "EffectiveDate" : {
+      "title" : "EffectiveDate",
+      "type" : [ "string", "null" ],
+      "format" : "date",
+      "examples" : [ "2025-04-01" ]
+    },
+    "Id" : {
+      "title" : "Id",
+      "type" : [ "string", "null" ]
+    },
+    "Status" : {
+      "title" : "Status",
+      "type" : [ "string", "null" ]
+    }
+  }
+}

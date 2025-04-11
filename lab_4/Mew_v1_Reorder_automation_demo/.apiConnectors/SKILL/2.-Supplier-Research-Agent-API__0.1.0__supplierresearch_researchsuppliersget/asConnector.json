@@ -1,0 +1,88 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.426d45e2-16d9-4ab7-9b43-79589eb65d72",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "2. Supplier Research Agent API" ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.734c5071-6057-4fc2-aa21-4345c4426dd3",
+      "declaredType" : "interface",
+      "id" : "_328660f1-7189-4a5b-bf5e-5b54d95ae98d",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.ea11daee-d52f-4e3f-9b31-035b2d892bc3" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "supplierresearch_researchsuppliersget",
+              "name" : "supplierresearch_researchsuppliersget",
+              "isCollection" : false,
+              "description" : "Successful Response",
+              "httpResponseCode" : "200",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_c3cfab21-2d71-49e9-ae57-19021e9c935b",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASH4bd47926bef8ae7a2082d87d81f1770a_app_89bedefc06fe46d99551fedd54d3ae77/supplierresearch_researchsuppliersget_200Type.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/d4a3392f-2355-4b2d-949d-5280c1839d78.xsd}supplierresearch_researchsuppliersget_200Type"
+            } ],
+            "input" : [ {
+              "path" : "query",
+              "name" : "query",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_094aaaa2-fe8e-4dad-8fa2-151732849282",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "2. Supplier Research Agent API" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "supplierresearch_researchsuppliersget",
+        "id" : "_bb565756-3d00-4450-a22f-2223a4d0a3a7"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "skillId" : "2.-Supplier-Research-Agent-API__0.1.0__supplierresearch_researchsuppliersget",
+            "invocationType" : "SKILL",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.426d45e2-16d9-4ab7-9b43-79589eb65d72",
+            "displayVersion" : "head",
+            "name" : "2. Supplier Research Agent API",
+            "project" : "2.-Supplier-Research-Agent-API__0.1.0__supplierresearch_researchsuppliersget",
+            "applicationId" : "app-89bedefc06fe46d99551fedd54d3ae77",
+            "canUseDefaultVersion" : true,
+            "type" : "workflow",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/d4a3392f-2355-4b2d-949d-5280c1839d78Service}6023.12bdad6e-edb6-4656-9846-bd97179952ee",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "2. Supplier Research Agent API",
+          "interfaceRef" : "_328660f1-7189-4a5b-bf5e-5b54d95ae98d",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_1f107f23-8aaf-4f56-990d-a2871247ce37"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/d4a3392f-2355-4b2d-949d-5280c1839d78Service",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_a184b5a2-71b7-4ff1-94f4-fe3353dd382d"
+  },
+  "poId" : "1.c97638f0-1b3a-4b4d-a6e2-aebe83e59593",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery18320168047145971080.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/d4a3392f-2355-4b2d-949d-5280c1839d78.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/d4a3392f-2355-4b2d-949d-5280c1839d78Service}supplierresearch_researchsuppliersgetRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/d4a3392f-2355-4b2d-949d-5280c1839d78Service}supplierresearch_researchsuppliersgetResponseMsg" ]
+}

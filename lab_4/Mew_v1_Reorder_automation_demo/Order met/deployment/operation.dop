@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="orderMet" targetRuleProjectName="Order met">
+  <name>orderMet</name>
+  <uuid>3ec28be7-c030-489a-a018-76feb500b174</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#c4c1df3c-1d78-49f5-af19-4285804c0def"/>
+  <targetRuleProject href="../../Order%20met#86406730-d009-49fd-8af9-2fa6b138fa55"/>
+  <tags key="operationType">
+    <value><![CDATA[Generative]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

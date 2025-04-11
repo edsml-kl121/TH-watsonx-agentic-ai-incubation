@@ -1,0 +1,11 @@
+{
+  "id" : "055eda7e-836e-40d7-80a4-f23d4a58faf3",
+  "providerId" : "GENAI",
+  "predictionParameters" : {
+    "predictionParamType" : "WML",
+    "modelId" : null,
+    "deploymentId" : null,
+    "url" : "https://us-south.ml.cloud.ibm.com/ml/v1/text/generation_stream"
+  },
+  "version" : "V1"
+}

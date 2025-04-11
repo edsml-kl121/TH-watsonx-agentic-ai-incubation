@@ -1,0 +1,1826 @@
+{
+    "definitions": {
+        "rootElement": [
+            {
+                "flowElement": [
+                    {
+                        "parallelMultiple": false,
+                        "outgoing": [
+                            "75c6cb70-dfab-4002-9f65-8a4e176e67db"
+                        ],
+                        "isInterrupting": true,
+                        "extensionElements": {
+                            "default": [
+                                "75c6cb70-dfab-4002-9f65-8a4e176e67db"
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "color": "#F8F8F8",
+                                    "width": 24,
+                                    "x": 25,
+                                    "y": 80,
+                                    "declaredType": "TNodeVisualInfo",
+                                    "height": 24
+                                }
+                            ]
+                        },
+                        "name": "Start",
+                        "declaredType": "startEvent",
+                        "id": "07a8e41b-71e8-4a87-aea0-96fd7c25845f"
+                    },
+                    {
+                        "incoming": [
+                            "53cceba4-ba5a-4eef-bdc4-b9797dfb23d0"
+                        ],
+                        "extensionElements": {
+                            "nodeVisualInfo": [
+                                {
+                                    "color": "#F8F8F8",
+                                    "width": 24,
+                                    "x": 189,
+                                    "y": 80,
+                                    "declaredType": "TNodeVisualInfo",
+                                    "height": 24
+                                }
+                            ]
+                        },
+                        "name": "End",
+                        "declaredType": "endEvent",
+                        "id": "a6be9b05-307a-425e-8475-1c912b52dd55"
+                    },
+                    {
+                        "targetRef": "6967532b-e491-4e5a-a05e-c083b7634dc5",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To End",
+                        "declaredType": "sequenceFlow",
+                        "id": "75c6cb70-dfab-4002-9f65-8a4e176e67db",
+                        "sourceRef": "07a8e41b-71e8-4a87-aea0-96fd7c25845f"
+                    },
+                    {
+                        "id": "53cceba4-ba5a-4eef-bdc4-b9797dfb23d0",
+                        "sourceRef": "ac34ba66-5c75-4caa-b180-910358aa890f",
+                        "targetRef": "a6be9b05-307a-425e-8475-1c912b52dd55",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "bab426c6-ac0d-487f-98a5-68298718de37",
+                        "sourceRef": "8d4a6a2b-50b1-4b7f-8cac-cc960d82b844",
+                        "targetRef": "6625d81b-2577-446f-b259-a4200afd36e0",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ],
+                            "conditionSet": [
+                                {
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TConditionSet",
+                                    "operator": "all",
+                                    "entry": [
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TCondition",
+                                            "lhs": "/ReorderQty",
+                                            "rhs": "2000.0",
+                                            "op": "greaterThanOrEqualTo"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "name": "MinOrderMet",
+                        "declaredType": "sequenceFlow",
+                        "conditionExpression": {
+                            "declaredType": "com.ibm.bpmsdk.model.bpmn20.TFormalExpression",
+                            "content": [
+                                ""
+                            ],
+                            "language": "http://www.ibm.com/xmlns/prod/bpm/expression-lang/spel"
+                        }
+                    },
+                    {
+                        "id": "11e641da-8343-4ac1-9eb6-accff2fc5439",
+                        "sourceRef": "8d4a6a2b-50b1-4b7f-8cac-cc960d82b844",
+                        "targetRef": "6118cc2e-7c56-4179-b35e-2304c575f64d",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "Else",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "ac34ba66-5c75-4caa-b180-910358aa890f",
+                        "name": "converge-8d4a6a2b-50b1-4b7f-8cac-cc960d82b844",
+                        "declaredType": "exclusiveGateway",
+                        "default": "53cceba4-ba5a-4eef-bdc4-b9797dfb23d0",
+                        "gatewayDirection": "Converging",
+                        "outgoing": [
+                            "53cceba4-ba5a-4eef-bdc4-b9797dfb23d0"
+                        ],
+                        "incoming": [
+                            "2ca63881-82ad-4650-bdf6-f6bfd9f69a00",
+                            "290dad05-03ff-4c8b-81d1-b3b26e9d8b64"
+                        ],
+                        "extensionElements": {
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "8d4a6a2b-50b1-4b7f-8cac-cc960d82b844",
+                        "name": "Branch",
+                        "declaredType": "exclusiveGateway",
+                        "default": "11e641da-8343-4ac1-9eb6-accff2fc5439",
+                        "outgoing": [
+                            "bab426c6-ac0d-487f-98a5-68298718de37",
+                            "11e641da-8343-4ac1-9eb6-accff2fc5439"
+                        ],
+                        "incoming": [
+                            "88e60b49-06f7-489a-b973-c36e8bd5412e"
+                        ],
+                        "gatewayDirection": "Unspecified",
+                        "extensionElements": {
+                            "nodeVisualInfo": [
+                                {
+                                    "color": "#A5B7CD",
+                                    "width": 32,
+                                    "x": 334,
+                                    "y": 46,
+                                    "declaredType": "TNodeVisualInfo",
+                                    "height": 32
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "6c043702-cafc-4fcf-8461-081818520354",
+                        "name": "Approve Overbudget Order",
+                        "declaredType": "serviceTask",
+                        "implementation": "##WebService",
+                        "startQuantity": 1,
+                        "isForCompensation": false,
+                        "completionQuantity": 1,
+                        "default": "2f49bae7-c44c-45fb-91ce-64b67f8a0c28",
+                        "outgoing": [
+                            "2f49bae7-c44c-45fb-91ce-64b67f8a0c28"
+                        ],
+                        "incoming": [
+                            "4a62ba1b-ab5d-4761-a321-3fc1fe4c16dc"
+                        ],
+                        "resourceRole": [
+                            {
+                                "resourceAssignmentExpression": {
+                                    "expression": {
+                                        "declaredType": "TExpression",
+                                        "content": [
+                                            "\"USER:645000J7BW\""
+                                        ]
+                                    }
+                                },
+                                "teamAssignmentType": "Dynamic",
+                                "name": "Custom",
+                                "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer",
+                                "distribution": "None"
+                            }
+                        ],
+                        "extensionElements": {
+                            "activityExtension": [
+                                {
+                                    "conditional": false,
+                                    "transactionalBehavior": "NotSet",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"
+                                }
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ],
+                            "userTaskSettings": [
+                                {
+                                    "activityAssignmentType": "Custom",
+                                    "activityWorkSchedule": {
+                                        "timezoneType": 0,
+                                        "timeScheduleType": 0,
+                                        "holidayScheduleType": 0
+                                    },
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TUserTaskSettings",
+                                    "activityPriority": {
+                                        "type": "Priority",
+                                        "priority": "Normal"
+                                    }
+                                }
+                            ],
+                            "activityType": [
+                                "UserTask"
+                            ],
+                            "externalServiceRefPO": [
+                                "1.f38dfdc6-0776-4f53-ae7f-0e9bb5c5dada"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "6f44d10c-1691-4548-b86d-abb52c9215ac",
+                        "declaredType": "dataObject",
+                        "name": "ReorderValue",
+                        "isCollection": false,
+                        "itemSubjectRef": "number",
+                        "extensionElements": {
+                            "dataName": [
+                                "ReorderValue"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "18738307-4fb9-40f2-93e5-7e5141114629",
+                        "declaredType": "dataObject",
+                        "name": "ReorderQtyFromSkill",
+                        "isCollection": false,
+                        "itemSubjectRef": "number",
+                        "extensionElements": {
+                            "dataName": [
+                                "ReorderQtyFromSkill"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "348f66d3-f326-40cd-b454-5fab1c2b83ce",
+                        "sourceRef": "6625d81b-2577-446f-b259-a4200afd36e0",
+                        "targetRef": "c4e90e86-ecdf-4861-b8f7-0be392d9de2a",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "6625d81b-2577-446f-b259-a4200afd36e0",
+                        "name": "Create a new order in Salesforce",
+                        "declaredType": "callActivity",
+                        "startQuantity": 1,
+                        "isForCompensation": false,
+                        "completionQuantity": 1,
+                        "calledElement": "1.53dc7fbb-b0e6-4d48-9d1c-c6af9ff16d88",
+                        "default": "348f66d3-f326-40cd-b454-5fab1c2b83ce",
+                        "outgoing": [
+                            "348f66d3-f326-40cd-b454-5fab1c2b83ce"
+                        ],
+                        "incoming": [
+                            "bab426c6-ac0d-487f-98a5-68298718de37"
+                        ],
+                        "resourceRole": [
+                            {
+                                "resourceAssignmentExpression": {
+                                    "expression": {
+                                        "declaredType": "TExpression",
+                                        "content": [
+                                            "\"USER:\" + tw.system.currentProcessInstance.starter.name"
+                                        ]
+                                    }
+                                },
+                                "teamAssignmentType": "Dynamic",
+                                "name": "Custom",
+                                "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer",
+                                "distribution": "None"
+                            }
+                        ],
+                        "extensionElements": {
+                            "activityExtension": [
+                                {
+                                    "conditional": false,
+                                    "transactionalBehavior": "NotSet",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"
+                                }
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ],
+                            "skillTaskInfo": [
+                                {
+                                    "applicationId": "app-c73451bc04c84958aa4a049c338df912",
+                                    "summary": "Create a new order in Salesforce",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TSkillTaskInfo"
+                                }
+                            ],
+                            "activityType": [
+                                "ServiceTask"
+                            ],
+                            "activitySubType": [
+                                "Skill"
+                            ],
+                            "skillId": [
+                                "Salesforce-Custom-Skills-Version2__1.0.0__createOrder"
+                            ],
+                            "calledOperation": [
+                                "_3f399909-31b2-4c59-9c4b-c06db532cec8"
+                            ]
+                        },
+                        "dataInputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.AccountID"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.account_id"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "account_id"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "literal"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "date",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "2025-03-17"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.date"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "date"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "literal"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "\"Draft\""
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.status"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "status"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.PriceBookID"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.Pricebook2Id"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "Pricebook2Id"
+                            }
+                        ],
+                        "dataOutputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.outputs.createOrder.order_id"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.order_id"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "sourceRef": [
+                                    "createOrder"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "290dad05-03ff-4c8b-81d1-b3b26e9d8b64",
+                        "sourceRef": "64bc201e-c5dd-459e-8d55-31878069b45c",
+                        "targetRef": "ac34ba66-5c75-4caa-b180-910358aa890f",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "3c98e1a5-3a3c-42f0-b3b4-60362a5b1c07",
+                        "sourceRef": "c4e90e86-ecdf-4861-b8f7-0be392d9de2a",
+                        "targetRef": "2104a821-d6f9-4798-acfd-d1d822d1a1d0",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ],
+                            "conditionSet": [
+                                {
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TConditionSet",
+                                    "operator": "all",
+                                    "entry": [
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TCondition",
+                                            "lhs": "/ReorderValue",
+                                            "rhs": "50000.0",
+                                            "op": "greaterThanOrEqualTo"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "name": "MeetBudget",
+                        "declaredType": "sequenceFlow",
+                        "conditionExpression": {
+                            "declaredType": "com.ibm.bpmsdk.model.bpmn20.TFormalExpression",
+                            "content": [
+                                ""
+                            ],
+                            "language": "http://www.ibm.com/xmlns/prod/bpm/expression-lang/spel"
+                        }
+                    },
+                    {
+                        "id": "69ac5176-1aa3-4d81-becd-3da66744aa0a",
+                        "sourceRef": "c4e90e86-ecdf-4861-b8f7-0be392d9de2a",
+                        "targetRef": "2fd86e37-0b20-4645-9f13-d2b305f36d91",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "Else",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "64bc201e-c5dd-459e-8d55-31878069b45c",
+                        "name": "converge-c4e90e86-ecdf-4861-b8f7-0be392d9de2a",
+                        "declaredType": "exclusiveGateway",
+                        "default": "290dad05-03ff-4c8b-81d1-b3b26e9d8b64",
+                        "gatewayDirection": "Converging",
+                        "outgoing": [
+                            "290dad05-03ff-4c8b-81d1-b3b26e9d8b64"
+                        ],
+                        "incoming": [
+                            "2f3970c7-f824-4658-9c4b-574d259cb2c9",
+                            "cff8f297-5197-43c6-b8ec-88cb0e70ad38"
+                        ],
+                        "extensionElements": {
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "c4e90e86-ecdf-4861-b8f7-0be392d9de2a",
+                        "name": "Branch 1",
+                        "declaredType": "exclusiveGateway",
+                        "default": "69ac5176-1aa3-4d81-becd-3da66744aa0a",
+                        "outgoing": [
+                            "3c98e1a5-3a3c-42f0-b3b4-60362a5b1c07",
+                            "69ac5176-1aa3-4d81-becd-3da66744aa0a"
+                        ],
+                        "incoming": [
+                            "348f66d3-f326-40cd-b454-5fab1c2b83ce"
+                        ],
+                        "gatewayDirection": "Unspecified",
+                        "extensionElements": {
+                            "nodeVisualInfo": [
+                                {
+                                    "color": "#A5B7CD",
+                                    "width": 32,
+                                    "x": 334,
+                                    "y": 46,
+                                    "declaredType": "TNodeVisualInfo",
+                                    "height": 32
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "cff8f297-5197-43c6-b8ec-88cb0e70ad38",
+                        "sourceRef": "a554ac14-9501-46a6-870f-d2ba1225b058",
+                        "targetRef": "64bc201e-c5dd-459e-8d55-31878069b45c",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "a554ac14-9501-46a6-870f-d2ba1225b058",
+                        "name": "Create an order item in salesforce",
+                        "declaredType": "callActivity",
+                        "startQuantity": 1,
+                        "isForCompensation": false,
+                        "completionQuantity": 1,
+                        "calledElement": "1.bf192c66-1cae-4330-b5d4-ab6eae392889",
+                        "default": "cff8f297-5197-43c6-b8ec-88cb0e70ad38",
+                        "outgoing": [
+                            "cff8f297-5197-43c6-b8ec-88cb0e70ad38"
+                        ],
+                        "incoming": [
+                            "ffe07e6d-e3a8-495e-b0b7-4496da1e9169"
+                        ],
+                        "resourceRole": [
+                            {
+                                "resourceAssignmentExpression": {
+                                    "expression": {
+                                        "declaredType": "TExpression",
+                                        "content": [
+                                            "\"USER:\" + tw.system.currentProcessInstance.starter.name"
+                                        ]
+                                    }
+                                },
+                                "teamAssignmentType": "Dynamic",
+                                "name": "Custom",
+                                "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer",
+                                "distribution": "None"
+                            }
+                        ],
+                        "extensionElements": {
+                            "activityExtension": [
+                                {
+                                    "conditional": false,
+                                    "transactionalBehavior": "NotSet",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"
+                                }
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ],
+                            "skillTaskInfo": [
+                                {
+                                    "applicationId": "app-c73451bc04c84958aa4a049c338df912",
+                                    "summary": "Create an order item in salesforce",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TSkillTaskInfo"
+                                }
+                            ],
+                            "activityType": [
+                                "ServiceTask"
+                            ],
+                            "activitySubType": [
+                                "Skill"
+                            ],
+                            "skillId": [
+                                "Salesforce-Custom-Skills-Version2__1.0.0__createOrderItem"
+                            ],
+                            "calledOperation": [
+                                "_2a233579-d966-477c-88d9-880f5bc893e0"
+                            ]
+                        },
+                        "dataInputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.PriceBookID"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.pricebook_id"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "pricebook_id"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.order_id"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.order"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "order"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "number",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.ReorderQty"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.quantity"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "quantity"
+                            }
+                        ],
+                        "dataOutputAssociation": []
+                    },
+                    {
+                        "id": "178de2ac-bd88-49f7-9247-e8333bcb48dd",
+                        "name": "order_id",
+                        "isCollection": false,
+                        "itemSubjectRef": "string",
+                        "declaredType": "dataObject",
+                        "extensionElements": {
+                            "dataName": [
+                                "order_id"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "88e60b49-06f7-489a-b973-c36e8bd5412e",
+                        "sourceRef": "6967532b-e491-4e5a-a05e-c083b7634dc5",
+                        "targetRef": "8d4a6a2b-50b1-4b7f-8cac-cc960d82b844",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "6967532b-e491-4e5a-a05e-c083b7634dc5",
+                        "name": "Get Reorder Qty",
+                        "declaredType": "callActivity",
+                        "startQuantity": 1,
+                        "isForCompensation": false,
+                        "completionQuantity": 1,
+                        "calledElement": "1.e1fc077e-68c4-45f8-87f9-7fffbfc21044",
+                        "default": "88e60b49-06f7-489a-b973-c36e8bd5412e",
+                        "outgoing": [
+                            "88e60b49-06f7-489a-b973-c36e8bd5412e"
+                        ],
+                        "incoming": [
+                            "75c6cb70-dfab-4002-9f65-8a4e176e67db"
+                        ],
+                        "extensionElements": {
+                            "activityExtension": [
+                                {
+                                    "conditional": false,
+                                    "transactionalBehavior": "NotSet",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"
+                                }
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ],
+                            "activityType": [
+                                "ServiceTask"
+                            ],
+                            "activitySubType": [
+                                "Decision"
+                            ],
+                            "componentName": [
+                                "Get Reorder Qty"
+                            ],
+                            "operationId": [
+                                "GetReorderQty-Get_Reorder_Qty"
+                            ],
+                            "calledOperation": [
+                                "_77e1ed5b-a8a7-4c66-99ad-96696f00da07"
+                            ],
+                            "automationIdentifierName": [
+                                "uab/Reorder_automation"
+                            ]
+                        },
+                        "dataInputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "number",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.ReorderQty"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.reorderQty"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "reorderQty"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.UnitPrice"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.unitPrice"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "unitPrice"
+                            }
+                        ],
+                        "dataOutputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.outputs.GetReorderQty_Get_Reorder_Qty"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "number",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.ReorderValue"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "sourceRef": [
+                                    "GetReorderQty_Get_Reorder_Qty"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2ca63881-82ad-4650-bdf6-f6bfd9f69a00",
+                        "sourceRef": "6118cc2e-7c56-4179-b35e-2304c575f64d",
+                        "targetRef": "ac34ba66-5c75-4caa-b180-910358aa890f",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "6118cc2e-7c56-4179-b35e-2304c575f64d",
+                        "name": "No min order notification",
+                        "declaredType": "callActivity",
+                        "startQuantity": 1,
+                        "isForCompensation": false,
+                        "completionQuantity": 1,
+                        "calledElement": "1.e04e9aa0-c803-43a8-bbaa-92f392c9cca8",
+                        "default": "2ca63881-82ad-4650-bdf6-f6bfd9f69a00",
+                        "outgoing": [
+                            "2ca63881-82ad-4650-bdf6-f6bfd9f69a00"
+                        ],
+                        "incoming": [
+                            "11e641da-8343-4ac1-9eb6-accff2fc5439"
+                        ],
+                        "extensionElements": {
+                            "activityExtension": [
+                                {
+                                    "conditional": false,
+                                    "transactionalBehavior": "NotSet",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"
+                                }
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ],
+                            "activityType": [
+                                "ServiceTask"
+                            ],
+                            "activitySubType": [
+                                "GenerativeAI"
+                            ],
+                            "componentName": [
+                                "No min order notification"
+                            ],
+                            "operationId": [
+                                "NoMinOrderNotification-noMinOrderNotification"
+                            ],
+                            "calledOperation": [
+                                "_af08c2a0-4fd7-4e7f-a021-34f8b68c00a5"
+                            ],
+                            "automationIdentifierName": [
+                                "uab/Reorder_automation"
+                            ]
+                        },
+                        "dataInputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "number",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.ReorderQty"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.order_qty"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "order_qty"
+                            }
+                        ],
+                        "dataOutputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.outputs.generated_text"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.NoMinOrderMsg"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "sourceRef": [
+                                    "generated_text"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ffe07e6d-e3a8-495e-b0b7-4496da1e9169",
+                        "sourceRef": "2104a821-d6f9-4798-acfd-d1d822d1a1d0",
+                        "targetRef": "a554ac14-9501-46a6-870f-d2ba1225b058",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "2104a821-d6f9-4798-acfd-d1d822d1a1d0",
+                        "name": "Order met",
+                        "declaredType": "callActivity",
+                        "startQuantity": 1,
+                        "isForCompensation": false,
+                        "completionQuantity": 1,
+                        "calledElement": "1.e1d766e5-6cb1-495c-9869-0e08f3fa1a19",
+                        "default": "ffe07e6d-e3a8-495e-b0b7-4496da1e9169",
+                        "outgoing": [
+                            "ffe07e6d-e3a8-495e-b0b7-4496da1e9169"
+                        ],
+                        "incoming": [
+                            "3c98e1a5-3a3c-42f0-b3b4-60362a5b1c07"
+                        ],
+                        "extensionElements": {
+                            "activityExtension": [
+                                {
+                                    "conditional": false,
+                                    "transactionalBehavior": "NotSet",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"
+                                }
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ],
+                            "activityType": [
+                                "ServiceTask"
+                            ],
+                            "activitySubType": [
+                                "GenerativeAI"
+                            ],
+                            "componentName": [
+                                "Order met"
+                            ],
+                            "operationId": [
+                                "OrderMet-orderMet"
+                            ],
+                            "calledOperation": [
+                                "_14b28123-226c-4be3-8f02-aa71494499df"
+                            ],
+                            "automationIdentifierName": [
+                                "uab/Reorder_automation"
+                            ]
+                        },
+                        "dataInputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.SupplierName"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.supplier"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "supplier"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "number",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.ReorderQty"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.reorder_qty"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "reorder_qty"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "number",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.ReorderValue"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.value"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "value"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "literal"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "\"Xtralife\""
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.product"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "product"
+                            }
+                        ],
+                        "dataOutputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.outputs.generated_text"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.OrderMetMsg"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "sourceRef": [
+                                    "generated_text"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2f3970c7-f824-4658-9c4b-574d259cb2c9",
+                        "sourceRef": "2fd86e37-0b20-4645-9f13-d2b305f36d91",
+                        "targetRef": "64bc201e-c5dd-459e-8d55-31878069b45c",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "2fd86e37-0b20-4645-9f13-d2b305f36d91",
+                        "name": "Overorder_email_draft",
+                        "declaredType": "callActivity",
+                        "startQuantity": 1,
+                        "isForCompensation": false,
+                        "completionQuantity": 1,
+                        "calledElement": "1.721c321a-67b5-41af-a4d8-2f2cc3bd3c95",
+                        "default": "2f3970c7-f824-4658-9c4b-574d259cb2c9",
+                        "outgoing": [
+                            "2f3970c7-f824-4658-9c4b-574d259cb2c9"
+                        ],
+                        "incoming": [
+                            "69ac5176-1aa3-4d81-becd-3da66744aa0a"
+                        ],
+                        "extensionElements": {
+                            "activityExtension": [
+                                {
+                                    "conditional": false,
+                                    "transactionalBehavior": "NotSet",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"
+                                }
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ],
+                            "activityType": [
+                                "ServiceTask"
+                            ],
+                            "activitySubType": [
+                                "GenerativeAI"
+                            ],
+                            "componentName": [
+                                "Overorder_email_draft"
+                            ],
+                            "operationId": [
+                                "Overorder_email_draft-overorder_Email_Draft"
+                            ],
+                            "calledOperation": [
+                                "_168d4eda-27e3-4ca1-be91-cc4d8fa9325d"
+                            ],
+                            "automationIdentifierName": [
+                                "uab/Reorder_automation"
+                            ]
+                        },
+                        "dataInputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "number",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.ReorderQty"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.reorder_qty"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "reorder_qty"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "number",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.ReorderValue"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.value"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "value"
+                            },
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.SupplierName"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.supplier"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "supplier"
+                            }
+                        ],
+                        "dataOutputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.outputs.generated_text"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.response_overdraft"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "sourceRef": [
+                                    "generated_text"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "laneSet": [
+                    {
+                        "id": "fee60a46-854b-434f-a90e-eea8ba1ed739",
+                        "lane": [
+                            {
+                                "flowNodeRef": [
+                                    "07a8e41b-71e8-4a87-aea0-96fd7c25845f",
+                                    "a6be9b05-307a-425e-8475-1c912b52dd55",
+                                    "ac34ba66-5c75-4caa-b180-910358aa890f",
+                                    "8d4a6a2b-50b1-4b7f-8cac-cc960d82b844",
+                                    "6c043702-cafc-4fcf-8461-081818520354",
+                                    "6625d81b-2577-446f-b259-a4200afd36e0",
+                                    "64bc201e-c5dd-459e-8d55-31878069b45c",
+                                    "c4e90e86-ecdf-4861-b8f7-0be392d9de2a",
+                                    "a554ac14-9501-46a6-870f-d2ba1225b058",
+                                    "6967532b-e491-4e5a-a05e-c083b7634dc5",
+                                    "6118cc2e-7c56-4179-b35e-2304c575f64d",
+                                    "2104a821-d6f9-4798-acfd-d1d822d1a1d0",
+                                    "2fd86e37-0b20-4645-9f13-d2b305f36d91"
+                                ],
+                                "extensionElements": {
+                                    "nodeVisualInfo": [
+                                        {
+                                            "color": "#F8F8F8",
+                                            "width": 3000,
+                                            "x": 0,
+                                            "y": 0,
+                                            "declaredType": "TNodeVisualInfo",
+                                            "height": 175
+                                        }
+                                    ]
+                                },
+                                "name": "All Users",
+                                "partitionElementRef": "24.da7e4d23-78cb-4483-98ed-b9c238308a03",
+                                "declaredType": "lane",
+                                "id": "5de6dce3-4880-42ed-b7a2-2ba7cb2a58b9",
+                                "otherAttributes": {
+                                    "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/wle}isSystemLane": "false"
+                                }
+                            },
+                            {
+                                "extensionElements": {
+                                    "nodeVisualInfo": [
+                                        {
+                                            "color": "#F8F8F8",
+                                            "width": 3000,
+                                            "x": 0,
+                                            "y": 175,
+                                            "declaredType": "TNodeVisualInfo",
+                                            "height": 200
+                                        }
+                                    ]
+                                },
+                                "name": "System",
+                                "partitionElementRef": "24.6fd38d02-81cf-48ab-bd42-8ff4c0a1628b",
+                                "declaredType": "lane",
+                                "id": "b2f2e62f-657a-4152-92cb-7c0d6c90503b",
+                                "otherAttributes": {
+                                    "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/wle}isSystemLane": "true"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "resourceRole": [
+                    {
+                        "resourceRef": "24.da7e4d23-78cb-4483-98ed-b9c238308a03",
+                        "name": "participantRef",
+                        "declaredType": "resourceRole"
+                    },
+                    {
+                        "name": "businessDataParticipantRef",
+                        "declaredType": "resourceRole"
+                    },
+                    {
+                        "name": "perfMetricParticipantRef",
+                        "declaredType": "resourceRole"
+                    },
+                    {
+                        "name": "ownerTeamParticipantRef",
+                        "declaredType": "resourceRole"
+                    }
+                ],
+                "isClosed": false,
+                "extensionElements": {
+                    "bpdExtension": [
+                        {
+                            "allowContentOperations": false,
+                            "enableTracking": true,
+                            "workSchedule": {
+                                "timezoneType": 0,
+                                "timeScheduleType": 0,
+                                "holidayScheduleType": 0
+                            },
+                            "instanceName": "\"flow:\" + tw.system.process.instanceId",
+                            "dueDateSettings": {
+                                "dueDate": {
+                                    "unit": "Hours",
+                                    "value": "8",
+                                    "timeOfDay": "00:00"
+                                },
+                                "type": "TimeCalculation"
+                            },
+                            "autoTrackingName": "at1675198607405",
+                            "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TBPDExtension",
+                            "optimizeExecForLatency": false,
+                            "dueDateEnabled": false,
+                            "atRiskCalcEnabled": true,
+                            "allowProjectedPathManagement": false,
+                            "autoTrackingEnabled": false,
+                            "sboSyncEnabled": true
+                        }
+                    ],
+                    "caseExtension": [
+                        {
+                            "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmcaseext.TCaseExtension",
+                            "caseFolder": {
+                                "allowSubfoldersCreation": false,
+                                "allowLocalDoc": false,
+                                "id": "1bb78fc6-3e1a-498a-bc36-427c42a346ed",
+                                "allowExternalFolder": false,
+                                "allowExternalDoc": false
+                            }
+                        }
+                    ],
+                    "isConvergedProcess": [
+                        true
+                    ],
+                    "variableOrder": [
+                        "2007.187609d2-d718-4c5c-9435-558ffac2ac33",
+                        "6f44d10c-1691-4548-b86d-abb52c9215ac",
+                        "2007.1256abf5-56cf-4e1e-87e7-95bb603a7b95",
+                        "2007.e23736b1-0aaf-40a4-ac65-53b5039e2f13",
+                        "18738307-4fb9-40f2-93e5-7e5141114629",
+                        "2007.9eeb041f-8cfa-4782-acb3-ed4aadd40271",
+                        "178de2ac-bd88-49f7-9247-e8333bcb48dd",
+                        "2007.ffe4bd06-67f8-4990-a430-20c9d11217da",
+                        "2007.43359848-640a-4095-930f-1be63bd5fab7",
+                        "2007.82ded76d-cae8-447f-9872-32e19e8e10c2",
+                        "2007.9457279e-982c-4241-90fc-5b126a32f1a5"
+                    ]
+                },
+                "documentation": [
+                    {
+                        "content": [
+                            ""
+                        ],
+                        "textFormat": "text/plain"
+                    }
+                ],
+                "name": "Reorder Decision Flow",
+                "declaredType": "process",
+                "id": "25.3e4b916f-b2da-4441-bc12-94a21970835d",
+                "processType": "None",
+                "otherAttributes": {
+                    "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process}executionMode": "longRunning"
+                },
+                "ioSpecification": {
+                    "inputSet": [
+                        {
+                            "id": "_1d32fca4-687b-4e8b-bace-f096e591dd37"
+                        }
+                    ],
+                    "outputSet": [
+                        {
+                            "id": "_78b7bb29-ecfc-4b4b-8972-45a420f02216"
+                        }
+                    ],
+                    "dataInput": [
+                        {
+                            "id": "2007.187609d2-d718-4c5c-9435-558ffac2ac33",
+                            "name": "ReorderQty",
+                            "isCollection": false,
+                            "itemSubjectRef": "number",
+                            "extensionElements": {
+                                "dataName": [
+                                    "ReorderQty"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2007.1256abf5-56cf-4e1e-87e7-95bb603a7b95",
+                            "name": "UnitPrice",
+                            "isCollection": false,
+                            "itemSubjectRef": "number",
+                            "extensionElements": {
+                                "dataName": [
+                                    "UnitPrice"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2007.ffe4bd06-67f8-4990-a430-20c9d11217da",
+                            "name": "PriceBookID",
+                            "isCollection": false,
+                            "itemSubjectRef": "string",
+                            "extensionElements": {
+                                "dataName": [
+                                    "PriceBookID"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2007.43359848-640a-4095-930f-1be63bd5fab7",
+                            "name": "AccountID",
+                            "isCollection": false,
+                            "itemSubjectRef": "string",
+                            "extensionElements": {
+                                "dataName": [
+                                    "AccountID"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2007.9457279e-982c-4241-90fc-5b126a32f1a5",
+                            "name": "SupplierName",
+                            "isCollection": false,
+                            "itemSubjectRef": "string",
+                            "extensionElements": {
+                                "dataName": [
+                                    "SupplierName"
+                                ]
+                            }
+                        }
+                    ],
+                    "dataOutput": [
+                        {
+                            "id": "2007.e23736b1-0aaf-40a4-ac65-53b5039e2f13",
+                            "name": "NoMinOrderMsg",
+                            "isCollection": false,
+                            "itemSubjectRef": "string",
+                            "extensionElements": {
+                                "dataName": [
+                                    "NoMinOrderMsg"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2007.9eeb041f-8cfa-4782-acb3-ed4aadd40271",
+                            "name": "response_overdraft",
+                            "isCollection": false,
+                            "itemSubjectRef": "string",
+                            "extensionElements": {
+                                "dataName": [
+                                    "response_overdraft"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2007.82ded76d-cae8-447f-9872-32e19e8e10c2",
+                            "name": "OrderMetMsg",
+                            "isCollection": false,
+                            "itemSubjectRef": "string",
+                            "extensionElements": {
+                                "dataName": [
+                                    "OrderMetMsg"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "flowInterface",
+                "declaredType": "interface",
+                "id": "_d6248401-201b-4423-b674-56edf753cbfd"
+            }
+        ],
+        "targetNamespace": "",
+        "typeLanguage": "http://www.w3.org/2001/XMLSchema",
+        "expressionLanguage": "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+        "id": "154b6f21-5bc2-4f97-bb56-ea7e04344c96"
+    }
+}
