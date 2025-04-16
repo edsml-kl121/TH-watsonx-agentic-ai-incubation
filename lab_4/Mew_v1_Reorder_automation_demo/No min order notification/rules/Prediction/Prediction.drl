@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>noMinOrderNotification</name>
-  <uuid>ae906cd9-2de2-42cd-8b54-7c2f3b7ecf3b</uuid>
-  <locale>en_US</locale>
-  <definition><![CDATA[set decision to predict( 'Input mapping' ) ;]]></definition>
-</ilog.rules.studio.model.brl:ActionRule>

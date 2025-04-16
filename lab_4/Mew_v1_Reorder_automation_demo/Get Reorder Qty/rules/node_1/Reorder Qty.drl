@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>Reorder Qty</name>
-  <uuid>990230ed-aa25-4689-ae57-a9f6782b44eb</uuid>
-  <locale>en_US</locale>
-  <definition><![CDATA[set decision to 'Reorder Qty' * UnitPrice ;]]></definition>
-</ilog.rules.studio.model.brl:ActionRule>

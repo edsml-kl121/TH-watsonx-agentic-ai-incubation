@@ -1,7 +1,6 @@
-fastapi
+fastapi 
+dotenv
+requests==2.31.0
 uvicorn
-python-dotenv
-crewai
-pandas
-tabulate
+ibm_watsonx_ai==1.2.10
 requests

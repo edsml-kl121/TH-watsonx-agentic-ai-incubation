@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>overorder_Email_Draft</name>
-  <uuid>64e273d0-9034-4806-847a-852427729b54</uuid>
-  <locale>en_US</locale>
-  <definition><![CDATA[set decision to the generated text of 'ML model invocation' ;]]></definition>
-</ilog.rules.studio.model.brl:ActionRule>

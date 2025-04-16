@@ -1,8 +1,0 @@
-{
-  "id" : "schemaIn",
-  "fields" : [ {
-    "name" : "input",
-    "type" : "string",
-    "nullable" : true
-  } ]
-}

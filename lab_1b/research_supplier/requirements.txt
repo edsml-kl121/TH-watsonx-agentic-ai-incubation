@@ -2,4 +2,4 @@ fastapi
 dotenv
 requests==2.31.0
 uvicorn
-Salesforce
+ibm_watsonx_ai==1.2.10

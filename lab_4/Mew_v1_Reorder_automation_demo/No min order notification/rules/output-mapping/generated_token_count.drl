@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>noMinOrderNotification</name>
-  <uuid>cabd1f1b-2ae3-4cb1-ab68-a80005412284</uuid>
-  <locale>en_US</locale>
-  <definition><![CDATA[set decision to the generated token count of 'ML model invocation' ;]]></definition>
-</ilog.rules.studio.model.brl:ActionRule>

@@ -103,37 +103,6 @@ Provide a structured response in JSON format with:
 
 
 
-# def create_inventory_task(agent, current_inventory, historic_data, forecast):
-#     return Task(
-#         description=f"""
-# Given the following data:
-# - Current Inventory: {current_inventory}
-# - Quantity sold previous month: {historic_data}
-# - Forecasted Quantity for next month: {forecast}
-
-# Determine the optimal reorder quantity to ensure sufficient stock while minimizing excess inventory.
-# Instructions for calculating the optimal reorder quantity:
-# 1. Shortfall calculation.
-#     - Shortfall = Forecast - Inventory
-# 2. Saftey stock calculation
-#     - If shortfall <= historic sales:
-#         Saftety Stock = 10% of historic sales
-#         Reorder Quantity = Shortfall + Safety Stock
-#     - If shortfall > historic sales:
-#         Reorder Quantity = Shortfall
-
-# Provide a structured response in JSON format with:
-# 1. "reorder_quantity": An integer representing the reorder quantity.
-# 2. "reasoning": A detailed explanation for why this reorder quantity was chosen.
-#         """,
-#         expected_output='''A JSON object: 
-#         {
-#           "reorder_quantity": <integer>,
-#           "reasoning": "<string explanation>"
-#         }''',
-#         agent=agent
-#     )
-
 @app.post("/calculate-reorder-quantity")
 def calculate_reorder_quantity(request:ReorderQuantityRequest):
     inventory_agent = create_inventory_agent()

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Get Reorder Qty">
-  <name>Get_Reorder_Qty</name>
-  <uuid>2bfd4e72-523d-4b14-bcb9-6abc07d8fbd5</uuid>
-  <decisionModel href="../rules/decisionModel.dmo#20629ab3-d46f-4c12-9a84-ec8eee40f826"/>
-  <targetRuleProject href="../../Get%20Reorder%20Qty#39f151b3-2575-4dd6-aac9-557a101d5dbb"/>
-</com.ibm.rules.studio.model.decisionservice:Operation>
