@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-      "title": "Get Historic Sales",
-      "description": "API that converts natural language queries into SQL and executes them on a SQLite database.",
+      "title": "Mew Thai Calculate Reorder Quantity",
+      "description": "Mew Thai API that takes historic sales and forecasts to calculate an optimal reorder quantity",
       "version": "1.0.0"
     },
     "servers": [
       {
-        "url": "https://text2sql-crewai.1soswfjkmeox.us-south.codeengine.appdomain.cloud/",
+        "url": "https://calculate-reorder-quantity.1u1bpgsnsvuw.us-south.codeengine.appdomain.cloud/",
         "description": "Deplopment server"
       }
     ],
@@ -17,28 +17,28 @@
       }
   ],
     "paths": {
-      "/query": {
+      "/calculate-reorder-quantity": {
         "post": {
-          "summary": "Text2SQL with Crew AI",
-          "description": "Converts natural language questions into SQL queries to retrieve insights from historical sales data. For example: 'What were the sales three months ago?' or 'What were the sales in February?'",
-          "operationId": "processQuery",
+          "summary": "Mew Optimal Reorder Quantity",
+          "description": "Mew API that takes historic sales and forecasts to calculate an optimal reorder quantity",
+          "operationId": "MewreorderQuantity",
           "requestBody": {
             "required": true,
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Text2SQLRequest"
+                  "$ref": "#/components/schemas/ReorderRequest"
                 }
               }
             }
           },
           "responses": {
             "200": {
-              "description": "Successful query execution",
+              "description": "Successful execution",
               "content": {
                 "application/json": {
                   "schema": {
-                    "$ref": "#/components/schemas/Text2SQLResponse"
+                    "$ref": "#/components/schemas/ReorderResponse"
                 }
               }
             }
@@ -71,32 +71,35 @@
           }
         },
       "schemas":{
-        "Text2SQLRequest":{
+        "ReorderRequest":{
           "type": "object",
           "properties": {
-            "query": {
-              "type": "string",
-              "description": "The natural language query to convert into SQL."
+            "current_inventory": {
+              "type": "number",
+              "description": "Current Inventory"
+            },
+            "historic_data":{
+                "type":"integer",
+                "description":"Quantity sold last month"
+            },
+            "forecast":{
+                "type":"integer",
+                "description":"Forecast Quantity next month"
             }
           },
-          "required": ["query"]
+          "required": ["current_inventory","historic_data","forecast"]
         },
-      "Text2SQLResponse": {
+      "ReorderResponse": {
           "type": "object",
           "properties": {
-            "result": {
-              "type": "array",
-              "items": {
-                    "type": "object",
-                    "properties": {
-                      "month_year": { "type": "string" },
-                      "total_figure": { "type": "integer" }
-                    },
-                    "required": ["month_year", "total_figure"]
-              }
+            "reorder_quantity": {
+              "type": "integer"
+            },
+            "reasoning":{
+                "type":"string"
             }
           },
-          "required": ["result"]
+          "required": ["reorder_quantity","reasoning"]
         }
 
 
