@@ -1,0 +1,20 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8/reorderQuantity_200Type.schema.json",
+  "x-ibm-json-name" : "reorderQuantity_200Type",
+  "x-ibm-package-name" : "com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8",
+  "type" : "object",
+  "title" : "reorderQuantity_200Type",
+  "x-ibm-original-json-name" : "reorderQuantity.reorderQuantity_200Type",
+  "properties" : {
+    "reasoning" : {
+      "title" : "reasoning",
+      "type" : [ "string", "null" ]
+    },
+    "reorder_quantity" : {
+      "title" : "reorder_quantity",
+      "type" : "integer",
+      "format" : "int32"
+    }
+  }
+}

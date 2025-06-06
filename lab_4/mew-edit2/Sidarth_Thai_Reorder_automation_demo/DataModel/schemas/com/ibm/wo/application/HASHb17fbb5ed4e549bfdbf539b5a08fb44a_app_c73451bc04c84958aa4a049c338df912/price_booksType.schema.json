@@ -1,0 +1,28 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912/price_booksType.schema.json",
+  "x-ibm-json-name" : "price_booksType",
+  "x-ibm-package-name" : "com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912",
+  "type" : "object",
+  "title" : "price_booksType",
+  "x-ibm-original-json-name" : "fetchPriceBooks.price_booksType",
+  "properties" : {
+    "uab_Pricebook_ID" : {
+      "title" : "uab_Pricebook_ID",
+      "type" : [ "string", "null" ]
+    },
+    "uab_Pricebook_Name" : {
+      "title" : "uab_Pricebook_Name",
+      "type" : [ "string", "null" ]
+    },
+    "uab_Product_Name" : {
+      "title" : "uab_Product_Name",
+      "type" : [ "string", "null" ]
+    },
+    "uab_Unit_Price" : {
+      "title" : "uab_Unit_Price",
+      "type" : "number",
+      "format" : "double"
+    }
+  }
+}

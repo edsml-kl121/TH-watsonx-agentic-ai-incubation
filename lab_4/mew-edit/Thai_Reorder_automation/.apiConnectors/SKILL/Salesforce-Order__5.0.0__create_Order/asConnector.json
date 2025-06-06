@@ -1,0 +1,448 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.cef8e9c2-33b1-4fb2-b17f-2eab289bd954",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "This OpenAPI document describes the operations that the salesforce Order runtime APIs support." ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.411c193a-056b-4b10-a9cd-a672e4a12d7a",
+      "declaredType" : "interface",
+      "id" : "_30bbf264-1284-4dfa-b4cc-23ed83ba4e6e",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.a15dd033-46df-4ccf-aac1-5d8af60b5a43" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "Id",
+              "name" : "Id",
+              "isCollection" : false,
+              "description" : "The unique identifier of the order",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_6f86cb38-517c-4d3d-b448-a915957e9cc8",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "input" : [ {
+              "path" : "Name",
+              "name" : "Name",
+              "isCollection" : false,
+              "description" : "Order name",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_666c9947-e0d3-459d-af05-e5321070a82c",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "Type",
+              "name" : "Type",
+              "isCollection" : false,
+              "description" : "The type of the order",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_1767bbde-c80f-49b9-a61b-d6f9ad107cc0",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "PoDate",
+              "name" : "PoDate",
+              "isCollection" : false,
+              "description" : "PO date",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_46ae0fb8-b9e7-4a5b-8c2a-c2a5a244ce22",
+              "isOptional" : false,
+              "typeRefPO" : "dateTime",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}time"
+            }, {
+              "path" : "Status",
+              "name" : "Status",
+              "isCollection" : false,
+              "description" : "Status",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_069b4198-5f3f-44dd-8eae-e3d18fc819c4",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/StatusType.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/c755d578-9673-4658-948d-0df56f992a2f.xsd}StatusType"
+            }, {
+              "path" : "EndDate",
+              "name" : "EndDate",
+              "isCollection" : false,
+              "description" : "The date the order was fulfilled",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_140959e2-8b91-4769-9804-5624bd64b62f",
+              "isOptional" : false,
+              "typeRefPO" : "dateTime",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}time"
+            }, {
+              "path" : "OwnerId",
+              "name" : "OwnerId",
+              "isCollection" : false,
+              "description" : "The unique identifier of the owner",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_136f97cf-0847-43a5-8533-ed64733dfc72",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "PoNumber",
+              "name" : "PoNumber",
+              "isCollection" : false,
+              "description" : "PO number",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_c4f15c1d-4ecc-43bf-beec-25cf50d0153a",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "AccountId",
+              "name" : "AccountId",
+              "isCollection" : false,
+              "description" : "The unique identifier of the account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_40ad274c-eef3-4aae-86d2-29185a607ca5",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "ContractId",
+              "name" : "ContractId",
+              "isCollection" : false,
+              "description" : "The unique identifier of the contract",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_a0bc6322-4eb7-4fb4-bd25-b8bd64eed5b1",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "BillingCity",
+              "name" : "BillingCity",
+              "isCollection" : false,
+              "description" : "The city for the billing address of this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_b26f6010-7be1-4dcb-aa9e-b66eb04a4d6b",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "Description",
+              "name" : "Description",
+              "isCollection" : false,
+              "description" : "Comments posted from users in the organization",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_cfc136f1-1c8b-4546-a7c4-1dd645ffb85c",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "BillingState",
+              "name" : "BillingState",
+              "isCollection" : false,
+              "description" : "The state or province for the billing address of this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_f06e1e4d-5dc1-4908-9891-c34381574181",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "Pricebook2Id",
+              "name" : "Pricebook2Id",
+              "isCollection" : false,
+              "description" : "The unique identifier of the price book",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_2a060579-cb43-4ef4-8385-7eb8685e63c0",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "ShippingCity",
+              "name" : "ShippingCity",
+              "isCollection" : false,
+              "description" : "The city of the shipping address for this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_f070085c-a458-4842-8e1b-dd2d7c232676",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "BillingStreet",
+              "name" : "BillingStreet",
+              "isCollection" : false,
+              "description" : "The street address for the billing address of this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_cf4293d0-b643-4e98-ba33-b824dbe29b88",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "EffectiveDate",
+              "name" : "EffectiveDate",
+              "isCollection" : false,
+              "description" : "The date the order was placed",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_548a4a79-2b39-4639-b315-1bf5adcb2d9a",
+              "isOptional" : false,
+              "typeRefPO" : "dateTime",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}time"
+            }, {
+              "path" : "ShippingState",
+              "name" : "ShippingState",
+              "isCollection" : false,
+              "description" : "The state or province of the shipping address for this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_21129bbd-7795-4e58-bb6e-4ddb08c57e67",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "BillingCountry",
+              "name" : "BillingCountry",
+              "isCollection" : false,
+              "description" : "The country for the billing address of this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_c9288d00-6c18-4a45-8536-c5c6b48834da",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "ShippingStreet",
+              "name" : "ShippingStreet",
+              "isCollection" : false,
+              "description" : "The street address of the shipping address for this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_606c1b8c-e18e-4246-8d09-967370ae146f",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "BillToContactId",
+              "name" : "BillToContactId",
+              "isCollection" : false,
+              "description" : "Bill to contact ID",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_6080a7f4-12d4-49b7-96a1-7ee4447af06e",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "BillingLatitude",
+              "name" : "BillingLatitude",
+              "isCollection" : false,
+              "description" : "Used with billing longitude to specify the precise geolocation of a billing address. Acceptable values are numbers between –90 and 90 with up to 15 decimal places.",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_934669b5-2d16-4bdb-868b-25c7a4bfdfbe",
+              "isOptional" : false,
+              "typeRefPO" : "number",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}double"
+            }, {
+              "path" : "OriginalOrderId",
+              "name" : "OriginalOrderId",
+              "isCollection" : false,
+              "description" : "The original unique identifier of the order",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_9350f0d3-0f2a-48d4-bdc5-a0ecd57a1277",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "ShipToContactId",
+              "name" : "ShipToContactId",
+              "isCollection" : false,
+              "description" : "Ship to contact ID",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_d47b294f-51fd-48dd-8de5-82c37caeaa5b",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "ShippingCountry",
+              "name" : "ShippingCountry",
+              "isCollection" : false,
+              "description" : "The country of the shipping address for this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_e01957de-3489-4031-b22c-8a65ff28c31f",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "BillingLongitude",
+              "name" : "BillingLongitude",
+              "isCollection" : false,
+              "description" : "Used with billing latitude to specify the precise geolocation of a billing address. Acceptable values are numbers between –180 and 180 with up to 15 decimal places.",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_7bbec95c-a7b7-4f98-afc0-69de1eb082df",
+              "isOptional" : false,
+              "typeRefPO" : "number",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}double"
+            }, {
+              "path" : "IsReductionOrder",
+              "name" : "IsReductionOrder",
+              "isCollection" : false,
+              "description" : "Reduction order",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_5910bbb8-60b2-43a8-ae56-eb7127710d15",
+              "isOptional" : false,
+              "typeRefPO" : "boolean",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}boolean"
+            }, {
+              "path" : "ShippingLatitude",
+              "name" : "ShippingLatitude",
+              "isCollection" : false,
+              "description" : "Used with shipping longitude to specify the precise geolocation of a shipping address. Acceptable values are numbers between –90 and 90 with up to 15 decimal places.",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_0e32924b-eea8-48e1-949b-d93882f90dc7",
+              "isOptional" : false,
+              "typeRefPO" : "number",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}double"
+            }, {
+              "path" : "BillingPostalCode",
+              "name" : "BillingPostalCode",
+              "isCollection" : false,
+              "description" : "The ZIP or postal code for the billing address of this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_78851d0c-7567-44fd-9575-782b1b7a0983",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "ShippingLongitude",
+              "name" : "ShippingLongitude",
+              "isCollection" : false,
+              "description" : "Used with shipping latitude to specify the precise geolocation of an address. Acceptable values are numbers between –180 and 180 with up to 15 decimal places.",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_b09b3696-965d-4330-89eb-74c61cacb1e5",
+              "isOptional" : false,
+              "typeRefPO" : "number",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}double"
+            }, {
+              "path" : "ShippingPostalCode",
+              "name" : "ShippingPostalCode",
+              "isCollection" : false,
+              "description" : "The zip or post code of the shipping address for this account",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_5282b836-0a35-4e7b-9e37-bc71fe366073",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "OrderReferenceNumber",
+              "name" : "OrderReferenceNumber",
+              "isCollection" : false,
+              "description" : "Order reference number",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_5347f2c7-7bd0-47d6-a951-0f4019da232e",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "CompanyAuthorizedById",
+              "name" : "CompanyAuthorizedById",
+              "isCollection" : false,
+              "description" : "The unique identifier of the person who authorized this company",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_5a71cb00-080b-409e-8fee-115027f5b151",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "CompanyAuthorizedDate",
+              "name" : "CompanyAuthorizedDate",
+              "isCollection" : false,
+              "description" : "Company authorized date",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_c01cd737-9f11-492d-8c93-08a60a254407",
+              "isOptional" : false,
+              "typeRefPO" : "dateTime",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}time"
+            }, {
+              "path" : "BillingGeocodeAccuracy",
+              "name" : "BillingGeocodeAccuracy",
+              "isCollection" : false,
+              "description" : "Billing geocode accuracy",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_f320be86-d9b9-4ec7-a7a9-51c069ca252c",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/BillingGeocodeAccuracyType_1.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/c755d578-9673-4658-948d-0df56f992a2f.xsd}BillingGeocodeAccuracyType"
+            }, {
+              "path" : "CustomerAuthorizedById",
+              "name" : "CustomerAuthorizedById",
+              "isCollection" : false,
+              "description" : "The unique identifier of the person who authorized this customer",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_b1106046-438d-4458-b4cf-8162309e91db",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "CustomerAuthorizedDate",
+              "name" : "CustomerAuthorizedDate",
+              "isCollection" : false,
+              "description" : "Customer authorized date",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_e5108a73-eccd-4d01-a0ab-9394e10c73ac",
+              "isOptional" : false,
+              "typeRefPO" : "dateTime",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}time"
+            }, {
+              "path" : "ShippingGeocodeAccuracy",
+              "name" : "ShippingGeocodeAccuracy",
+              "isCollection" : false,
+              "description" : "Shipping geocode accuracy",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_89c16242-e7f3-4adb-8695-d3ccb37e0064",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/BillingGeocodeAccuracyType_1.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/c755d578-9673-4658-948d-0df56f992a2f.xsd}BillingGeocodeAccuracyType"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "in Salesforce" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "create_Order",
+        "id" : "_d725c952-d69b-462c-bf52-67b4416b7aa8"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "skillId" : "Salesforce-Order__5.0.0__create_Order",
+            "invocationType" : "SKILL",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.cef8e9c2-33b1-4fb2-b17f-2eab289bd954",
+            "displayVersion" : "head",
+            "name" : "Salesforce Order",
+            "project" : "Salesforce-Order__5.0.0__create_Order",
+            "applicationId" : "salesforce",
+            "canUseDefaultVersion" : true,
+            "type" : "workflow",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/c755d578-9673-4658-948d-0df56f992a2fService}6023.f3b9efba-02fe-48fc-8a74-31e3035706a1",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "Salesforce Order",
+          "interfaceRef" : "_30bbf264-1284-4dfa-b4cc-23ed83ba4e6e",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_f953f0a7-c1b6-485e-87da-931b65943998"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/c755d578-9673-4658-948d-0df56f992a2fService",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_faf49819-41d4-4f9e-8f98-16c8d6872e58"
+  },
+  "poId" : "1.5ce2ce63-3687-4828-a583-3396fc4d3a3c",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery13612035875626035414.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/c755d578-9673-4658-948d-0df56f992a2f.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/c755d578-9673-4658-948d-0df56f992a2fService}create_OrderRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/c755d578-9673-4658-948d-0df56f992a2fService}create_OrderResponseMsg" ]
+}

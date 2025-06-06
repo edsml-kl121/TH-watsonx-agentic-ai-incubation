@@ -1,0 +1,19 @@
+{
+  "prompt" : {
+    "input" : "Recommendation: {{recommendation}}\nOnly output the best supplier name",
+    "variables" : [ {
+      "id" : 1,
+      "name" : "recommendation",
+      "type" : "string",
+      "default_value" : "Agent Response : ### ซัพพลายเออร์สำหรับผลิตภัณฑ์ Xtralife เรียงลำดับซัพพลายเออร์จากดีที่สุดไปจนถึงแย่ที่สุดตามราคาต่อหน่วยและข้อกำหนดอื่นๆ ดังนี้ 1. Excelentia Supplies: ราคา 61.5 ต่อหน่วย 2. Global Office Solutions: ราคา 76.9 ต่อหน่วย 3. CGV Supplier: ราคา 92.3 ต่อหน่วย เหตุผลในการเลือก Excelentia Supplies เป็นตัวเลือกแรก เนื่องจากราคาถูกที่สุด ซึ่งสามารถช่วยลดต้นทุนการผลิตและเพิ่มความสามารถในการแข่งขันในตลาดได้ ในขณะที่ CGV Supplier มีราคาสูงสุด จึงถือเป็นตัวเลือกสุดท้ายหากไม่มีข้อจำกัดหรือเหตุผลพิเศษที่ต้องเลือกซัพพลายเออร์"
+    } ],
+    "examples" : [ ],
+    "instruction" : "You are to identify the supplier that I need to order from based on the recommendation"
+  },
+  "parameters" : {
+    "max_new_tokens" : 50,
+    "min_new_tokens" : 1,
+    "stop_sequences" : [ ]
+  },
+  "model_id" : "meta-llama/llama-3-3-70b-instruct"
+}

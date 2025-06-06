@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Overorder_email_draft</name>
+  <uuid>42193627-9726-455d-81bd-401621b5f169</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="overorder_Email_Draft" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="input_data_0" name="reorder_qty">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="reorder_qty"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_data_0_ii" name="reorder_qty" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="input_data_1" name="value">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="value"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_data_1_ii" name="value" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="input_data_2" name="supplier">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="supplier"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_data_2_ii" name="supplier" typeRef="java.lang.String"/>
+    </inputData>
+    <decision id="input-mapping" name="Input mapping">
+        <description>ML model input</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="false" name="reorder_qty"/>
+                <input bomType="java.lang.String" collection="false" name="value"/>
+                <input bomType="java.lang.String" collection="false" name="supplier"/>
+                <output bomType="uab.reorder_automation.reorder_automation.overorder_email_draft.Input" collection="false" name="Input mapping"/>
+                <rule defaultRule="true" href="input-mapping/input-mapping.drl" kind="BusinessRule" name="Map input"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="input_mapping_ii" name="Input mapping" typeRef="uab.reorder_automation.reorder_automation.overorder_email_draft.Input"/>
+        <informationRequirement>
+            <requiredInput href="#input_data_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#input_data_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#input_data_0"/>
+        </informationRequirement>
+    </decision>
+    <decision id="Prediction" name="ML model invocation">
+        <description>ML model output</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="uab.reorder_automation.reorder_automation.overorder_email_draft.Input" collection="false" name="Input mapping"/>
+                <output bomType="uab.reorder_automation.reorder_automation.overorder_email_draft.Output" collection="false" name="ML model invocation"/>
+                <rule defaultRule="false" href="Prediction/Prediction.drl" kind="BusinessRule" name="Prediction"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="prediction_ii" name="ML model invocation" typeRef="uab.reorder_automation.reorder_automation.overorder_email_draft.Output"/>
+        <informationRequirement>
+            <requiredInput href="#input-mapping"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output_decision_0" name="generated_text">
+        <description>generated_text</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="uab.reorder_automation.reorder_automation.overorder_email_draft.Output" collection="false" name="ML model invocation"/>
+                <output bomType="java.lang.String" collection="false" name="generated_text"/>
+                <rule defaultRule="false" href="output-mapping/generated_text.drl" kind="BusinessRule" name="generated_text"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_decision_0_ii" name="generated_text" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#Prediction"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output_decision_1" name="generated_token_count">
+        <description>generated_token_count</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="uab.reorder_automation.reorder_automation.overorder_email_draft.Output" collection="false" name="ML model invocation"/>
+                <output bomType="java.lang.Integer" collection="false" name="generated_token_count"/>
+                <rule defaultRule="false" href="output-mapping/generated_token_count.drl" kind="BusinessRule" name="generated_token_count"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_decision_1_ii" name="generated_token_count" typeRef="java.lang.Integer"/>
+        <informationRequirement>
+            <requiredInput href="#Prediction"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output_decision_2" name="input_token_count">
+        <description>input_token_count</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="uab.reorder_automation.reorder_automation.overorder_email_draft.Output" collection="false" name="ML model invocation"/>
+                <output bomType="java.lang.Integer" collection="false" name="input_token_count"/>
+                <rule defaultRule="false" href="output-mapping/input_token_count.drl" kind="BusinessRule" name="input_token_count"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_decision_2_ii" name="input_token_count" typeRef="java.lang.Integer"/>
+        <informationRequirement>
+            <requiredInput href="#Prediction"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output_decision_3" name="stop_reason">
+        <description>stop_reason</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="uab.reorder_automation.reorder_automation.overorder_email_draft.Output" collection="false" name="ML model invocation"/>
+                <output bomType="java.lang.String" collection="false" name="stop_reason"/>
+                <rule defaultRule="false" href="output-mapping/stop_reason.drl" kind="BusinessRule" name="stop_reason"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_decision_3_ii" name="stop_reason" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#Prediction"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output_decision_error_code" name="error_code">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="uab.reorder_automation.reorder_automation.overorder_email_draft.Output" collection="false" name="ML model invocation"/>
+                <output bomType="java.lang.String" collection="false" name="error_code"/>
+                <rule defaultRule="false" href="output-mapping/error_code.drl" kind="BusinessRule" name="error_code"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_decision_error_code_ii" name="error_code" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#Prediction"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output_decision_error_message" name="error_message">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="uab.reorder_automation.reorder_automation.overorder_email_draft.Output" collection="false" name="ML model invocation"/>
+                <output bomType="java.lang.String" collection="false" name="error_message"/>
+                <rule defaultRule="false" href="output-mapping/error_message.drl" kind="BusinessRule" name="error_message"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_decision_error_message_ii" name="error_message" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#Prediction"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

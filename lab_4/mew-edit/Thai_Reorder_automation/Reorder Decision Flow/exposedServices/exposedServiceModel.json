@@ -1,0 +1,17 @@
+{
+  "type" : "RESTService",
+  "restService" : {
+    "id" : "2051.04a8a81c-3424-48e2-892b-1cdefdeeb902",
+    "name" : "Mew_v1_Reorder_automation_demo-Reorder_Decision_Flow",
+    "description" : null,
+    "operations" : [ {
+      "interactionPattern" : "REQUEST_RESPONSE_ASYNC",
+      "implementation" : "25.3e4b916f-b2da-4441-bc12-94a21970835d",
+      "name" : "Reorder_Decision_Flow",
+      "description" : null,
+      "id" : "2053.9ba48fd7-7b9d-4786-b89c-f0355c011071",
+      "seq" : 1,
+      "visibility" : "public"
+    } ]
+  }
+}

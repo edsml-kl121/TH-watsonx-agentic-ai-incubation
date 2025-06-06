@@ -1,0 +1,94 @@
+
+package uab.reorder_automation.reorder_automation.nominordernotification;
+
+
+class Error
+        property ads.typeId "2"
+        #de.generated
+{
+    string code
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "code"
+                #update;
+    string message
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    Error(string code, string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Error()
+                #dataio.default;
+}
+
+class Input
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonPropertyOrder "{order_qty}"
+        #de.generated
+{
+    string order_qty
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "order_qty"
+                #update;
+    Input(string order_qty)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Input()
+                #dataio.default;
+}
+
+class Output
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonIgnoreProperties {
+            ignoreUnknown "true"
+        }
+        #de.generated
+{
+    uab.reorder_automation.reorder_automation.nominordernotification.Error error
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "error"
+                #update;
+    string generatedText
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "generated_text"
+                #update;
+    java.lang.Integer generatedTokenCount
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "generated_token_count"
+                #update;
+    java.lang.Integer inputTokenCount
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "input_token_count"
+                #update;
+    string stopReason
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "stop_reason"
+                #update;
+    Output(string generatedText, java.lang.Integer generatedTokenCount, java.lang.Integer inputTokenCount, string stopReason, uab.reorder_automation.reorder_automation.nominordernotification.Error error)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Output()
+                #dataio.default;
+    boolean inError()
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
+                    $target "BOM"
+                }
+                #pureFunction;
+    static Output run(uab.reorder_automation.reorder_automation.nominordernotification.Input input)
+                #pureFunction;
+    static Output run(com.ibm.decision.run.RunContext runContext, uab.reorder_automation.reorder_automation.nominordernotification.Input input)
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    providerInfoId "0b56c51c-676f-4dc2-a0e1-71a1a8defd0e"
+                }
+                #pureFunction;
+}
+

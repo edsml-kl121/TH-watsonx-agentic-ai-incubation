@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed/createOrderItem_200Type_2.schema.json",
+  "x-ibm-json-name" : "createOrderItem_200Type_2",
+  "x-ibm-package-name" : "com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed",
+  "type" : "object",
+  "title" : "createOrderItem_200Type_2",
+  "x-ibm-original-json-name" : "createOrderItem.createOrderItem_200Type",
+  "properties" : {
+    "message" : {
+      "title" : "message",
+      "type" : [ "string", "null" ]
+    }
+  }
+}

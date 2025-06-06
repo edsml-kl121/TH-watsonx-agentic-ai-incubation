@@ -1,0 +1,238 @@
+{
+    "coachDefinition": {
+        "layout": {
+            "layoutItem": [
+                {
+                    "id": "e2f1a91c-540f-4a33-87a8-3fe2f08169c6",
+                    "version": "8550",
+                    "layoutItemId": "FORM_LAYOUT_HEADER_CONTAINER",
+                    "declaredType": "com.ibm.bpmsdk.model.coach.GridLayoutContainer",
+                    "configData": [
+                        {
+                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                            "id": "cda5c897-1233-47f5-8048-e91f4c83381d",
+                            "optionName": "@horizontalSpan",
+                            "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":12}]}"
+                        }
+                    ],
+                    "gridContainerLayoutItems": [
+                        {
+                            "layoutItemId": "FORM_LAYOUT_HEADER_CONTAINER_ITEMS",
+                            "configData": [
+                                {
+                                    "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                    "id": "3058e333-c68b-4a98-8356-a6ab25240881",
+                                    "optionName": "@horizontalSpan",
+                                    "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":12}]}"
+                                }
+                            ],
+                            "declaredType": "com.ibm.bpmsdk.model.coach.GridLayoutCell",
+                            "id": "74255be4-0a7a-442a-8306-6adabaed2747",
+                            "version": "8550",
+                            "direction": "VERTICAL",
+                            "gridCellLayoutItems": [
+                                {
+                                    "id": "9961e8d7-ca25-41cc-92a6-583d5d70db32",
+                                    "version": "8550",
+                                    "layoutItemId": "FORM_TITLE",
+                                    "declaredType": "com.ibm.bpmsdk.model.coach.ViewRef",
+                                    "viewUUID": "64.f634f22e-7800-4bd7-9f1e-87177acfb3bc",
+                                    "configData": [
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "ae4f474d-78a7-456f-81e7-0c1c1f75605d",
+                                            "optionName": "@visibility",
+                                            "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":\"DEFAULT\"}]}"
+                                        },
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "85da9fb1-12e0-44a4-a3dc-fdf701d503c3",
+                                            "optionName": "@helpText",
+                                            "value": ""
+                                        },
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "479bc317-315a-43b1-b9bf-fbfbff04046c",
+                                            "optionName": "@labelVisibility",
+                                            "value": "SHOW"
+                                        },
+                                        {
+                                            "id": "f9a2a518-c11c-41e2-83bb-ed9422c9aa4d",
+                                            "optionName": "labelFontSize",
+                                            "value": "large",
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData"
+                                        },
+                                        {
+                                            "id": "1e8158ce-93ab-4394-9b60-c7b0ff9d784b",
+                                            "optionName": "wrapText",
+                                            "value": "true",
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData"
+                                        },
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "fc183a07-cef5-4513-8d31-140e0d4abf7a",
+                                            "optionName": "@label",
+                                            "value": "Approve Overbudget Order"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "7d01b971-17ed-4221-89ef-49ef9112f526",
+                    "version": "8550",
+                    "layoutItemId": "FORM_PALETTE_LAYOUTS_CONTAINER",
+                    "declaredType": "com.ibm.bpmsdk.model.coach.GridLayoutContainer",
+                    "configData": [
+                        {
+                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                            "id": "ae394416-2926-4532-afd3-23d2e860c8b4",
+                            "optionName": "@horizontalSpan",
+                            "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":12}]}"
+                        }
+                    ],
+                    "gridContainerLayoutItems": [
+                        {
+                            "layoutItemId": "FORM_PALETTE_LAYOUTS",
+                            "configData": [
+                                {
+                                    "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                    "id": "7a914380-143f-4dae-a792-17ba9bffcb78",
+                                    "optionName": "@horizontalSpan",
+                                    "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":12}]}"
+                                }
+                            ],
+                            "declaredType": "com.ibm.bpmsdk.model.coach.GridLayoutCell",
+                            "id": "57a10dc2-72e7-4373-8bd3-9f0405e5ab88",
+                            "version": "8550",
+                            "direction": "VERTICAL",
+                            "gridCellLayoutItems": []
+                        }
+                    ]
+                },
+                {
+                    "id": "db9b4f4a-6a00-414d-94dc-6177fde2f2ee",
+                    "version": "8550",
+                    "layoutItemId": "BUTTONS_FOOTER_CONTAINER",
+                    "declaredType": "com.ibm.bpmsdk.model.coach.GridLayoutContainer",
+                    "configData": [
+                        {
+                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                            "id": "eefe9680-e177-4266-b0b9-5eb285dccd75",
+                            "optionName": "@horizontalSpan",
+                            "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":12}]}"
+                        }
+                    ],
+                    "direction": "VERTICAL",
+                    "gridContainerLayoutItems": [
+                        {
+                            "id": "2c25566b-30ac-475b-b248-3839d3cc4637",
+                            "version": "8550",
+                            "declaredType": "com.ibm.bpmsdk.model.coach.GridLayoutCell",
+                            "direction": "HORIZONTAL",
+                            "layoutItemId": "BUTTONS_FOOTER",
+                            "configData": [
+                                {
+                                    "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                    "id": "1c9cedf4-0a7f-4095-b139-a361bd39d676",
+                                    "optionName": "@horizontalSpan",
+                                    "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":12}]}"
+                                },
+                                {
+                                    "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                    "id": "b2f65ef7-e5fb-407c-a082-39645b6ffc95",
+                                    "optionName": "@horizontalAlignment",
+                                    "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":\"RIGHT\"}]}"
+                                }
+                            ],
+                            "gridCellLayoutItems": [
+                                {
+                                    "id": "e983ce85-c91e-41f7-9c31-211d43c0bd44",
+                                    "version": "8550",
+                                    "layoutItemId": "SAVE_BUTTON",
+                                    "declaredType": "com.ibm.bpmsdk.model.coach.ViewRef",
+                                    "viewUUID": "64.7133c7d4-1a54-45c8-89cd-a8e8fa4a8e36",
+                                    "configData": [
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "c26cb25e-b745-49f9-b244-88d76ed33e3f",
+                                            "optionName": "@label",
+                                            "value": "Save"
+                                        },
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "be126102-1d27-42fc-ab78-24051e656df8",
+                                            "optionName": "@visibility",
+                                            "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":\"DEFAULT\"}]}"
+                                        },
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "5e90520e-f46f-46b5-851f-6a34ce1b6ad6",
+                                            "optionName": "@helpText",
+                                            "value": ""
+                                        },
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "7d487a97-1831-4ffc-aeb9-48fce8574c83",
+                                            "optionName": "@labelVisibility",
+                                            "value": "SHOW"
+                                        },
+                                        {
+                                            "id": "1c976d84-bc76-4a22-886b-5788d50c368f",
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "optionName": "kind",
+                                            "value": "ghost",
+                                            "valueType": "static"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "cd21363c-01c7-410d-8d88-e41edc05af31",
+                                    "version": "8550",
+                                    "layoutItemId": "SUBMIT_BUTTON",
+                                    "declaredType": "com.ibm.bpmsdk.model.coach.ViewRef",
+                                    "viewUUID": "64.7133c7d4-1a54-45c8-89cd-a8e8fa4a8e36",
+                                    "configData": [
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "4498f038-d8e3-4fb0-b761-065434ccddd4",
+                                            "optionName": "@label",
+                                            "value": "Submit"
+                                        },
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "cee4ed22-dffa-410e-af48-6f87bfbdca5b",
+                                            "optionName": "@visibility",
+                                            "value": "{\"isResponsiveData\":true,\"values\":[{\"deviceConfigID\":\"LargeID\",\"value\":\"DEFAULT\"}]}"
+                                        },
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "7f419b5b-bfb1-4f62-b3eb-8406a6e45046",
+                                            "optionName": "@helpText",
+                                            "value": ""
+                                        },
+                                        {
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "id": "21de099f-e8c5-41c8-81c2-95fb85583656",
+                                            "optionName": "@labelVisibility",
+                                            "value": "SHOW"
+                                        },
+                                        {
+                                            "id": "3046b030-006d-4993-8d95-db1be491b683",
+                                            "declaredType": "com.ibm.bpmsdk.model.coach.ConfigData",
+                                            "optionName": "kind",
+                                            "value": "primary",
+                                            "valueType": "static"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

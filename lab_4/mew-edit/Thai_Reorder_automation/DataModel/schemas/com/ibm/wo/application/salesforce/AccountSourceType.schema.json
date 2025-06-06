@@ -1,0 +1,10 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/AccountSourceType.schema.json",
+  "x-ibm-json-name" : "AccountSourceType",
+  "x-ibm-package-name" : "com.ibm.wo.application.salesforce",
+  "title" : "account source type",
+  "x-ibm-original-json-name" : "retrievewithwhere_Account.AccountSourceType",
+  "type" : "string",
+  "enum" : [ "Other", "Partner Referral", "Phone Inquiry", "Purchased List", "Web" ]
+}

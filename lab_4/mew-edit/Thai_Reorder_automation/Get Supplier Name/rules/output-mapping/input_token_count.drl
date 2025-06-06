@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>getSupplierName</name>
+  <uuid>bc212109-89c0-4878-a854-f30dff078ff7</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to the input token count of 'ML model invocation' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

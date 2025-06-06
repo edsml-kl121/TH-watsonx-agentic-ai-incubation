@@ -1,0 +1,34 @@
+
+# uab.reorder_automation.reorder_automation.timeseriesmodel.Error
+uab.reorder_automation.reorder_automation.timeseriesmodel.Error#concept.label = Output error
+uab.reorder_automation.reorder_automation.timeseriesmodel.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = a new {Output error} where {0, code} {1, message} 
+uab.reorder_automation.reorder_automation.timeseriesmodel.Error.code#phrase.action = set the code of {this} to {code}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Error.code#phrase.navigation = {code} of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Error.message#phrase.action = set the message of {this} to {message}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Error.message#phrase.navigation = {message} of {this}
+
+# uab.reorder_automation.reorder_automation.timeseriesmodel.Input
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input#concept.label = ML model input
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input.Input(java.lang.Integer,java.lang.Integer)#phrase.navigation = a new {ML model input} where {0, quantity} {1, sales} 
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input.quantity#phrase.action = set the quantity of {this} to {quantity}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input.quantity#phrase.addition_setter = add {quantity} to the quantity of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input.quantity#phrase.navigation = {quantity} of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input.quantity#phrase.subtraction_setter = subtract {quantity} from the quantity of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input.sales#phrase.action = set the sales of {this} to {sales}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input.sales#phrase.addition_setter = add {sales} to the sales of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input.sales#phrase.navigation = {sales} of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Input.sales#phrase.subtraction_setter = subtract {sales} from the sales of {this}
+
+# uab.reorder_automation.reorder_automation.timeseriesmodel.Output
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output#concept.label = ML model output
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.Output(java.util.List,uab.reorder_automation.reorder_automation.timeseriesmodel.Error)#phrase.navigation = a new {ML model output} where {0, prediction} {1, error} 
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.addTo_prediction(java.lang.Double)#phrase.action = add {0} to the predictions of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.clear_prediction()#phrase.action = clear the predictions of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.error#phrase.action = set the error of {this} to {error}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.error#phrase.clearer = clear the error of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.error#phrase.navigation = {error} of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.inError()#phrase.navigation = {this} is in error
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.prediction#phrase.action = set the predictions of {this} to {prediction}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.prediction#phrase.navigation = {prediction} of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.removeFrom_prediction(java.lang.Double)#phrase.action = remove {0} from the predictions of {this}
+uab.reorder_automation.reorder_automation.timeseriesmodel.Output.run(uab.reorder_automation.reorder_automation.timeseriesmodel.Input)#phrase.navigation = predict({0})

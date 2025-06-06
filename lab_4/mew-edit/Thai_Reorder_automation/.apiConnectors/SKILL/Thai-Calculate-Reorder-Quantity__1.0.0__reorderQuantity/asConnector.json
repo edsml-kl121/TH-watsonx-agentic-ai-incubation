@@ -1,0 +1,88 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.3e34499b-6099-44a5-80ee-e1e87fc6232c",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "API that takes historic sales and forecasts to calculate an optimal reorder quantity" ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.8deecff4-8130-459a-9623-c6956be30cc3",
+      "declaredType" : "interface",
+      "id" : "_164cb684-fc6f-412b-b3ef-9099cdd48f3b",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.cf20aff5-3ea2-45a8-a5ae-24a2d551b839" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "reorderQuantity",
+              "name" : "reorderQuantity",
+              "isCollection" : false,
+              "description" : "Successful execution",
+              "httpResponseCode" : "200",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_d58f3991-0f42-4e5e-bb7b-cb3d5a2b6b7c",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8/reorderQuantity_200Type.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd}reorderQuantity_200Type"
+            } ],
+            "input" : [ {
+              "path" : "body",
+              "name" : "body",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_9a9d7566-9214-41ab-94ba-4f5a2ffa5b54",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8/bodyType.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd}bodyType"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "API that takes historic sales and forecasts to calculate an optimal reorder quantity" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "reorderQuantity",
+        "id" : "_9c719fb5-c2de-4117-b32c-cf4cc97a4339"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "skillId" : "Thai-Calculate-Reorder-Quantity__1.0.0__reorderQuantity",
+            "invocationType" : "SKILL",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.3e34499b-6099-44a5-80ee-e1e87fc6232c",
+            "displayVersion" : "head",
+            "name" : "Thai Calculate Reorder Quantity",
+            "project" : "Thai-Calculate-Reorder-Quantity__1.0.0__reorderQuantity",
+            "applicationId" : "app-0b37d9b456a346519a8a7f3db04747e8",
+            "canUseDefaultVersion" : true,
+            "type" : "workflow",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1f88283-0bfd-4eb2-8277-c94b48f0924eService}6023.879e3df9-219f-4bfd-a920-608129a0e580",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "Thai Calculate Reorder Quantity",
+          "interfaceRef" : "_164cb684-fc6f-412b-b3ef-9099cdd48f3b",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_f77748a0-f772-489c-bff7-4b01f4fb714b"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1f88283-0bfd-4eb2-8277-c94b48f0924eService",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_194db875-beb8-4ea1-a9b6-5a9a7b596e7b"
+  },
+  "poId" : "1.1756bff2-0bd9-4c1a-a84d-52db0023ca14",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery11922460033488785987.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1f88283-0bfd-4eb2-8277-c94b48f0924eService}reorderQuantityRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1f88283-0bfd-4eb2-8277-c94b48f0924eService}reorderQuantityResponseMsg" ]
+}

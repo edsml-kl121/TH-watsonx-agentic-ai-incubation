@@ -1,0 +1,48 @@
+{
+  "metadata" : {
+    "id" : "4cdcd408-b79d-47dd-a996-b8ab2b705eb8",
+    "name" : "BATS",
+    "modified_at" : "2025-03-10T13:57:19.598Z",
+    "created_at" : "2025-03-10T13:57:19.598Z",
+    "owner" : "IBMid-6950006UDX",
+    "space_id" : "c2ce1449-db08-47c7-87c3-edd0ac75ad99"
+  },
+  "entity" : {
+    "name" : "BATS",
+    "space_id" : "c2ce1449-db08-47c7-87c3-edd0ac75ad99",
+    "custom" : { },
+    "online" : { },
+    "status" : {
+      "state" : "ready",
+      "online_url" : {
+        "url" : "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/4cdcd408-b79d-47dd-a996-b8ab2b705eb8/predictions"
+      },
+      "serving_urls" : [ "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/4cdcd408-b79d-47dd-a996-b8ab2b705eb8/predictions" ],
+      "inference" : [ {
+        "url" : "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/4cdcd408-b79d-47dd-a996-b8ab2b705eb8/predictions"
+      } ]
+    },
+    "asset" : {
+      "id" : "2d33be6e-90be-4277-abc1-ec6a717fe4d0"
+    },
+    "hybrid_pipeline_hardware_specs" : [ {
+      "hardware_spec" : {
+        "name" : "S",
+        "num_nodes" : 1
+      },
+      "node_runtime_id" : "auto_ai.ts"
+    } ],
+    "deployed_asset_type" : "model",
+    "chat_enabled" : false
+  },
+  "name" : "BATS",
+  "status" : "ready",
+  "deployedAt" : "2025-03-10T13:57:19.598Z",
+  "url" : "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/4cdcd408-b79d-47dd-a996-b8ab2b705eb8/predictions",
+  "system" : {
+    "warnings" : [ {
+      "id" : "Deprecated",
+      "message" : "online_url and serving_urls are deprecated and will be removed in a future release. Use inference instead."
+    } ]
+  }
+}

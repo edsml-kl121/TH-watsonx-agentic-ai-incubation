@@ -1,0 +1,149 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.8edbb60f-b1b2-42bb-b4ab-1a30da64dd27",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c" ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.7dbd50c4-bec1-4066-ae28-b696f4e6b6bf",
+      "declaredType" : "interface",
+      "id" : "_d3ac3fe8-ea5d-4360-8f3e-51251f5b73e5",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.76300130-a9fc-4100-b80d-30987f828a45" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "generated_text",
+              "name" : "generated_text",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_13f1f6c7-024c-4879-a4e3-78f72e4dfd8d",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "generated_token_count",
+              "name" : "generated_token_count",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_2cd41d70-6dd1-4861-a786-530bdfd30432",
+              "isOptional" : false,
+              "typeRefPO" : "integer",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}int"
+            }, {
+              "path" : "input_token_count",
+              "name" : "input_token_count",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_ec785fda-2a8a-4425-a0c8-a69a2f773cdd",
+              "isOptional" : false,
+              "typeRefPO" : "integer",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}int"
+            }, {
+              "path" : "stop_reason",
+              "name" : "stop_reason",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_ef742446-4fb8-4dfa-8ec6-6ee63dae8e95",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "error_code",
+              "name" : "error_code",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_f8ff37b0-e268-42fb-825c-c2d09096dbc4",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "error_message",
+              "name" : "error_message",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_f33d768d-2f29-41fc-b82f-6137f92b4742",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "input" : [ {
+              "path" : "reorder_qty",
+              "name" : "reorder_qty",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_2be04bc2-14ab-4bd6-924a-6332a9a44eac",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "value",
+              "name" : "value",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_ff315bbe-70d9-400d-8fdf-0f70a2fad0f2",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "supplier",
+              "name" : "supplier",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_736a71b0-ce74-449a-af6f-7a68738a74c6",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "Execute Overorder_email_draft-Overorder_email_draft" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "Overorder_email_draft-Overorder_email_draft",
+        "id" : "_47927bc5-0763-41ba-adf2-40b30c1178ea"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "invocationType" : "LOCAL",
+            "designProjectFolder" : "Mew_v1_Reorder_automation_demo",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.8edbb60f-b1b2-42bb-b4ab-1a30da64dd27",
+            "displayVersion" : "head",
+            "name" : "local/Overorder_email_draft-Overorder_email_draft",
+            "project" : "Mew_v1_Reorder_automation_demo",
+            "componentName" : "Mew_v1_Reorder_automation_demo",
+            "canUseDefaultVersion" : true,
+            "type" : "ADS",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/53028583-42f4-4748-ae51-b5a34432785cService}6023.05cc7250-d858-4de4-8646-9958bf0f4e86",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "/Overorder_email_draft",
+          "interfaceRef" : "_d3ac3fe8-ea5d-4360-8f3e-51251f5b73e5",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_7a3d5eff-1db2-4a74-8b97-693b4d823022"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/53028583-42f4-4748-ae51-b5a34432785cService",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_ec80e0c1-48ca-4c97-8bed-58b0f471ff84"
+  },
+  "poId" : "1.df86ac77-1721-4fcb-b19b-e97a04e1e056",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery10699026259828560216.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/53028583-42f4-4748-ae51-b5a34432785c.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/53028583-42f4-4748-ae51-b5a34432785cService}Overorder_email_draft-Overorder_email_draftRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/53028583-42f4-4748-ae51-b5a34432785cService}Overorder_email_draft-Overorder_email_draftResponseMsg" ]
+}

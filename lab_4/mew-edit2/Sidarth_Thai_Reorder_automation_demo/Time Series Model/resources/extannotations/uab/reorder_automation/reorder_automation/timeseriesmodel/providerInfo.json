@@ -1,0 +1,11 @@
+{
+  "id" : "7bed1625-7178-4295-8d92-6342a0d73e69",
+  "providerId" : "uab/Mew_v1_Reorder_automation_demo/Auto AI P10 BATS Model1744363355248",
+  "predictionParameters" : {
+    "predictionParamType" : "WML",
+    "modelId" : "2d33be6e-90be-4277-abc1-ec6a717fe4d0",
+    "deploymentId" : "4cdcd408-b79d-47dd-a996-b8ab2b705eb8",
+    "url" : "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/4cdcd408-b79d-47dd-a996-b8ab2b705eb8/predictions"
+  },
+  "version" : "V1"
+}

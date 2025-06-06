@@ -1,0 +1,17 @@
+{
+  "name" : "GENAI",
+  "type" : "GENAI",
+  "description" : null,
+  "updateTime" : 0,
+  "authInfo" : {
+    "authType" : "IAM",
+    "apiKey" : null,
+    "authUrl" : "https://iam.cloud.ibm.com/identity/token"
+  },
+  "providerAdditionalInfo" : {
+    "providerType" : "GENAI",
+    "mlUrl" : "https://us-south.ml.cloud.ibm.com",
+    "projectId" : "e739c455-bc68-4b39-aab0-7b12de6c0ca0"
+  },
+  "version" : "V1"
+}

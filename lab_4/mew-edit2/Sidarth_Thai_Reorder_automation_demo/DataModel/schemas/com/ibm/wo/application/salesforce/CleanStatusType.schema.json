@@ -1,0 +1,10 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/CleanStatusType.schema.json",
+  "x-ibm-json-name" : "CleanStatusType",
+  "x-ibm-package-name" : "com.ibm.wo.application.salesforce",
+  "title" : "clean status type",
+  "x-ibm-original-json-name" : "retrievewithwhere_Account.CleanStatusType",
+  "type" : "string",
+  "enum" : [ "Acknowledged", "Different", "Inactive", "Matched", "NotFound", "Pending", "SelectMatch", "Skipped" ]
+}

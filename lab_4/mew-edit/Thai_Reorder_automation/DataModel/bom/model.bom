@@ -1,0 +1,1784 @@
+
+package com.ibm.wo.application.HASH4bd47926bef8ae7a2082d87d81f1770a_app_89bedefc06fe46d99551fedd54d3ae77;
+
+
+class supplierresearch_researchsuppliersget_200Type
+        #ads.readonly
+        property ads.typeId "7"
+        property com.fasterxml.jackson.annotation.JsonTypeName "supplierresearch_researchsuppliersget_200Type"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"supplierresearch_researchsuppliersget.supplierresearch_researchsuppliersget_200Type\""
+        }
+        #imported
+{
+    string uab_Agent_Response
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "uab_Agent_Response"
+                property description "The AI model's response rating the suppliers."
+                #update;
+    supplierresearch_researchsuppliersget_200Type(string uab_Agent_Response)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    supplierresearch_researchsuppliersget_200Type()
+                #dataio.default;
+}
+
+package com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed;
+
+
+class createOrderItem_200Type_2
+        #ads.readonly
+        property ads.typeId "40"
+        property com.fasterxml.jackson.annotation.JsonTypeName "createOrderItem_200Type_2"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"createOrderItem.createOrderItem_200Type\""
+        }
+        #imported
+{
+    string message
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                property description "Response message"
+                #update;
+    createOrderItem_200Type_2(string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    createOrderItem_200Type_2()
+                #dataio.default;
+}
+
+class createOrder_200Type_2
+        #ads.readonly
+        property ads.typeId "39"
+        property com.fasterxml.jackson.annotation.JsonTypeName "createOrder_200Type_2"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"createOrder.createOrder_200Type\""
+        }
+        #imported
+{
+    string order_id
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "order_id"
+                property description "ID of the newly created order"
+                #update;
+    createOrder_200Type_2(string order_id)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    createOrder_200Type_2()
+                #dataio.default;
+}
+
+package com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912;
+
+
+class createOrderItem_200Type_1
+        #ads.readonly
+        property ads.typeId "32"
+        property com.fasterxml.jackson.annotation.JsonTypeName "createOrderItem_200Type_1"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"createOrderItem.createOrderItem_200Type\""
+        }
+        #imported
+{
+    string message
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                property description "Response message"
+                #update;
+    createOrderItem_200Type_1(string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    createOrderItem_200Type_1()
+                #dataio.default;
+}
+
+class createOrder_200Type_1
+        #ads.readonly
+        property ads.typeId "31"
+        property com.fasterxml.jackson.annotation.JsonTypeName "createOrder_200Type_1"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"createOrder.createOrder_200Type\""
+        }
+        #imported
+{
+    string order_id
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "order_id"
+                property description "ID of the newly created order"
+                #update;
+    createOrder_200Type_1(string order_id)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    createOrder_200Type_1()
+                #dataio.default;
+}
+
+class fetchPriceBooks_200Type
+        #ads.readonly
+        property ads.typeId "34"
+        property com.fasterxml.jackson.annotation.JsonTypeName "fetchPriceBooks_200Type"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"fetchPriceBooks.fetchPriceBooks_200Type\""
+        }
+        #imported
+{
+    java.util.List price_books domain 0,* class com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "price_books"
+                #update;
+    fetchPriceBooks_200Type(java.util.List price_books domain 0,* class com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    fetchPriceBooks_200Type()
+                #dataio.default;
+    void addTo_price_books(com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType price_books)
+                property collectionAttribute "price_books"
+                #update;
+    void clear_price_books()
+                property collectionAttribute "price_books"
+                #update;
+    void removeFrom_price_books(com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType price_books)
+                property collectionAttribute "price_books"
+                #update;
+    void set_price_books(java.util.Collection price_books domain 0,* class com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType)
+                property collectionAttribute "price_books"
+                #update;
+}
+
+class price_booksType
+        #ads.readonly
+        property ads.typeId "33"
+        property com.fasterxml.jackson.annotation.JsonTypeName "price_booksType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"fetchPriceBooks.price_booksType\""
+        }
+        #imported
+{
+    string uab_Pricebook_ID
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "uab_Pricebook_ID"
+                #update;
+    string uab_Pricebook_Name
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "uab_Pricebook_Name"
+                #update;
+    string uab_Product_Name
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "uab_Product_Name"
+                #update;
+    double uab_Unit_Price
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "uab_Unit_Price"
+                #update;
+    price_booksType(string uab_Pricebook_ID, string uab_Pricebook_Name, string uab_Product_Name, double uab_Unit_Price)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    price_booksType()
+                #dataio.default;
+}
+
+package com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364;
+
+
+class New_orderType
+        #ads.readonly
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "New_orderType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"createOrder.New_orderType\""
+        }
+        #imported
+{
+    string accountId
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "AccountId"
+                #update;
+    java.time.LocalDate effectiveDate
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "EffectiveDate"
+                #update;
+    string id
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Id"
+                #update;
+    string status
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Status"
+                #update;
+    New_orderType(string accountId, java.time.LocalDate effectiveDate, string id, string status)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    New_orderType()
+                #dataio.default;
+}
+
+class createOrderItem_200Type
+        #ads.readonly
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonTypeName "createOrderItem_200Type"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"createOrderItem.createOrderItem_200Type\""
+        }
+        #imported
+{
+    string message
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                property description "Response message"
+                #update;
+    createOrderItem_200Type(string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    createOrderItem_200Type()
+                #dataio.default;
+}
+
+class createOrder_200Type
+        #ads.readonly
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "createOrder_200Type"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"createOrder.createOrder_200Type\""
+        }
+        #imported
+{
+    com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType new_order
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "New_order"
+                #update;
+    createOrder_200Type(com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType new_order)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    createOrder_200Type()
+                #dataio.default;
+}
+
+package com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8;
+
+
+class bodyType
+        #ads.readonly
+        property ads.typeId "37"
+        property com.fasterxml.jackson.annotation.JsonTypeName "bodyType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"reorderQuantity.bodyType\""
+        }
+        #imported
+{
+    double current_inventory
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "current_inventory"
+                property description "Current Inventory"
+                #update;
+    int forecast
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "forecast"
+                property description "Forecast Quantity next month"
+                #update;
+    int historic_data
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "historic_data"
+                property description "Quantity sold last month"
+                #update;
+    bodyType(double current_inventory, int forecast, int historic_data)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    bodyType()
+                #dataio.default;
+}
+
+class reorderQuantity_200Type
+        #ads.readonly
+        property ads.typeId "38"
+        property com.fasterxml.jackson.annotation.JsonTypeName "reorderQuantity_200Type"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"reorderQuantity.reorderQuantity_200Type\""
+        }
+        #imported
+{
+    string reasoning
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "reasoning"
+                #update;
+    int reorder_quantity
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "reorder_quantity"
+                #update;
+    reorderQuantity_200Type(string reasoning, int reorder_quantity)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    reorderQuantity_200Type()
+                #dataio.default;
+}
+
+package com.ibm.wo.application.composite_skill;
+
+
+class _5ae816c1ab548458b3d587db99586b9_200Type
+        #ads.readonly
+        property ads.typeId "22"
+        property com.fasterxml.jackson.annotation.JsonTypeName "_5ae816c1ab548458b3d587db99586b9_200Type"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"75ae816c1ab548458b3d587db99586b9._5ae816c1ab548458b3d587db99586b9_200Type\""
+        }
+        #imported
+{
+    string reasoning
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "reasoning"
+                #update;
+    int reorder_quantity
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "reorder_quantity"
+                #update;
+    _5ae816c1ab548458b3d587db99586b9_200Type(string reasoning, int reorder_quantity)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    _5ae816c1ab548458b3d587db99586b9_200Type()
+                #dataio.default;
+}
+
+class _a6aab124ec340e4a6feb0e2eda95f1c_200Type
+        #ads.readonly
+        property ads.typeId "35"
+        property com.fasterxml.jackson.annotation.JsonTypeName "_a6aab124ec340e4a6feb0e2eda95f1c_200Type"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"4a6aab124ec340e4a6feb0e2eda95f1c._a6aab124ec340e4a6feb0e2eda95f1c_200Type\""
+        }
+        #imported
+{
+    string uab_Supplier_ID
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "uab_Supplier_ID"
+                property description "Supplier ID"
+                #update;
+    string uab_Supplier_Name
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "uab_Supplier_Name"
+                property description "Supplier Name"
+                #update;
+    string uab_Supplier_Pricebook_ID
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "uab_Supplier_Pricebook_ID"
+                property description "Supplier Pricebook ID"
+                #update;
+    double uab_Unit_Price
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "uab_Unit_Price"
+                property description "Unit Price"
+                #update;
+    _a6aab124ec340e4a6feb0e2eda95f1c_200Type(string uab_Supplier_ID, string uab_Supplier_Name, string uab_Supplier_Pricebook_ID, double uab_Unit_Price)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    _a6aab124ec340e4a6feb0e2eda95f1c_200Type()
+                #dataio.default;
+}
+
+package com.ibm.wo.application.gmail;
+
+
+class AttachmentsType
+        #ads.readonly
+        property ads.typeId "5"
+        property com.fasterxml.jackson.annotation.JsonTypeName "AttachmentsType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"create_mail.AttachmentsType\""
+        }
+        #imported
+{
+    com.ibm.automation.runtime.DocumentRef content
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "content"
+                property description "The content of the file attachment. If the content type is binary, specify the content in Base64-encoded format."
+                #update;
+    string fileName
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "fileName"
+                property description "The file name, including the extension, of the attachment, for example test.pdf, test.docx, or test.txt"
+                #update;
+    AttachmentsType(com.ibm.automation.runtime.DocumentRef content, string fileName)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    AttachmentsType()
+                #dataio.default;
+}
+
+class contentTypeType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "6"
+        property com.fasterxml.jackson.annotation.JsonTypeName "contentTypeType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"create_mail.contentTypeType\""
+        }
+        #imported
+{
+    domain {static "Text/html", static "Text/plain"}
+    static final readonly com.ibm.wo.application.gmail.contentTypeType "Text/html"
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "text/html";
+    static final readonly com.ibm.wo.application.gmail.contentTypeType "Text/plain"
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "text/plain";
+}
+
+class richTextBodyType
+        #ads.readonly
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "richTextBodyType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"create_mail.richTextBodyType\""
+        }
+        #imported
+{
+    string content
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "content"
+                property description "The body content of the email"
+                #update;
+    com.ibm.wo.application.gmail.contentTypeType contentType
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "contentType"
+                #update;
+    richTextBodyType(string content, com.ibm.wo.application.gmail.contentTypeType contentType)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    richTextBodyType()
+                #dataio.default;
+}
+
+package com.ibm.wo.application.salesforce;
+
+
+class AccountSourceType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "18"
+        property com.fasterxml.jackson.annotation.JsonTypeName "AccountSourceType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.AccountSourceType\""
+        }
+        #imported
+{
+    domain {static Other, static PartnerReferral, static PhoneInquiry, static PurchasedList, static Web}
+    static final readonly com.ibm.wo.application.salesforce.AccountSourceType Other
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Other";
+    static final readonly com.ibm.wo.application.salesforce.AccountSourceType PartnerReferral
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Partner Referral";
+    static final readonly com.ibm.wo.application.salesforce.AccountSourceType PhoneInquiry
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Phone Inquiry";
+    static final readonly com.ibm.wo.application.salesforce.AccountSourceType PurchasedList
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Purchased List";
+    static final readonly com.ibm.wo.application.salesforce.AccountSourceType Web
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "Web";
+}
+
+class Active__cType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "16"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Active__cType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.Active__cType\""
+        }
+        #imported
+{
+    domain {static No, static Yes}
+    static final readonly com.ibm.wo.application.salesforce.Active__cType No
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "No";
+    static final readonly com.ibm.wo.application.salesforce.Active__cType Yes
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Yes";
+}
+
+class BillingGeocodeAccuracyType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "17"
+        property com.fasterxml.jackson.annotation.JsonTypeName "BillingGeocodeAccuracyType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.BillingGeocodeAccuracyType\""
+        }
+        #imported
+{
+    domain {static Address, static Block, static City, static County, static ExtendedZip, static NearAddress, static Neighborhood, static State, static Street, static Unknown, static Zip}
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType Address
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Address";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType Block
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Block";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType City
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "City";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType County
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "County";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType ExtendedZip
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "ExtendedZip";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType NearAddress
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "NearAddress";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType Neighborhood
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "Neighborhood";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType State
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "State";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType Street
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "Street";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType Unknown
+                property ads.attributeId "10"
+                property com.fasterxml.jackson.annotation.JsonProperty "Unknown";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType Zip
+                property ads.attributeId "11"
+                property com.fasterxml.jackson.annotation.JsonProperty "Zip";
+}
+
+class BillingGeocodeAccuracyType_1
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "29"
+        property com.fasterxml.jackson.annotation.JsonTypeName "BillingGeocodeAccuracyType_1"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"create_Order.BillingGeocodeAccuracyType\""
+        }
+        #imported
+{
+    domain {static Address, static Block, static City, static County, static ExtendedZip, static NearAddress, static Neighborhood, static State, static Street, static Unknown, static Zip}
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 Address
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Address";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 Block
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Block";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 City
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "City";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 County
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "County";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 ExtendedZip
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "ExtendedZip";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 NearAddress
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "NearAddress";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 Neighborhood
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "Neighborhood";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 State
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "State";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 Street
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "Street";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 Unknown
+                property ads.attributeId "10"
+                property com.fasterxml.jackson.annotation.JsonProperty "Unknown";
+    static final readonly com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1 Zip
+                property ads.attributeId "11"
+                property com.fasterxml.jackson.annotation.JsonProperty "Zip";
+}
+
+class CleanStatusType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "12"
+        property com.fasterxml.jackson.annotation.JsonTypeName "CleanStatusType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.CleanStatusType\""
+        }
+        #imported
+{
+    domain {static Acknowledged, static Different, static Inactive, static Matched, static NotFound, static Pending, static SelectMatch, static Skipped}
+    static final readonly com.ibm.wo.application.salesforce.CleanStatusType Acknowledged
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Acknowledged";
+    static final readonly com.ibm.wo.application.salesforce.CleanStatusType Different
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Different";
+    static final readonly com.ibm.wo.application.salesforce.CleanStatusType Inactive
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Inactive";
+    static final readonly com.ibm.wo.application.salesforce.CleanStatusType Matched
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Matched";
+    static final readonly com.ibm.wo.application.salesforce.CleanStatusType NotFound
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "NotFound";
+    static final readonly com.ibm.wo.application.salesforce.CleanStatusType Pending
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "Pending";
+    static final readonly com.ibm.wo.application.salesforce.CleanStatusType SelectMatch
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "SelectMatch";
+    static final readonly com.ibm.wo.application.salesforce.CleanStatusType Skipped
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "Skipped";
+}
+
+class CustomerPriority__cType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "21"
+        property com.fasterxml.jackson.annotation.JsonTypeName "CustomerPriority__cType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.CustomerPriority__cType\""
+        }
+        #imported
+{
+    domain {static High, static Low, static Medium}
+    static final readonly com.ibm.wo.application.salesforce.CustomerPriority__cType High
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "High";
+    static final readonly com.ibm.wo.application.salesforce.CustomerPriority__cType Low
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Low";
+    static final readonly com.ibm.wo.application.salesforce.CustomerPriority__cType Medium
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Medium";
+}
+
+class FamilyType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "26"
+        property com.fasterxml.jackson.annotation.JsonTypeName "FamilyType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Product2.FamilyType\""
+        }
+        #imported
+{
+    domain {static None}
+    static final readonly com.ibm.wo.application.salesforce.FamilyType None
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "None";
+}
+
+class IndustryType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "13"
+        property com.fasterxml.jackson.annotation.JsonTypeName "IndustryType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.IndustryType\""
+        }
+        #imported
+{
+    domain 
+    {
+        static Agriculture,
+        static Apparel,
+        static Banking,
+        static Biotechnology,
+        static Chemicals,
+        static Communications,
+        static Construction,
+        static Consulting,
+        static Education,
+        static Electronics,
+        static Energy,
+        static Engineering,
+        static Entertainment,
+        static Environmental,
+        static Finance,
+        static "Food&Beverage",
+        static Government,
+        static Healthcare,
+        static Hospitality,
+        static Insurance,
+        static Machinery,
+        static Manufacturing,
+        static Media,
+        static NotForProfit,
+        static Other,
+        static Recreation,
+        static Retail,
+        static Shipping,
+        static Technology,
+        static Telecommunications,
+        static Transportation,
+        static Utilities
+    }
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Agriculture
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Agriculture";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Apparel
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Apparel";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Banking
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Banking";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Biotechnology
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Biotechnology";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Chemicals
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "Chemicals";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Communications
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "Communications";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Construction
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "Construction";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Consulting
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "Consulting";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Education
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "Education";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Electronics
+                property ads.attributeId "10"
+                property com.fasterxml.jackson.annotation.JsonProperty "Electronics";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Energy
+                property ads.attributeId "11"
+                property com.fasterxml.jackson.annotation.JsonProperty "Energy";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Engineering
+                property ads.attributeId "12"
+                property com.fasterxml.jackson.annotation.JsonProperty "Engineering";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Entertainment
+                property ads.attributeId "13"
+                property com.fasterxml.jackson.annotation.JsonProperty "Entertainment";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Environmental
+                property ads.attributeId "14"
+                property com.fasterxml.jackson.annotation.JsonProperty "Environmental";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Finance
+                property ads.attributeId "15"
+                property com.fasterxml.jackson.annotation.JsonProperty "Finance";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType "Food&Beverage"
+                property ads.attributeId "16"
+                property com.fasterxml.jackson.annotation.JsonProperty "Food & Beverage";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Government
+                property ads.attributeId "17"
+                property com.fasterxml.jackson.annotation.JsonProperty "Government";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Healthcare
+                property ads.attributeId "18"
+                property com.fasterxml.jackson.annotation.JsonProperty "Healthcare";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Hospitality
+                property ads.attributeId "19"
+                property com.fasterxml.jackson.annotation.JsonProperty "Hospitality";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Insurance
+                property ads.attributeId "20"
+                property com.fasterxml.jackson.annotation.JsonProperty "Insurance";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Machinery
+                property ads.attributeId "21"
+                property com.fasterxml.jackson.annotation.JsonProperty "Machinery";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Manufacturing
+                property ads.attributeId "22"
+                property com.fasterxml.jackson.annotation.JsonProperty "Manufacturing";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Media
+                property ads.attributeId "23"
+                property com.fasterxml.jackson.annotation.JsonProperty "Media";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType NotForProfit
+                property ads.attributeId "24"
+                property com.fasterxml.jackson.annotation.JsonProperty "Not For Profit";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Other
+                property ads.attributeId "25"
+                property com.fasterxml.jackson.annotation.JsonProperty "Other";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Recreation
+                property ads.attributeId "26"
+                property com.fasterxml.jackson.annotation.JsonProperty "Recreation";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Retail
+                property ads.attributeId "27"
+                property com.fasterxml.jackson.annotation.JsonProperty "Retail";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Shipping
+                property ads.attributeId "28"
+                property com.fasterxml.jackson.annotation.JsonProperty "Shipping";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Technology
+                property ads.attributeId "29"
+                property com.fasterxml.jackson.annotation.JsonProperty "Technology";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Telecommunications
+                property ads.attributeId "30"
+                property com.fasterxml.jackson.annotation.JsonProperty "Telecommunications";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Transportation
+                property ads.attributeId "31"
+                property com.fasterxml.jackson.annotation.JsonProperty "Transportation";
+    static final readonly com.ibm.wo.application.salesforce.IndustryType Utilities
+                property ads.attributeId "32"
+                property com.fasterxml.jackson.annotation.JsonProperty "Utilities";
+}
+
+class OwnershipType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "8"
+        property com.fasterxml.jackson.annotation.JsonTypeName "OwnershipType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.OwnershipType\""
+        }
+        #imported
+{
+    domain {static Other, static Private, static Public, static Subsidiary}
+    static final readonly com.ibm.wo.application.salesforce.OwnershipType Other
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Other";
+    static final readonly com.ibm.wo.application.salesforce.OwnershipType Private
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Private";
+    static final readonly com.ibm.wo.application.salesforce.OwnershipType Public
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Public";
+    static final readonly com.ibm.wo.application.salesforce.OwnershipType Subsidiary
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Subsidiary";
+}
+
+class ProductClassType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "25"
+        property com.fasterxml.jackson.annotation.JsonTypeName "ProductClassType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Product2.ProductClassType\""
+        }
+        #imported
+{
+    domain {static Bundle, static Set, static Simple, static Variation, static VariationParent}
+    static final readonly com.ibm.wo.application.salesforce.ProductClassType Bundle
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Bundle";
+    static final readonly com.ibm.wo.application.salesforce.ProductClassType Set
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Set";
+    static final readonly com.ibm.wo.application.salesforce.ProductClassType Simple
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Simple";
+    static final readonly com.ibm.wo.application.salesforce.ProductClassType Variation
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Variation";
+    static final readonly com.ibm.wo.application.salesforce.ProductClassType VariationParent
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "VariationParent";
+}
+
+class QuantityUnitOfMeasureType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "23"
+        property com.fasterxml.jackson.annotation.JsonTypeName "QuantityUnitOfMeasureType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Product2.QuantityUnitOfMeasureType\""
+        }
+        #imported
+{
+    domain {static Each}
+    static final readonly com.ibm.wo.application.salesforce.QuantityUnitOfMeasureType Each
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Each";
+}
+
+class RatingType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "10"
+        property com.fasterxml.jackson.annotation.JsonTypeName "RatingType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.RatingType\""
+        }
+        #imported
+{
+    domain {static Bronze, static Gold, static Silver}
+    static final readonly com.ibm.wo.application.salesforce.RatingType Bronze
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Bronze";
+    static final readonly com.ibm.wo.application.salesforce.RatingType Gold
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Gold";
+    static final readonly com.ibm.wo.application.salesforce.RatingType Silver
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Silver";
+}
+
+class SLA__cType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "9"
+        property com.fasterxml.jackson.annotation.JsonTypeName "SLA__cType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.SLA__cType\""
+        }
+        #imported
+{
+    domain {static Bronze, static Gold, static Platinum, static Silver}
+    static final readonly com.ibm.wo.application.salesforce.SLA__cType Bronze
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Bronze";
+    static final readonly com.ibm.wo.application.salesforce.SLA__cType Gold
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Gold";
+    static final readonly com.ibm.wo.application.salesforce.SLA__cType Platinum
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Platinum";
+    static final readonly com.ibm.wo.application.salesforce.SLA__cType Silver
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Silver";
+}
+
+class StatusType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "30"
+        property com.fasterxml.jackson.annotation.JsonTypeName "StatusType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"create_Order.StatusType\""
+        }
+        #imported
+{
+    domain {static Activated, static Draft}
+    static final readonly com.ibm.wo.application.salesforce.StatusType Activated
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Activated";
+    static final readonly com.ibm.wo.application.salesforce.StatusType Draft
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Draft";
+}
+
+class TypeType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "20"
+        property com.fasterxml.jackson.annotation.JsonTypeName "TypeType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.TypeType\""
+        }
+        #imported
+{
+    domain {static "ChannelPartner/Reseller", static "Customer-Channel", static "Customer-Direct", static InstallationPartner, static Other, static Prospect, static TechnologyPartner}
+    static final readonly com.ibm.wo.application.salesforce.TypeType "ChannelPartner/Reseller"
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Channel Partner / Reseller";
+    static final readonly com.ibm.wo.application.salesforce.TypeType "Customer-Channel"
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Customer - Channel";
+    static final readonly com.ibm.wo.application.salesforce.TypeType "Customer-Direct"
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Customer - Direct";
+    static final readonly com.ibm.wo.application.salesforce.TypeType InstallationPartner
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Installation Partner";
+    static final readonly com.ibm.wo.application.salesforce.TypeType Other
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "Other";
+    static final readonly com.ibm.wo.application.salesforce.TypeType Prospect
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "Prospect";
+    static final readonly com.ibm.wo.application.salesforce.TypeType TechnologyPartner
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "Technology Partner";
+}
+
+class TypeType_1
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "27"
+        property com.fasterxml.jackson.annotation.JsonTypeName "TypeType_1"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Product2.TypeType\""
+        }
+        #imported
+{
+    domain {static Base, static Bundle, static Set}
+    static final readonly com.ibm.wo.application.salesforce.TypeType_1 Base
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Base";
+    static final readonly com.ibm.wo.application.salesforce.TypeType_1 Bundle
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Bundle";
+    static final readonly com.ibm.wo.application.salesforce.TypeType_1 Set
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Set";
+}
+
+class UpsellOpportunity__cType
+        extends java.lang.Enum
+        #ads.readonly
+        property ads.typeId "15"
+        property com.fasterxml.jackson.annotation.JsonTypeName "UpsellOpportunity__cType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.UpsellOpportunity__cType\""
+        }
+        #imported
+{
+    domain {static Maybe, static No, static Yes}
+    static final readonly com.ibm.wo.application.salesforce.UpsellOpportunity__cType Maybe
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Maybe";
+    static final readonly com.ibm.wo.application.salesforce.UpsellOpportunity__cType No
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "No";
+    static final readonly com.ibm.wo.application.salesforce.UpsellOpportunity__cType Yes
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Yes";
+}
+
+class attributesType
+        #ads.readonly
+        property ads.typeId "14"
+        property com.fasterxml.jackson.annotation.JsonTypeName "attributesType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.attributesType\""
+        }
+        #imported
+{
+    string type
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "type"
+                property description "Type"
+                #update;
+    string url
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "url"
+                property description "Url"
+                #update;
+    attributesType(string type, string url)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    attributesType()
+                #dataio.default;
+}
+
+class instancesType
+        #ads.readonly
+        property ads.typeId "19"
+        property com.fasterxml.jackson.annotation.JsonTypeName "instancesType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.instancesType\""
+        }
+        #imported
+{
+    java.time.LocalDate SLAExpirationDate__c
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "SLAExpirationDate__c"
+                property description "SLA Expiration Date"
+                #update;
+    string SLASerialNumber__c
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "SLASerialNumber__c"
+                property description "SLA Serial Number"
+                #update;
+    com.ibm.wo.application.salesforce.SLA__cType SLA__c
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "SLA__c"
+                #update;
+    string accountNumber
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "AccountNumber"
+                property description "Account Number"
+                #update;
+    com.ibm.wo.application.salesforce.AccountSourceType accountSource
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "AccountSource"
+                #update;
+    com.ibm.wo.application.salesforce.Active__cType active__c
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "Active__c"
+                #update;
+    double annualRevenue
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "AnnualRevenue"
+                property description "Estimated annual revenue of the account"
+                #update;
+    com.ibm.wo.application.salesforce.attributesType attributes
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "attributes"
+                #update;
+    string billingCity
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "BillingCity"
+                property description "The city for the billing address of this account. Maximum length is 40 characters."
+                #update;
+    string billingCountry
+                property ads.attributeId "10"
+                property com.fasterxml.jackson.annotation.JsonProperty "BillingCountry"
+                property description "The country for the billing address of this account. Maximum length is 80 characters."
+                #update;
+    com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType billingGeocodeAccuracy
+                property ads.attributeId "11"
+                property com.fasterxml.jackson.annotation.JsonProperty "BillingGeocodeAccuracy"
+                #update;
+    double billingLatitude
+                property ads.attributeId "12"
+                property com.fasterxml.jackson.annotation.JsonProperty "BillingLatitude"
+                property description "Used with billing longitude to specify the precise geolocation of a billing address. Acceptable values are numbers between –90 and 90 with up to 15 decimal places."
+                #update;
+    double billingLongitude
+                property ads.attributeId "13"
+                property com.fasterxml.jackson.annotation.JsonProperty "BillingLongitude"
+                property description "Used with billing latitude to specify the precise geolocation of a billing address. Acceptable values are numbers between –180 and 180 with up to 15 decimal places."
+                #update;
+    string billingPostalCode
+                property ads.attributeId "14"
+                property com.fasterxml.jackson.annotation.JsonProperty "BillingPostalCode"
+                property description "The zip or postal code for the billing address of this account. Maximum length is 20 characters."
+                #update;
+    string billingState
+                property ads.attributeId "15"
+                property com.fasterxml.jackson.annotation.JsonProperty "BillingState"
+                property description "The state or province for the billing address of this account. Maximum length is 80 characters."
+                #update;
+    string billingStreet
+                property ads.attributeId "16"
+                property com.fasterxml.jackson.annotation.JsonProperty "BillingStreet"
+                property description "The street address for the billing address of this account"
+                #update;
+    com.ibm.wo.application.salesforce.CleanStatusType cleanStatus
+                property ads.attributeId "17"
+                property com.fasterxml.jackson.annotation.JsonProperty "CleanStatus"
+                #update;
+    string createdById
+                property ads.attributeId "18"
+                property com.fasterxml.jackson.annotation.JsonProperty "CreatedById"
+                property description "The ID of the user who created the account"
+                #update;
+    java.time.ZonedDateTime createdDate
+                property ads.attributeId "19"
+                property com.fasterxml.jackson.annotation.JsonProperty "CreatedDate"
+                property description "The date the account was created"
+                #update;
+    com.ibm.wo.application.salesforce.CustomerPriority__cType customerPriority__c
+                property ads.attributeId "20"
+                property com.fasterxml.jackson.annotation.JsonProperty "CustomerPriority__c"
+                #update;
+    string dandbCompanyId
+                property ads.attributeId "21"
+                property com.fasterxml.jackson.annotation.JsonProperty "DandbCompanyId"
+                property description "D&B Company ID"
+                #update;
+    string description
+                property ads.attributeId "22"
+                property com.fasterxml.jackson.annotation.JsonProperty "Description"
+                property description "Textual description of the account. Limited to 32,000 KB."
+                #update;
+    string dunsNumber
+                property ads.attributeId "23"
+                property com.fasterxml.jackson.annotation.JsonProperty "DunsNumber"
+                property description "D-U-N-S Number"
+                #update;
+    string fax
+                property ads.attributeId "24"
+                property com.fasterxml.jackson.annotation.JsonProperty "Fax"
+                property description "The fax number for the account. Maximum length is 40 digits."
+                #update;
+    string id
+                property ads.attributeId "25"
+                property com.fasterxml.jackson.annotation.JsonProperty "Id"
+                property description "The system-generated ID assigned when the account is created"
+                #update;
+    com.ibm.wo.application.salesforce.IndustryType industry
+                property ads.attributeId "26"
+                property com.fasterxml.jackson.annotation.JsonProperty "Industry"
+                #update;
+    boolean isDeleted
+                property ads.attributeId "27"
+                property com.fasterxml.jackson.annotation.JsonProperty "IsDeleted"
+                property description "Indicates whether the account has been moved to the recycle bin"
+                #update;
+    string jigsaw
+                property ads.attributeId "28"
+                property com.fasterxml.jackson.annotation.JsonProperty "Jigsaw"
+                property description "The company ID in Data.com"
+                #update;
+    string jigsawCompanyId
+                property ads.attributeId "29"
+                property com.fasterxml.jackson.annotation.JsonProperty "JigsawCompanyId"
+                property description "The Jigsaw company ID"
+                #update;
+    java.time.LocalDate lastActivityDate
+                property ads.attributeId "30"
+                property com.fasterxml.jackson.annotation.JsonProperty "LastActivityDate"
+                property description "Due date of the most recent event logged against the record or the due date of the most recently closed task associated with the record, whichever is the most recent date"
+                #update;
+    string lastModifiedById
+                property ads.attributeId "31"
+                property com.fasterxml.jackson.annotation.JsonProperty "LastModifiedById"
+                property description "The ID of the user who last modified the account"
+                #update;
+    java.time.ZonedDateTime lastModifiedDate
+                property ads.attributeId "32"
+                property com.fasterxml.jackson.annotation.JsonProperty "LastModifiedDate"
+                property description "The date when the account was last modified"
+                #update;
+    java.time.ZonedDateTime lastReferencedDate
+                property ads.attributeId "33"
+                property com.fasterxml.jackson.annotation.JsonProperty "LastReferencedDate"
+                property description "The timestamp for when the current user last viewed a record related to this record."
+                #update;
+    java.time.ZonedDateTime lastViewedDate
+                property ads.attributeId "34"
+                property com.fasterxml.jackson.annotation.JsonProperty "LastViewedDate"
+                property description "The timestamp for when the current user last viewed this record"
+                #update;
+    string masterRecordId
+                property ads.attributeId "35"
+                property com.fasterxml.jackson.annotation.JsonProperty "MasterRecordId"
+                property description "The ID of the record that was kept if the account was deleted as the result of a merge. If the account was deleted for another reason, or hasn’t been deleted, the primary record ID is null."
+                #update;
+    string naicsCode
+                property ads.attributeId "36"
+                property com.fasterxml.jackson.annotation.JsonProperty "NaicsCode"
+                property description "NAICS Code"
+                #update;
+    string naicsDesc
+                property ads.attributeId "37"
+                property com.fasterxml.jackson.annotation.JsonProperty "NaicsDesc"
+                property description "NAICS Description"
+                #update;
+    string name
+                property ads.attributeId "38"
+                property com.fasterxml.jackson.annotation.JsonProperty "Name"
+                property description "Name of the account. A name can’t be longer than 255 characters."
+                #update;
+    double numberOfEmployees
+                property ads.attributeId "39"
+                property com.fasterxml.jackson.annotation.JsonProperty "NumberOfEmployees"
+                property description "Number of employees working at the company represented by this account. Maximum length is 8 digits. '"
+                #update;
+    double numberofLocations__c
+                property ads.attributeId "40"
+                property com.fasterxml.jackson.annotation.JsonProperty "NumberofLocations__c"
+                property description "Number of Locations"
+                #update;
+    string operatingHoursId
+                property ads.attributeId "41"
+                property com.fasterxml.jackson.annotation.JsonProperty "OperatingHoursId"
+                property description "Operating Hour ID"
+                #update;
+    string ownerId
+                property ads.attributeId "42"
+                property com.fasterxml.jackson.annotation.JsonProperty "OwnerId"
+                property description "The unique identifier of the user who currently owns this account"
+                #update;
+    com.ibm.wo.application.salesforce.OwnershipType ownership
+                property ads.attributeId "43"
+                property com.fasterxml.jackson.annotation.JsonProperty "Ownership"
+                #update;
+    string parentId
+                property ads.attributeId "44"
+                property com.fasterxml.jackson.annotation.JsonProperty "ParentId"
+                property description "ID of the parent object"
+                #update;
+    string phone
+                property ads.attributeId "45"
+                property com.fasterxml.jackson.annotation.JsonProperty "Phone"
+                property description "The phone number for this account. Maximum length is 40 digits."
+                #update;
+    string photoUrl
+                property ads.attributeId "46"
+                property com.fasterxml.jackson.annotation.JsonProperty "PhotoUrl"
+                property description "The URL to request the social network profile image associated with the account"
+                #update;
+    com.ibm.wo.application.salesforce.RatingType rating
+                property ads.attributeId "47"
+                property com.fasterxml.jackson.annotation.JsonProperty "Rating"
+                #update;
+    string shippingCity
+                property ads.attributeId "48"
+                property com.fasterxml.jackson.annotation.JsonProperty "ShippingCity"
+                property description "The city of the shipping address for this account. Maximum length is 40 characters."
+                #update;
+    string shippingCountry
+                property ads.attributeId "49"
+                property com.fasterxml.jackson.annotation.JsonProperty "ShippingCountry"
+                property description "The country of the shipping address for this account. Maximum length is 80 characters."
+                #update;
+    com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType shippingGeocodeAccuracy
+                property ads.attributeId "50"
+                property com.fasterxml.jackson.annotation.JsonProperty "ShippingGeocodeAccuracy"
+                #update;
+    double shippingLatitude
+                property ads.attributeId "51"
+                property com.fasterxml.jackson.annotation.JsonProperty "ShippingLatitude"
+                property description "Used with shipping longitude to specify the precise geolocation of a shipping address. Acceptable values are numbers between –90 and 90 with up to 15 decimal places."
+                #update;
+    double shippingLongitude
+                property ads.attributeId "52"
+                property com.fasterxml.jackson.annotation.JsonProperty "ShippingLongitude"
+                property description "Used with shipping latitude to specify the precise geolocation of an address. Acceptable values are numbers between –180 and 180 with up to 15 decimal places."
+                #update;
+    string shippingPostalCode
+                property ads.attributeId "53"
+                property com.fasterxml.jackson.annotation.JsonProperty "ShippingPostalCode"
+                property description "The zip or post code of the shipping address for this account. Maximum length is 20 characters."
+                #update;
+    string shippingState
+                property ads.attributeId "54"
+                property com.fasterxml.jackson.annotation.JsonProperty "ShippingState"
+                property description "The state or province of the shipping address for this account. Maximum length is 80 characters."
+                #update;
+    string shippingStreet
+                property ads.attributeId "55"
+                property com.fasterxml.jackson.annotation.JsonProperty "ShippingStreet"
+                property description "The street address of the shipping address for this account. Maximum length is 255 characters."
+                #update;
+    string sic
+                property ads.attributeId "56"
+                property com.fasterxml.jackson.annotation.JsonProperty "Sic"
+                property description "SIC Code"
+                #update;
+    string sicDesc
+                property ads.attributeId "57"
+                property com.fasterxml.jackson.annotation.JsonProperty "SicDesc"
+                property description "A brief description of an organization’s line of business, based on its Standard Industrial Classification (SIC) code. Maximum length is 80 characters."
+                #update;
+    string site
+                property ads.attributeId "58"
+                property com.fasterxml.jackson.annotation.JsonProperty "Site"
+                property description "Account site"
+                #update;
+    java.time.ZonedDateTime systemModstamp
+                property ads.attributeId "59"
+                property com.fasterxml.jackson.annotation.JsonProperty "SystemModstamp"
+                property description "System modstamp"
+                #update;
+    string tickerSymbol
+                property ads.attributeId "60"
+                property com.fasterxml.jackson.annotation.JsonProperty "TickerSymbol"
+                property description "Ticker symbol"
+                #update;
+    string tradestyle
+                property ads.attributeId "61"
+                property com.fasterxml.jackson.annotation.JsonProperty "Tradestyle"
+                property description "Tradestyle"
+                #update;
+    com.ibm.wo.application.salesforce.TypeType type
+                property ads.attributeId "62"
+                property com.fasterxml.jackson.annotation.JsonProperty "Type"
+                #update;
+    com.ibm.wo.application.salesforce.UpsellOpportunity__cType upsellOpportunity__c
+                property ads.attributeId "63"
+                property com.fasterxml.jackson.annotation.JsonProperty "UpsellOpportunity__c"
+                #update;
+    string website
+                property ads.attributeId "64"
+                property com.fasterxml.jackson.annotation.JsonProperty "Website"
+                property description "The website of this account. Maximum length is 255 characters."
+                #update;
+    string yearStarted
+                property ads.attributeId "65"
+                property com.fasterxml.jackson.annotation.JsonProperty "YearStarted"
+                property description "Year Started"
+                #update;
+    instancesType(java.time.LocalDate SLAExpirationDate__c, 
+        string SLASerialNumber__c, 
+        com.ibm.wo.application.salesforce.SLA__cType SLA__c, 
+        string accountNumber, 
+        com.ibm.wo.application.salesforce.AccountSourceType accountSource, 
+        com.ibm.wo.application.salesforce.Active__cType active__c, 
+        double annualRevenue, 
+        com.ibm.wo.application.salesforce.attributesType attributes, 
+        string billingCity, 
+        string billingCountry, 
+        com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType billingGeocodeAccuracy, 
+        double billingLatitude, 
+        double billingLongitude, 
+        string billingPostalCode, 
+        string billingState, 
+        string billingStreet, 
+        com.ibm.wo.application.salesforce.CleanStatusType cleanStatus, 
+        string createdById, 
+        java.time.ZonedDateTime createdDate, 
+        com.ibm.wo.application.salesforce.CustomerPriority__cType customerPriority__c, 
+        string dandbCompanyId, 
+        string description, 
+        string dunsNumber, 
+        string fax, 
+        string id, 
+        com.ibm.wo.application.salesforce.IndustryType industry, 
+        boolean isDeleted, 
+        string jigsaw, 
+        string jigsawCompanyId, 
+        java.time.LocalDate lastActivityDate, 
+        string lastModifiedById, 
+        java.time.ZonedDateTime lastModifiedDate, 
+        java.time.ZonedDateTime lastReferencedDate, 
+        java.time.ZonedDateTime lastViewedDate, 
+        string masterRecordId, 
+        string naicsCode, 
+        string naicsDesc, 
+        string name, 
+        double numberOfEmployees, 
+        double numberofLocations__c, 
+        string operatingHoursId, 
+        string ownerId, 
+        com.ibm.wo.application.salesforce.OwnershipType ownership, 
+        string parentId, 
+        string phone, 
+        string photoUrl, 
+        com.ibm.wo.application.salesforce.RatingType rating, 
+        string shippingCity, 
+        string shippingCountry, 
+        com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType shippingGeocodeAccuracy, 
+        double shippingLatitude, 
+        double shippingLongitude, 
+        string shippingPostalCode, 
+        string shippingState, 
+        string shippingStreet, 
+        string sic, 
+        string sicDesc, 
+        string site, 
+        java.time.ZonedDateTime systemModstamp, 
+        string tickerSymbol, 
+        string tradestyle, 
+        com.ibm.wo.application.salesforce.TypeType type, 
+        com.ibm.wo.application.salesforce.UpsellOpportunity__cType upsellOpportunity__c, 
+        string website, 
+        string yearStarted)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    instancesType()
+                #dataio.default;
+}
+
+class instancesType_1
+        #ads.readonly
+        property ads.typeId "24"
+        property com.fasterxml.jackson.annotation.JsonTypeName "instancesType_1"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Product2.instancesType\""
+        }
+        #imported
+{
+    string createdById
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "CreatedById"
+                property description "The unique identifier of the user who created the product record"
+                #update;
+    java.time.ZonedDateTime createdDate
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "CreatedDate"
+                property description "The date the product record was created"
+                #update;
+    string description
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Description"
+                property description "A description of the product"
+                #update;
+    string displayUrl
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "DisplayUrl"
+                property description "Display URL"
+                #update;
+    string externalDataSourceId
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "ExternalDataSourceId"
+                property description "External data source ID"
+                #update;
+    string externalId
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "ExternalId"
+                property description "External ID"
+                #update;
+    com.ibm.wo.application.salesforce.FamilyType family
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "Family"
+                #update;
+    string id
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "Id"
+                property description "The unique identifier of the product"
+                #update;
+    boolean isActive
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "IsActive"
+                property description "Whether the product is active"
+                #update;
+    boolean isArchived
+                property ads.attributeId "10"
+                property com.fasterxml.jackson.annotation.JsonProperty "IsArchived"
+                property description "Archived"
+                #update;
+    boolean isDeleted
+                property ads.attributeId "11"
+                property com.fasterxml.jackson.annotation.JsonProperty "IsDeleted"
+                property description "Deleted"
+                #update;
+    string lastModifiedById
+                property ads.attributeId "12"
+                property com.fasterxml.jackson.annotation.JsonProperty "LastModifiedById"
+                property description "The unique identifier of the user who last modified the product record"
+                #update;
+    java.time.ZonedDateTime lastModifiedDate
+                property ads.attributeId "13"
+                property com.fasterxml.jackson.annotation.JsonProperty "LastModifiedDate"
+                property description "The date when the product record was last modified"
+                #update;
+    java.time.ZonedDateTime lastReferencedDate
+                property ads.attributeId "14"
+                property com.fasterxml.jackson.annotation.JsonProperty "LastReferencedDate"
+                property description "When the product was last referred to"
+                #update;
+    java.time.ZonedDateTime lastViewedDate
+                property ads.attributeId "15"
+                property com.fasterxml.jackson.annotation.JsonProperty "LastViewedDate"
+                property description "When the product record was last viewed"
+                #update;
+    string name
+                property ads.attributeId "16"
+                property com.fasterxml.jackson.annotation.JsonProperty "Name"
+                property description "The name of the product"
+                #update;
+    com.ibm.wo.application.salesforce.ProductClassType productClass
+                property ads.attributeId "17"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProductClass"
+                #update;
+    string productCode
+                property ads.attributeId "18"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProductCode"
+                property description "The code of the product"
+                #update;
+    double product_Amount__c
+                property ads.attributeId "19"
+                property com.fasterxml.jackson.annotation.JsonProperty "Product_Amount__c"
+                property description "Product Amount"
+                #update;
+    com.ibm.wo.application.salesforce.QuantityUnitOfMeasureType quantityUnitOfMeasure
+                property ads.attributeId "20"
+                property com.fasterxml.jackson.annotation.JsonProperty "QuantityUnitOfMeasure"
+                #update;
+    string stockKeepingUnit
+                property ads.attributeId "21"
+                property com.fasterxml.jackson.annotation.JsonProperty "StockKeepingUnit"
+                property description "Product SKU"
+                #update;
+    java.time.ZonedDateTime systemModstamp
+                property ads.attributeId "22"
+                property com.fasterxml.jackson.annotation.JsonProperty "SystemModstamp"
+                property description "The date and time when a record was last modified by a user or by an automated process (such as a trigger)"
+                #update;
+    com.ibm.wo.application.salesforce.TypeType_1 type
+                property ads.attributeId "23"
+                property com.fasterxml.jackson.annotation.JsonProperty "Type"
+                #update;
+    instancesType_1(string createdById, 
+        java.time.ZonedDateTime createdDate, 
+        string description, 
+        string displayUrl, 
+        string externalDataSourceId, 
+        string externalId, 
+        com.ibm.wo.application.salesforce.FamilyType family, 
+        string id, 
+        boolean isActive, 
+        boolean isArchived, 
+        boolean isDeleted, 
+        string lastModifiedById, 
+        java.time.ZonedDateTime lastModifiedDate, 
+        java.time.ZonedDateTime lastReferencedDate, 
+        java.time.ZonedDateTime lastViewedDate, 
+        string name, 
+        com.ibm.wo.application.salesforce.ProductClassType productClass, 
+        string productCode, 
+        double product_Amount__c, 
+        com.ibm.wo.application.salesforce.QuantityUnitOfMeasureType quantityUnitOfMeasure, 
+        string stockKeepingUnit, 
+        java.time.ZonedDateTime systemModstamp, 
+        com.ibm.wo.application.salesforce.TypeType_1 type)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    instancesType_1()
+                #dataio.default;
+}
+
+class nextType
+        #ads.readonly
+        property ads.typeId "11"
+        property com.fasterxml.jackson.annotation.JsonTypeName "nextType"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Account.nextType\""
+        }
+        #imported
+{
+    string next_page_token
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "next_page_token"
+                property description "For token-based pagination, the token to retrieve the next page"
+                #update;
+    nextType(string next_page_token)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    nextType()
+                #dataio.default;
+}
+
+class nextType_1
+        #ads.readonly
+        property ads.typeId "28"
+        property com.fasterxml.jackson.annotation.JsonTypeName "nextType_1"
+        #de.generated
+        property ilog.rules.bom.annotations.JSONExtraProperty {
+            name "x-ibm-original-json-name",
+            value "\"retrievewithwhere_Product2.nextType\""
+        }
+        #imported
+{
+    string next_page_token
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "next_page_token"
+                property description "For token-based pagination, the token to go to the next page"
+                #update;
+    nextType_1(string next_page_token)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    nextType_1()
+                #dataio.default;
+}
+
+package reorder_automation.datamodel;
+
+
+class Prediction
+        property ads.typeId "36"
+        property com.fasterxml.jackson.annotation.JsonTypeName "prediction"
+        #de.generated
+{
+    java.util.List predictions domain 0,* class double
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "predictions"
+                #update;
+    Prediction(java.util.List predictions domain 0,* class double)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Prediction()
+                #dataio.default;
+    void addTo_predictions(double predictions)
+                property collectionAttribute "predictions"
+                #update;
+    void clear_predictions()
+                property collectionAttribute "predictions"
+                #update;
+    void removeFrom_predictions(double predictions)
+                property collectionAttribute "predictions"
+                #update;
+    void set_predictions(java.util.Collection predictions domain 0,* class double)
+                property collectionAttribute "predictions"
+                #update;
+}
+

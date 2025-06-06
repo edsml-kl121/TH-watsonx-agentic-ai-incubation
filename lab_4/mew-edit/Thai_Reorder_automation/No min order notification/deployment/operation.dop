@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="No_min_order_notification" targetRuleProjectName="No min order notification">
+  <name>No_min_order_notification</name>
+  <uuid>440dea58-cdca-4405-96be-5888277d29a5</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#1d59952b-9134-4a4f-b553-0ab11e07d415"/>
+  <targetRuleProject href="../../No%20min%20order%20notification#c645ba54-7bfb-4963-8a81-35567136c61a"/>
+  <tags key="operationType">
+    <value><![CDATA[Generative]]></value>
+  </tags>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["No_min_order_notification"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[false]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

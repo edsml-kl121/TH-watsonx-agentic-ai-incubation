@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/nextType.schema.json",
+  "x-ibm-json-name" : "nextType",
+  "x-ibm-package-name" : "com.ibm.wo.application.salesforce",
+  "type" : "object",
+  "title" : "nextType",
+  "x-ibm-original-json-name" : "retrievewithwhere_Account.nextType",
+  "properties" : {
+    "next_page_token" : {
+      "title" : "next_page_token",
+      "type" : [ "string", "null" ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="Get_Supplier_Name" targetRuleProjectName="Get Supplier Name">
+  <name>Get_Supplier_Name</name>
+  <uuid>dc1a8a8d-8cd5-483d-924b-d113800d9be0</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#51f64841-998c-42f2-8405-313ecc758fa2"/>
+  <targetRuleProject href="../../Get%20Supplier%20Name#9283f65c-0dce-4566-8cd4-71f0704bc6f6"/>
+  <tags key="operationType">
+    <value><![CDATA[Generative]]></value>
+  </tags>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["getSupplierName"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[false]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

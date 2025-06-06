@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>overorder_Email_Draft</name>
+  <uuid>57d29d50-384b-4e8e-be92-7e5d86d98bb6</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model input where
+		the reorder qty is reorder_qty , 
+		the value is value , 
+		the supplier is supplier ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

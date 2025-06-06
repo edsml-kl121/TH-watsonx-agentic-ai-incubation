@@ -1,0 +1,19 @@
+{
+  "prompt" : {
+    "input" : "Generate a chat to notify the member of the procurement team as their order quantity of {{order_qty}} is less than minimum order requirement of 2000, therefore they cannot proceed with this order. ตอบเป้นภาษาไทยอย่างเดียว",
+    "variables" : [ {
+      "id" : 1,
+      "name" : "order_qty",
+      "type" : "string",
+      "default_value" : "244"
+    } ],
+    "examples" : [ ],
+    "instruction" : "Generate a rejection message to a user. "
+  },
+  "parameters" : {
+    "max_new_tokens" : 150,
+    "min_new_tokens" : 1,
+    "stop_sequences" : [ ]
+  },
+  "model_id" : "mistralai/mixtral-8x7b-instruct-v01"
+}

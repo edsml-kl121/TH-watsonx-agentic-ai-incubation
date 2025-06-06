@@ -1,0 +1,97 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.38706497-f438-4fc2-8077-84518c7f9ebc",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "646000EUAI/uab/Reorder_automation/Reorder_automation/Get Reorder Qty/master/dd5bfe3b0c" ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.e1a17333-7be0-498e-89c0-cc2ce68678c3",
+      "declaredType" : "interface",
+      "id" : "_817e3448-f2d6-414b-9108-3b0f524c542a",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.89658497-144f-4b06-a531-d61615eca43b" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "GetReorderQty_Get_Reorder_Qty",
+              "name" : "GetReorderQty_Get_Reorder_Qty",
+              "isCollection" : false,
+              "description" : "Decision execution success",
+              "httpResponseCode" : "200",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_1b7669c4-ec52-4ed1-adaa-c03f3e0e248a",
+              "isOptional" : false,
+              "typeRefPO" : "number",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}double"
+            } ],
+            "input" : [ {
+              "path" : "reorderQty",
+              "name" : "reorderQty",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_741f40f2-bfde-4fc8-8414-ade1ac4a8696",
+              "isOptional" : false,
+              "typeRefPO" : "number",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}double"
+            }, {
+              "path" : "unitPrice",
+              "name" : "unitPrice",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_7db28190-66d7-4d27-98f3-53b3a566cd72",
+              "isOptional" : false,
+              "typeRefPO" : "number",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}double"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "Execute GetReorderQty-Get_Reorder_Qty" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "GetReorderQty-Get_Reorder_Qty",
+        "id" : "_77e1ed5b-a8a7-4c66-99ad-96696f00da07"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "invocationType" : "LOCAL",
+            "designProjectFolder" : "Reorder_automation",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.38706497-f438-4fc2-8077-84518c7f9ebc",
+            "displayVersion" : "head",
+            "name" : "local/GetReorderQty-Get_Reorder_Qty",
+            "project" : "Reorder_automation",
+            "componentName" : "Reorder_automation",
+            "canUseDefaultVersion" : true,
+            "type" : "ADS",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/0e68d07f-142b-451c-825c-e438fe3e78faService}6023.9430ccf7-3bb7-4b73-b0d4-f670b81c5a48",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "/Get_Reorder_Qty",
+          "interfaceRef" : "_817e3448-f2d6-414b-9108-3b0f524c542a",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_670ec48b-bdfc-4665-bc9d-d31f0d8e7304"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/0e68d07f-142b-451c-825c-e438fe3e78faService",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_9f185cf1-2f32-4206-830b-31f32af1c674"
+  },
+  "poId" : "1.e1fc077e-68c4-45f8-87f9-7fffbfc21044",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery7910102482088128891.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/0e68d07f-142b-451c-825c-e438fe3e78fa.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/0e68d07f-142b-451c-825c-e438fe3e78faService}GetReorderQty-Get_Reorder_QtyRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/0e68d07f-142b-451c-825c-e438fe3e78faService}GetReorderQty-Get_Reorder_QtyResponseMsg" ]
+}

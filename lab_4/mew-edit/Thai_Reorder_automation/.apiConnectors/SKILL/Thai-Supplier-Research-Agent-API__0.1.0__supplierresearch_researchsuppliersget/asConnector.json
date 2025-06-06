@@ -1,0 +1,88 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.8e75aa66-f9b3-4467-8af8-7cd1017fb029",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "Procurement Analysis is a tool that helps do analysis around procurement including suppliers, products, vendors and shipping companies. It gathers information the web, performance reports and procurement rules to compare different options for procuring a particular product. Input format: This tool needs the know what research needs to be conducted. Examples include \"Research the suppliers for product Xtralife\", \"Research the suppliers for Xtralife\"." ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.2cd0b3a4-0d6b-49ef-9ba7-cc9fa89261f8",
+      "declaredType" : "interface",
+      "id" : "_76270d89-3c19-4bbb-90fe-f537af946986",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.a019d07e-e298-4258-a81a-2d53190c1eff" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "supplierresearch_researchsuppliersget",
+              "name" : "supplierresearch_researchsuppliersget",
+              "isCollection" : false,
+              "description" : "Successful Response",
+              "httpResponseCode" : "200",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_11b05543-7bca-4c50-97bf-4ca9753a9c96",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASH4bd47926bef8ae7a2082d87d81f1770a_app_89bedefc06fe46d99551fedd54d3ae77/supplierresearch_researchsuppliersget_200Type.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/29060d2c-0a45-4ad7-a7bd-279dcf4b74c1.xsd}supplierresearch_researchsuppliersget_200Type"
+            } ],
+            "input" : [ {
+              "path" : "query",
+              "name" : "query",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_271e5090-5d8a-45fe-b4d2-69633b39db4c",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "Procurement Analysis is a tool that helps do analysis around procurement including suppliers, products, vendors and shipping companies. It gathers information the web, performance reports and procurement rules to compare different options for procuring a particular product. Input format: This tool needs the know what research needs to be conducted. Examples include \"Research the suppliers for product Xtralife\", \"Research the suppliers for Xtralife\"." ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "supplierresearch_researchsuppliersget",
+        "id" : "_dd92b619-359e-44d0-b73f-cbfd2347d733"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "skillId" : "Thai-Supplier-Research-Agent-API__0.1.0__supplierresearch_researchsuppliersget",
+            "invocationType" : "SKILL",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.8e75aa66-f9b3-4467-8af8-7cd1017fb029",
+            "displayVersion" : "head",
+            "name" : "Thai Supplier Research Agent API",
+            "project" : "Thai-Supplier-Research-Agent-API__0.1.0__supplierresearch_researchsuppliersget",
+            "applicationId" : "app-89bedefc06fe46d99551fedd54d3ae77",
+            "canUseDefaultVersion" : true,
+            "type" : "workflow",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/29060d2c-0a45-4ad7-a7bd-279dcf4b74c1Service}6023.d09c368c-457b-4cf7-88b6-1fe531e0889b",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "Thai Supplier Research Agent API",
+          "interfaceRef" : "_76270d89-3c19-4bbb-90fe-f537af946986",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_485cf4aa-7bfd-442e-84c7-91406e449730"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/29060d2c-0a45-4ad7-a7bd-279dcf4b74c1Service",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_8a3058e1-1b7e-449a-961e-6266c9f9ccdd"
+  },
+  "poId" : "1.6955374e-2bfb-4c90-bc66-f5c4f7e48104",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery13885735034419600458.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/29060d2c-0a45-4ad7-a7bd-279dcf4b74c1.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/29060d2c-0a45-4ad7-a7bd-279dcf4b74c1Service}supplierresearch_researchsuppliersgetRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/29060d2c-0a45-4ad7-a7bd-279dcf4b74c1Service}supplierresearch_researchsuppliersgetResponseMsg" ]
+}

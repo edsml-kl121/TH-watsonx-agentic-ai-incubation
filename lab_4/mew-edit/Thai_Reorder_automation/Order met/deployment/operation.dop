@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="Order_met" targetRuleProjectName="Order met">
+  <name>Order_met</name>
+  <uuid>be2785e1-cbbb-4811-9f3c-e09087bd33e7</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#c4c1df3c-1d78-49f5-af19-4285804c0def"/>
+  <targetRuleProject href="../../Order%20met#86406730-d009-49fd-8af9-2fa6b138fa55"/>
+  <tags key="operationType">
+    <value><![CDATA[Generative]]></value>
+  </tags>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Order_met"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[false]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

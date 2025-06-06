@@ -1,0 +1,563 @@
+{
+    "definitions": {
+        "rootElement": [
+            {
+                "flowElement": [
+                    {
+                        "parallelMultiple": false,
+                        "outgoing": [
+                            "75c6cb70-dfab-4002-9f65-8a4e176e67db"
+                        ],
+                        "isInterrupting": true,
+                        "extensionElements": {
+                            "default": [
+                                "75c6cb70-dfab-4002-9f65-8a4e176e67db"
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "color": "#F8F8F8",
+                                    "width": 24,
+                                    "x": 25,
+                                    "y": 80,
+                                    "declaredType": "TNodeVisualInfo",
+                                    "height": 24
+                                }
+                            ]
+                        },
+                        "name": "Start",
+                        "declaredType": "startEvent",
+                        "id": "07a8e41b-71e8-4a87-aea0-96fd7c25845f"
+                    },
+                    {
+                        "incoming": [
+                            "e2005250-0ff3-4107-8ff1-866850e071e8"
+                        ],
+                        "extensionElements": {
+                            "nodeVisualInfo": [
+                                {
+                                    "color": "#F8F8F8",
+                                    "width": 24,
+                                    "x": 189,
+                                    "y": 80,
+                                    "declaredType": "TNodeVisualInfo",
+                                    "height": 24
+                                }
+                            ]
+                        },
+                        "name": "End",
+                        "declaredType": "endEvent",
+                        "id": "a6be9b05-307a-425e-8475-1c912b52dd55"
+                    },
+                    {
+                        "targetRef": "5388f030-d018-49b3-87bd-f14012842701",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To End",
+                        "declaredType": "sequenceFlow",
+                        "id": "75c6cb70-dfab-4002-9f65-8a4e176e67db",
+                        "sourceRef": "07a8e41b-71e8-4a87-aea0-96fd7c25845f"
+                    },
+                    {
+                        "id": "298735d5-52b4-4646-8287-7393fe27e61e",
+                        "declaredType": "dataObject",
+                        "name": "AgentResponse",
+                        "isCollection": false,
+                        "itemSubjectRef": "string",
+                        "extensionElements": {
+                            "dataName": [
+                                "AgentResponse"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "0431b57a-6f76-483c-b280-2f4cda286999",
+                        "sourceRef": "5388f030-d018-49b3-87bd-f14012842701",
+                        "targetRef": "95e56ed7-ac92-4fa8-91b0-77beaf33f6b7",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "5388f030-d018-49b3-87bd-f14012842701",
+                        "name": "Thai Supplier Research",
+                        "declaredType": "callActivity",
+                        "startQuantity": 1,
+                        "isForCompensation": false,
+                        "completionQuantity": 1,
+                        "calledElement": "1.6955374e-2bfb-4c90-bc66-f5c4f7e48104",
+                        "default": "0431b57a-6f76-483c-b280-2f4cda286999",
+                        "outgoing": [
+                            "0431b57a-6f76-483c-b280-2f4cda286999"
+                        ],
+                        "incoming": [
+                            "75c6cb70-dfab-4002-9f65-8a4e176e67db"
+                        ],
+                        "resourceRole": [
+                            {
+                                "resourceAssignmentExpression": {
+                                    "expression": {
+                                        "declaredType": "TExpression",
+                                        "content": [
+                                            "\"USER:\" + tw.system.currentProcessInstance.starter.name"
+                                        ]
+                                    }
+                                },
+                                "teamAssignmentType": "Dynamic",
+                                "name": "Custom",
+                                "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer",
+                                "distribution": "None"
+                            }
+                        ],
+                        "extensionElements": {
+                            "activityExtension": [
+                                {
+                                    "conditional": false,
+                                    "transactionalBehavior": "NotSet",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"
+                                }
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ],
+                            "skillTaskInfo": [
+                                {
+                                    "applicationId": "app-89bedefc06fe46d99551fedd54d3ae77",
+                                    "summary": "Thai Supplier Research",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TSkillTaskInfo"
+                                }
+                            ],
+                            "activityType": [
+                                "ServiceTask"
+                            ],
+                            "activitySubType": [
+                                "Skill"
+                            ],
+                            "skillId": [
+                                "Thai-Supplier-Research-Agent-API__0.1.0__supplierresearch_researchsuppliersget"
+                            ],
+                            "calledOperation": [
+                                "_dd92b619-359e-44d0-b73f-cbfd2347d733"
+                            ]
+                        },
+                        "dataInputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.Query"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.query"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "query"
+                            }
+                        ],
+                        "dataOutputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.outputs.supplierresearch_researchsuppliersget.uab_Agent_Response"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.AgentResponse"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "sourceRef": [
+                                    "supplierresearch_researchsuppliersget"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "e2005250-0ff3-4107-8ff1-866850e071e8",
+                        "sourceRef": "95e56ed7-ac92-4fa8-91b0-77beaf33f6b7",
+                        "targetRef": "a6be9b05-307a-425e-8475-1c912b52dd55",
+                        "extensionElements": {
+                            "linkVisualInfo": [
+                                {
+                                    "sourcePortLocation": "rightCenter",
+                                    "showCoachControlLabel": false,
+                                    "labelPosition": 0,
+                                    "targetPortLocation": "leftCenter",
+                                    "declaredType": "TLinkVisualInfo",
+                                    "saveExecutionContext": false,
+                                    "showLabel": false
+                                }
+                            ],
+                            "happySequence": [
+                                true
+                            ]
+                        },
+                        "name": "To node",
+                        "declaredType": "sequenceFlow"
+                    },
+                    {
+                        "id": "95e56ed7-ac92-4fa8-91b0-77beaf33f6b7",
+                        "name": "Get Supplier Name",
+                        "declaredType": "callActivity",
+                        "startQuantity": 1,
+                        "isForCompensation": false,
+                        "completionQuantity": 1,
+                        "calledElement": "1.acaf7293-8668-43c5-8ddb-c1ef7c02d4f8",
+                        "default": "e2005250-0ff3-4107-8ff1-866850e071e8",
+                        "outgoing": [
+                            "e2005250-0ff3-4107-8ff1-866850e071e8"
+                        ],
+                        "incoming": [
+                            "0431b57a-6f76-483c-b280-2f4cda286999"
+                        ],
+                        "extensionElements": {
+                            "activityExtension": [
+                                {
+                                    "conditional": false,
+                                    "transactionalBehavior": "NotSet",
+                                    "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"
+                                }
+                            ],
+                            "nodeVisualInfo": [
+                                {
+                                    "declaredType": "TNodeVisualInfo",
+                                    "x": 555,
+                                    "y": 75,
+                                    "width": 95,
+                                    "height": 70
+                                }
+                            ],
+                            "activityType": [
+                                "ServiceTask"
+                            ],
+                            "activitySubType": [
+                                "GenerativeAI"
+                            ],
+                            "componentName": [
+                                "Get Supplier Name"
+                            ],
+                            "operationId": [
+                                "GetSupplierName-Get_Supplier_Name"
+                            ],
+                            "calledOperation": [
+                                "_c9274409-f70e-45d5-bbd1-7acdcf4f092b"
+                            ],
+                            "automationIdentifierName": [
+                                "uab/Mew_v1_Reorder_automation_demo"
+                            ]
+                        },
+                        "dataInputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.AgentResponse"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.inputs.recommendation"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "targetRef": "recommendation"
+                            }
+                        ],
+                        "dataOutputAssociation": [
+                            {
+                                "assignment": [
+                                    {
+                                        "extensionElements": {
+                                            "mappingMode": [
+                                                "simple"
+                                            ]
+                                        },
+                                        "from": {
+                                            "evaluatesToTypeRef": "",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.outputs.generated_text"
+                                            ]
+                                        },
+                                        "to": {
+                                            "evaluatesToTypeRef": "string",
+                                            "declaredType": "TFormalExpression",
+                                            "content": [
+                                                "tw.local.SupplierName"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "sourceRef": [
+                                    "generated_text"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "laneSet": [
+                    {
+                        "id": "fee60a46-854b-434f-a90e-eea8ba1ed739",
+                        "lane": [
+                            {
+                                "flowNodeRef": [
+                                    "07a8e41b-71e8-4a87-aea0-96fd7c25845f",
+                                    "a6be9b05-307a-425e-8475-1c912b52dd55",
+                                    "5388f030-d018-49b3-87bd-f14012842701",
+                                    "95e56ed7-ac92-4fa8-91b0-77beaf33f6b7"
+                                ],
+                                "extensionElements": {
+                                    "nodeVisualInfo": [
+                                        {
+                                            "color": "#F8F8F8",
+                                            "width": 3000,
+                                            "x": 0,
+                                            "y": 0,
+                                            "declaredType": "TNodeVisualInfo",
+                                            "height": 175
+                                        }
+                                    ]
+                                },
+                                "name": "All Users",
+                                "partitionElementRef": "24.da7e4d23-78cb-4483-98ed-b9c238308a03",
+                                "declaredType": "lane",
+                                "id": "5de6dce3-4880-42ed-b7a2-2ba7cb2a58b9",
+                                "otherAttributes": {
+                                    "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/wle}isSystemLane": "false"
+                                }
+                            },
+                            {
+                                "extensionElements": {
+                                    "nodeVisualInfo": [
+                                        {
+                                            "color": "#F8F8F8",
+                                            "width": 3000,
+                                            "x": 0,
+                                            "y": 175,
+                                            "declaredType": "TNodeVisualInfo",
+                                            "height": 200
+                                        }
+                                    ]
+                                },
+                                "name": "System",
+                                "partitionElementRef": "24.6fd38d02-81cf-48ab-bd42-8ff4c0a1628b",
+                                "declaredType": "lane",
+                                "id": "b2f2e62f-657a-4152-92cb-7c0d6c90503b",
+                                "otherAttributes": {
+                                    "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/wle}isSystemLane": "true"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "resourceRole": [
+                    {
+                        "resourceRef": "24.da7e4d23-78cb-4483-98ed-b9c238308a03",
+                        "name": "participantRef",
+                        "declaredType": "resourceRole"
+                    },
+                    {
+                        "name": "businessDataParticipantRef",
+                        "declaredType": "resourceRole"
+                    },
+                    {
+                        "name": "perfMetricParticipantRef",
+                        "declaredType": "resourceRole"
+                    },
+                    {
+                        "name": "ownerTeamParticipantRef",
+                        "declaredType": "resourceRole"
+                    }
+                ],
+                "isClosed": false,
+                "extensionElements": {
+                    "bpdExtension": [
+                        {
+                            "allowContentOperations": false,
+                            "enableTracking": true,
+                            "workSchedule": {
+                                "timezoneType": 0,
+                                "timeScheduleType": 0,
+                                "holidayScheduleType": 0
+                            },
+                            "instanceName": "\"flow:\" + tw.system.process.instanceId",
+                            "dueDateSettings": {
+                                "dueDate": {
+                                    "unit": "Hours",
+                                    "value": "8",
+                                    "timeOfDay": "00:00"
+                                },
+                                "type": "TimeCalculation"
+                            },
+                            "autoTrackingName": "at1675198607405",
+                            "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmwleext.TBPDExtension",
+                            "optimizeExecForLatency": false,
+                            "dueDateEnabled": false,
+                            "atRiskCalcEnabled": true,
+                            "allowProjectedPathManagement": false,
+                            "autoTrackingEnabled": false,
+                            "sboSyncEnabled": true
+                        }
+                    ],
+                    "caseExtension": [
+                        {
+                            "declaredType": "com.ibm.bpmsdk.model.bpmn20.ibmcaseext.TCaseExtension",
+                            "caseFolder": {
+                                "allowSubfoldersCreation": false,
+                                "allowLocalDoc": false,
+                                "id": "1bb78fc6-3e1a-498a-bc36-427c42a346ed",
+                                "allowExternalFolder": false,
+                                "allowExternalDoc": false
+                            }
+                        }
+                    ],
+                    "isConvergedProcess": [
+                        true
+                    ],
+                    "workflowDisplayName": [
+                        "Thai Get Supplier Flow"
+                    ],
+                    "variableOrder": [
+                        "298735d5-52b4-4646-8287-7393fe27e61e",
+                        "2007.34c682da-8bd8-4251-b363-883c11fdee52",
+                        "2007.4f71fcfa-01f5-4171-ba66-ee4872eb4b26"
+                    ]
+                },
+                "documentation": [
+                    {
+                        "content": [
+                            ""
+                        ],
+                        "textFormat": "text/plain"
+                    }
+                ],
+                "name": "2c96e4c8-c1bc-47ce-890e-8a5c7c65cbae",
+                "declaredType": "process",
+                "id": "25.2c96e4c8-c1bc-47ce-890e-8a5c7c65cbae",
+                "processType": "None",
+                "otherAttributes": {
+                    "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process}executionMode": "longRunning"
+                },
+                "ioSpecification": {
+                    "inputSet": [
+                        {
+                            "id": "_1d32fca4-687b-4e8b-bace-f096e591dd37"
+                        }
+                    ],
+                    "outputSet": [
+                        {
+                            "id": "_78b7bb29-ecfc-4b4b-8972-45a420f02216"
+                        }
+                    ],
+                    "dataOutput": [
+                        {
+                            "id": "2007.34c682da-8bd8-4251-b363-883c11fdee52",
+                            "name": "SupplierName",
+                            "isCollection": false,
+                            "itemSubjectRef": "string",
+                            "extensionElements": {
+                                "dataName": [
+                                    "SupplierName"
+                                ]
+                            }
+                        }
+                    ],
+                    "dataInput": [
+                        {
+                            "id": "2007.4f71fcfa-01f5-4171-ba66-ee4872eb4b26",
+                            "name": "Query",
+                            "isCollection": false,
+                            "itemSubjectRef": "string",
+                            "extensionElements": {
+                                "dataName": [
+                                    "Query"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "flowInterface",
+                "declaredType": "interface",
+                "id": "_d6248401-201b-4423-b674-56edf753cbfd"
+            }
+        ],
+        "targetNamespace": "",
+        "typeLanguage": "http://www.w3.org/2001/XMLSchema",
+        "expressionLanguage": "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+        "id": "154b6f21-5bc2-4f97-bb56-ea7e04344c96"
+    }
+}

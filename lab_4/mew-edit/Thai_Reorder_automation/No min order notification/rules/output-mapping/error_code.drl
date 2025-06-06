@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>noMinOrderNotification</name>
+  <uuid>a52b8227-0655-4549-9da2-641f4329489d</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	'ML model invocation' is in error
+then
+	set decision to the code of the error of 'ML model invocation' ;
+else
+	set decision to null ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

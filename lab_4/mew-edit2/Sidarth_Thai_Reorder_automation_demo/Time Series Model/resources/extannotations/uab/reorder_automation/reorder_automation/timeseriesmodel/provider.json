@@ -1,0 +1,17 @@
+{
+  "name" : "uab/Mew_v1_Reorder_automation_demo/Auto AI P10 BATS Model1744363355248",
+  "type" : "WML",
+  "description" : "",
+  "updateTime" : 1744363355306,
+  "authInfo" : {
+    "authType" : "IAM",
+    "apiKey" : null,
+    "authUrl" : "https://iam.cloud.ibm.com/identity/token"
+  },
+  "providerAdditionalInfo" : {
+    "providerType" : "WML",
+    "mlUrl" : "https://us-south.ml.cloud.ibm.com/",
+    "spaceId" : "c2ce1449-db08-47c7-87c3-edd0ac75ad99"
+  },
+  "version" : "V1"
+}

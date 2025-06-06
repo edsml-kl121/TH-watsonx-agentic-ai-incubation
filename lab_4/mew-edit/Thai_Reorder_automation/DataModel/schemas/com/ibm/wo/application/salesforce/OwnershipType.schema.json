@@ -1,0 +1,10 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/OwnershipType.schema.json",
+  "x-ibm-json-name" : "OwnershipType",
+  "x-ibm-package-name" : "com.ibm.wo.application.salesforce",
+  "title" : "ownership type",
+  "x-ibm-original-json-name" : "retrievewithwhere_Account.OwnershipType",
+  "type" : "string",
+  "enum" : [ "Other", "Private", "Public", "Subsidiary" ]
+}

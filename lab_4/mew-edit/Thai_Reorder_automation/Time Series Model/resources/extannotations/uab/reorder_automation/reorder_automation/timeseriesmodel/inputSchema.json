@@ -1,0 +1,12 @@
+{
+  "id" : "auto_ai_ts_input_schema",
+  "fields" : [ {
+    "name" : "Quantity",
+    "type" : "integer",
+    "nullable" : true
+  }, {
+    "name" : "Sales",
+    "type" : "integer",
+    "nullable" : true
+  } ]
+}

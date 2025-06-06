@@ -1,0 +1,26 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8/bodyType.schema.json",
+  "x-ibm-json-name" : "bodyType",
+  "x-ibm-package-name" : "com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8",
+  "type" : "object",
+  "title" : "bodyType",
+  "x-ibm-original-json-name" : "reorderQuantity.bodyType",
+  "properties" : {
+    "current_inventory" : {
+      "title" : "current_inventory",
+      "type" : "number",
+      "format" : "double"
+    },
+    "forecast" : {
+      "title" : "forecast",
+      "type" : "integer",
+      "format" : "int32"
+    },
+    "historic_data" : {
+      "title" : "historic_data",
+      "type" : "integer",
+      "format" : "int32"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Time Series Model</name>
+  <uuid>642d306e-dec1-4d53-961c-53e3e843f572</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="timeSeriesModel" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="input" name="Last Moth Quantity">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Integer" collection="false" name="Last Moth Quantity"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_ii" name="Last Moth Quantity" typeRef="java.lang.Integer"/>
+    </inputData>
+    <decision id="input-mapping" name="Input mapping">
+        <description>ML model input</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Integer" collection="false" name="Last Moth Quantity"/>
+                <input bomType="java.lang.Integer" collection="false" name="Last Moth Sales"/>
+                <output bomType="uab.reorder_automation.reorder_automation.timeseriesmodel.Input" collection="false" name="Input mapping"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="input_mapping_ii" name="Input mapping" typeRef="uab.reorder_automation.reorder_automation.timeseriesmodel.Input"/>
+        <informationRequirement>
+            <requiredInput href="#input"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output-mapping" name="Output mapping">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="uab.reorder_automation.reorder_automation.timeseriesmodel.Output" collection="false" name="ML model invocation"/>
+                <output bomType="reorder_automation.datamodel.Prediction" collection="false" name="Output mapping"/>
+                <rule defaultRule="false" href="output-mapping/rule%2001.drl" kind="BusinessRule" name="rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="reorder_automation.datamodel.Prediction"/>
+        <informationRequirement>
+            <requiredInput href="#Prediction"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_1" name="Last Moth Sales">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Integer" collection="false" name="Last Moth Sales"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_1_ii" name="Last Moth Sales" typeRef="java.lang.Integer"/>
+    </inputData>
+    <decision id="node_2" name="Sale">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="reorder_automation.datamodel.Prediction" collection="false" name="Output mapping"/>
+                <output bomType="java.lang.Integer" collection="false" name="Sale"/>
+                <rule defaultRule="false" href="node_2/rule.drl" kind="BusinessRule" name="rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="Sale" typeRef="java.lang.Integer"/>
+        <informationRequirement>
+            <requiredInput href="#output-mapping"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_3" name="Quantity">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="reorder_automation.datamodel.Prediction" collection="false" name="Output mapping"/>
+                <output bomType="java.lang.Integer" collection="false" name="Quantity"/>
+                <rule defaultRule="false" href="node_3/rule.drl" kind="BusinessRule" name="rule"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="Quantity" typeRef="java.lang.Integer"/>
+        <informationRequirement>
+            <requiredInput href="#output-mapping"/>
+        </informationRequirement>
+    </decision>
+    <decision id="Prediction" name="ML model invocation">
+        <description>ML model output</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="uab.reorder_automation.reorder_automation.timeseriesmodel.Input" collection="false" name="Input mapping"/>
+                <output bomType="uab.reorder_automation.reorder_automation.timeseriesmodel.Output" collection="false" name="ML model invocation"/>
+                <rule defaultRule="false" href="Prediction/Prediction.drl" kind="BusinessRule" name="Prediction"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="prediction_ii" name="ML model invocation" typeRef="uab.reorder_automation.reorder_automation.timeseriesmodel.Output"/>
+        <informationRequirement>
+            <requiredInput href="#input-mapping"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

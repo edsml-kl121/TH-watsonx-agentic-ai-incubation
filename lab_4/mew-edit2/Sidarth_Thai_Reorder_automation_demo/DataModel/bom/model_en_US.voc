@@ -1,0 +1,579 @@
+
+# com.ibm.wo.application.HASH4bd47926bef8ae7a2082d87d81f1770a_app_89bedefc06fe46d99551fedd54d3ae77.supplierresearch_researchsuppliersget_200Type
+com.ibm.wo.application.HASH4bd47926bef8ae7a2082d87d81f1770a_app_89bedefc06fe46d99551fedd54d3ae77.supplierresearch_researchsuppliersget_200Type#concept.label = supplierresearch_researchsuppliersget_200Type
+com.ibm.wo.application.HASH4bd47926bef8ae7a2082d87d81f1770a_app_89bedefc06fe46d99551fedd54d3ae77.supplierresearch_researchsuppliersget_200Type.supplierresearch_researchsuppliersget_200Type(java.lang.String)#phrase.navigation = a new {supplierresearch_researchsuppliersget_200Type} where {0, uab_Agent_Response}
+com.ibm.wo.application.HASH4bd47926bef8ae7a2082d87d81f1770a_app_89bedefc06fe46d99551fedd54d3ae77.supplierresearch_researchsuppliersget_200Type.uab_Agent_Response#phrase.action = set the uab_Agent_Response of {this} to {uab_Agent_Response}
+com.ibm.wo.application.HASH4bd47926bef8ae7a2082d87d81f1770a_app_89bedefc06fe46d99551fedd54d3ae77.supplierresearch_researchsuppliersget_200Type.uab_Agent_Response#phrase.navigation = {uab_Agent_Response} of {this}
+
+# com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2#concept.ads.readonly = true
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2#concept.com.fasterxml.jackson.annotation.JsonTypeName = createOrderItem_200Type_2
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2#concept.de.generated = true
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2#concept.ilog.rules.bom.annotations.JSONExtraProperty = ilog.rules.bom.dynamic.IlrDynamicProperties@bdd26c6b
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2#concept.imported = true
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2#concept.label = createOrderItem_200Type_2
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2#concept.vocabulary.label = createOrderItem_200Type_2
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2.createOrderItem_200Type_2(java.lang.String)#phrase.navigation = a new {createOrderItem_200Type_2} where {0, message} 
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2.message#phrase.action = set the message of {this} to {message}
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrderItem_200Type_2.message#phrase.navigation = {message} of {this}
+
+# com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrder_200Type_2
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrder_200Type_2#concept.label = createOrder_200Type_2
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrder_200Type_2.createOrder_200Type_2(java.lang.String)#phrase.navigation = a new {createOrder_200Type_2} where {0, order_id}
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrder_200Type_2.order_id#phrase.action = set the order_id of {this} to {order_id}
+com.ibm.wo.application.HASHb141514ca07ad7154d9efc965e887c8f_app_5981a7a0016f4fe1bb5d60480f2f63ed.createOrder_200Type_2.order_id#phrase.navigation = {order_id} of {this}
+
+# com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrderItem_200Type_1
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrderItem_200Type_1#concept.label = createOrderItem_200Type_1
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrderItem_200Type_1.createOrderItem_200Type_1(java.lang.String)#phrase.navigation = a new {createOrderItem_200Type_1} where {0, message}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrderItem_200Type_1.message#phrase.action = set the message of {this} to {message}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrderItem_200Type_1.message#phrase.navigation = {message} of {this}
+
+# com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrder_200Type_1
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrder_200Type_1#concept.label = createOrder_200Type_1
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrder_200Type_1.createOrder_200Type_1(java.lang.String)#phrase.navigation = a new {createOrder_200Type_1} where {0, order_id}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrder_200Type_1.order_id#phrase.action = set the order_id of {this} to {order_id}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.createOrder_200Type_1.order_id#phrase.navigation = {order_id} of {this}
+
+# com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.fetchPriceBooks_200Type
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.fetchPriceBooks_200Type#concept.label = fetchPriceBooks_200Type
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.fetchPriceBooks_200Type.addTo_price_books(com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType)#phrase.action = add {0} to the price_books of {this}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.fetchPriceBooks_200Type.clear_price_books()#phrase.action = clear the price_books of {this}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.fetchPriceBooks_200Type.fetchPriceBooks_200Type(java.util.List)#phrase.navigation = a new {fetchPriceBooks_200Type} where {0, price_book}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.fetchPriceBooks_200Type.price_books#phrase.action = set the price_books of {this} to {price_book}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.fetchPriceBooks_200Type.price_books#phrase.navigation = {price_book} of {this}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.fetchPriceBooks_200Type.removeFrom_price_books(com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType)#phrase.action = remove {0} from the price_books of {this}
+
+# com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType#concept.label = price_booksType
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.price_booksType(java.lang.String,java.lang.String,java.lang.String,double)#phrase.navigation = a new {price_booksType} where {0, uab_Pricebook_ID} {1, uab_Pricebook_Name} {2, uab_Product_Name} {3, uab_Unit_Price}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Pricebook_ID#phrase.action = set the uab_Pricebook_ID of {this} to {uab_Pricebook_ID}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Pricebook_ID#phrase.navigation = {uab_Pricebook_ID} of {this}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Pricebook_Name#phrase.action = set the uab_Pricebook_Name of {this} to {uab_Pricebook_Name}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Pricebook_Name#phrase.navigation = {uab_Pricebook_Name} of {this}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Product_Name#phrase.action = set the uab_Product_Name of {this} to {uab_Product_Name}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Product_Name#phrase.navigation = {uab_Product_Name} of {this}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Unit_Price#phrase.action = set the uab_Unit_Price of {this} to {uab_Unit_Price}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Unit_Price#phrase.addition_setter = add {uab_Unit_Price} to the uab_Unit_Price of {this}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Unit_Price#phrase.navigation = {uab_Unit_Price} of {this}
+com.ibm.wo.application.HASHb17fbb5ed4e549bfdbf539b5a08fb44a_app_c73451bc04c84958aa4a049c338df912.price_booksType.uab_Unit_Price#phrase.subtraction_setter = subtract {uab_Unit_Price} from the uab_Unit_Price of {this}
+
+# com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType#concept.label = New_orderType
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType.New_orderType(java.lang.String,java.time.LocalDate,java.lang.String,java.lang.String)#phrase.navigation = a new {New_orderType} where {0, AccountId} {1, EffectiveDate} {2, Id} {3, Status}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType.accountId#phrase.action = set the AccountId of {this} to {AccountId}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType.accountId#phrase.navigation = {AccountId} of {this}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType.effectiveDate#phrase.action = set the EffectiveDate of {this} to {EffectiveDate}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType.effectiveDate#phrase.navigation = {EffectiveDate} of {this}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType.id#phrase.action = set the Id of {this} to {Id}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType.id#phrase.navigation = {Id} of {this}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType.status#phrase.action = set the Status of {this} to {Status}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType.status#phrase.navigation = {Status} of {this}
+
+# com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrderItem_200Type
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrderItem_200Type#concept.label = createOrderItem_200Type
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrderItem_200Type.createOrderItem_200Type(java.lang.String)#phrase.navigation = a new {createOrderItem_200Type} where {0, message}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrderItem_200Type.message#phrase.action = set the message of {this} to {message}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrderItem_200Type.message#phrase.navigation = {message} of {this}
+
+# com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrder_200Type
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrder_200Type#concept.label = createOrder_200Type
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrder_200Type.createOrder_200Type(com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.New_orderType)#phrase.navigation = a new {createOrder_200Type} where {0, new order}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrder_200Type.new_order#phrase.action = set the new order of {this} to {new order}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrder_200Type.new_order#phrase.clearer = clear the new order of {this}
+com.ibm.wo.application.HASHcf15979b8bf4be57c7709d6a7b1c8dd0_app_f6fb079701ce4728a716772189ef5364.createOrder_200Type.new_order#phrase.navigation = {new order} of {this}
+
+# com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType#concept.label = bodyType
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.bodyType(double,int,int)#phrase.navigation = a new {bodyType} where {0, current_inventory} {1, forecast} {2, historic_data}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.current_inventory#phrase.action = set the current_inventory of {this} to {current_inventory}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.current_inventory#phrase.addition_setter = add {current_inventory} to the current_inventory of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.current_inventory#phrase.navigation = {current_inventory} of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.current_inventory#phrase.subtraction_setter = subtract {current_inventory} from the current_inventory of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.forecast#phrase.action = set the forecast of {this} to {forecast}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.forecast#phrase.addition_setter = add {forecast} to the forecast of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.forecast#phrase.navigation = {forecast} of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.forecast#phrase.subtraction_setter = subtract {forecast} from the forecast of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.historic_data#phrase.action = set the historic_data of {this} to {historic_data}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.historic_data#phrase.addition_setter = add {historic_data} to the historic_data of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.historic_data#phrase.navigation = {historic_data} of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.bodyType.historic_data#phrase.subtraction_setter = subtract {historic_data} from the historic_data of {this}
+
+# com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.reorderQuantity_200Type
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.reorderQuantity_200Type#concept.label = reorderQuantity_200Type
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.reorderQuantity_200Type.reasoning#phrase.action = set the reasoning of {this} to {reasoning}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.reorderQuantity_200Type.reasoning#phrase.navigation = {reasoning} of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.reorderQuantity_200Type.reorderQuantity_200Type(java.lang.String,int)#phrase.navigation = a new {reorderQuantity_200Type} where {0, reasoning} {1, reorder_quantity}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.reorderQuantity_200Type.reorder_quantity#phrase.action = set the reorder_quantity of {this} to {reorder_quantity}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.reorderQuantity_200Type.reorder_quantity#phrase.addition_setter = add {reorder_quantity} to the reorder_quantity of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.reorderQuantity_200Type.reorder_quantity#phrase.navigation = {reorder_quantity} of {this}
+com.ibm.wo.application.HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8.reorderQuantity_200Type.reorder_quantity#phrase.subtraction_setter = subtract {reorder_quantity} from the reorder_quantity of {this}
+
+# com.ibm.wo.application.composite_skill._5ae816c1ab548458b3d587db99586b9_200Type
+com.ibm.wo.application.composite_skill._5ae816c1ab548458b3d587db99586b9_200Type#concept.label = _5ae816c1ab548458b3d587db99586b9_200Type
+com.ibm.wo.application.composite_skill._5ae816c1ab548458b3d587db99586b9_200Type._5ae816c1ab548458b3d587db99586b9_200Type(java.lang.String,int)#phrase.navigation = a new {_5ae816c1ab548458b3d587db99586b9_200Type} where {0, reasoning} {1, reorder_quantity}
+com.ibm.wo.application.composite_skill._5ae816c1ab548458b3d587db99586b9_200Type.reasoning#phrase.action = set the reasoning of {this} to {reasoning}
+com.ibm.wo.application.composite_skill._5ae816c1ab548458b3d587db99586b9_200Type.reasoning#phrase.navigation = {reasoning} of {this}
+com.ibm.wo.application.composite_skill._5ae816c1ab548458b3d587db99586b9_200Type.reorder_quantity#phrase.action = set the reorder_quantity of {this} to {reorder_quantity}
+com.ibm.wo.application.composite_skill._5ae816c1ab548458b3d587db99586b9_200Type.reorder_quantity#phrase.addition_setter = add {reorder_quantity} to the reorder_quantity of {this}
+com.ibm.wo.application.composite_skill._5ae816c1ab548458b3d587db99586b9_200Type.reorder_quantity#phrase.navigation = {reorder_quantity} of {this}
+com.ibm.wo.application.composite_skill._5ae816c1ab548458b3d587db99586b9_200Type.reorder_quantity#phrase.subtraction_setter = subtract {reorder_quantity} from the reorder_quantity of {this}
+
+# com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type#concept.label = _a6aab124ec340e4a6feb0e2eda95f1c_200Type
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type._a6aab124ec340e4a6feb0e2eda95f1c_200Type(java.lang.String,java.lang.String,java.lang.String,double)#phrase.navigation = a new {_a6aab124ec340e4a6feb0e2eda95f1c_200Type} where {0, Supplier ID} {1, Supplier Name} {2, Supplier Pricebook ID} {3, Unit Price}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Supplier_ID#phrase.action = set the Supplier ID of {this} to {Supplier ID}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Supplier_ID#phrase.navigation = {Supplier ID} of {this}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Supplier_Name#phrase.action = set the Supplier Name of {this} to {Supplier Name}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Supplier_Name#phrase.navigation = {Supplier Name} of {this}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Supplier_Pricebook_ID#phrase.action = set the Supplier Pricebook ID of {this} to {Supplier Pricebook ID}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Supplier_Pricebook_ID#phrase.navigation = {Supplier Pricebook ID} of {this}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Unit_Price#phrase.action = set the Unit Price of {this} to {Unit Price}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Unit_Price#phrase.addition_setter = add {Unit Price} to the Unit Price of {this}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Unit_Price#phrase.navigation = {Unit Price} of {this}
+com.ibm.wo.application.composite_skill._a6aab124ec340e4a6feb0e2eda95f1c_200Type.uab_Unit_Price#phrase.subtraction_setter = subtract {Unit Price} from the Unit Price of {this}
+
+# com.ibm.wo.application.gmail.AttachmentsType
+com.ibm.wo.application.gmail.AttachmentsType#concept.label = AttachmentsType
+com.ibm.wo.application.gmail.AttachmentsType.AttachmentsType(com.ibm.automation.runtime.DocumentRef,java.lang.String)#phrase.navigation = a new {AttachmentsType} where {0, Content} {1, File name}
+com.ibm.wo.application.gmail.AttachmentsType.content#phrase.action = set the Content of {this} to {Content}
+com.ibm.wo.application.gmail.AttachmentsType.content#phrase.clearer = clear the Content of {this}
+com.ibm.wo.application.gmail.AttachmentsType.content#phrase.navigation = {Content} of {this}
+com.ibm.wo.application.gmail.AttachmentsType.fileName#phrase.action = set the File name of {this} to {File name}
+com.ibm.wo.application.gmail.AttachmentsType.fileName#phrase.navigation = {File name} of {this}
+
+# com.ibm.wo.application.gmail.contentTypeType
+com.ibm.wo.application.gmail.contentTypeType#concept.label = content type type
+com.ibm.wo.application.gmail.contentTypeType.Text/html#instance.label = text/html
+com.ibm.wo.application.gmail.contentTypeType.Text/plain#instance.label = text/plain
+
+# com.ibm.wo.application.gmail.richTextBodyType
+com.ibm.wo.application.gmail.richTextBodyType#concept.label = richTextBodyType
+com.ibm.wo.application.gmail.richTextBodyType.content#phrase.action = set the Content of {this} to {Content}
+com.ibm.wo.application.gmail.richTextBodyType.content#phrase.navigation = {Content} of {this}
+com.ibm.wo.application.gmail.richTextBodyType.contentType#phrase.action = set the content type of {this} to {content type}
+com.ibm.wo.application.gmail.richTextBodyType.contentType#phrase.clearer = clear the content type of {this}
+com.ibm.wo.application.gmail.richTextBodyType.contentType#phrase.navigation = {content type} of {this}
+com.ibm.wo.application.gmail.richTextBodyType.richTextBodyType(java.lang.String,com.ibm.wo.application.gmail.contentTypeType)#phrase.navigation = a new {richTextBodyType} where {0, Content} {1, content type}
+
+# com.ibm.wo.application.salesforce.AccountSourceType
+com.ibm.wo.application.salesforce.AccountSourceType#concept.label = account source type
+com.ibm.wo.application.salesforce.AccountSourceType.Other#instance.label = other
+com.ibm.wo.application.salesforce.AccountSourceType.PartnerReferral#instance.label = partner referral
+com.ibm.wo.application.salesforce.AccountSourceType.PhoneInquiry#instance.label = phone inquiry
+com.ibm.wo.application.salesforce.AccountSourceType.PurchasedList#instance.label = purchased list
+com.ibm.wo.application.salesforce.AccountSourceType.Web#instance.label = web
+
+# com.ibm.wo.application.salesforce.Active__cType
+com.ibm.wo.application.salesforce.Active__cType#concept.label = active  c type
+com.ibm.wo.application.salesforce.Active__cType.No#instance.label = no
+com.ibm.wo.application.salesforce.Active__cType.Yes#instance.label = yes
+
+# com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType#concept.label = billing geocode accuracy type
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.Address#instance.label = address
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.Block#instance.label = block
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.City#instance.label = city
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.County#instance.label = county
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.ExtendedZip#instance.label = extended zip
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.NearAddress#instance.label = near address
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.Neighborhood#instance.label = neighborhood
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.State#instance.label = state
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.Street#instance.label = street
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.Unknown#instance.label = unknown
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType.Zip#instance.label = zip
+
+# com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1#concept.label = billing geocode accuracy type 1
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.Address#instance.label = address
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.Block#instance.label = block
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.City#instance.label = city
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.County#instance.label = county
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.ExtendedZip#instance.label = extended zip
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.NearAddress#instance.label = near address
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.Neighborhood#instance.label = neighborhood
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.State#instance.label = state
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.Street#instance.label = street
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.Unknown#instance.label = unknown
+com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType_1.Zip#instance.label = zip
+
+# com.ibm.wo.application.salesforce.CleanStatusType
+com.ibm.wo.application.salesforce.CleanStatusType#concept.label = clean status type
+com.ibm.wo.application.salesforce.CleanStatusType.Acknowledged#instance.label = acknowledged
+com.ibm.wo.application.salesforce.CleanStatusType.Different#instance.label = different
+com.ibm.wo.application.salesforce.CleanStatusType.Inactive#instance.label = inactive
+com.ibm.wo.application.salesforce.CleanStatusType.Matched#instance.label = matched
+com.ibm.wo.application.salesforce.CleanStatusType.NotFound#instance.label = not found
+com.ibm.wo.application.salesforce.CleanStatusType.Pending#instance.label = pending
+com.ibm.wo.application.salesforce.CleanStatusType.SelectMatch#instance.label = select match
+com.ibm.wo.application.salesforce.CleanStatusType.Skipped#instance.label = skipped
+
+# com.ibm.wo.application.salesforce.CustomerPriority__cType
+com.ibm.wo.application.salesforce.CustomerPriority__cType#concept.label = customer priority  c type
+com.ibm.wo.application.salesforce.CustomerPriority__cType.High#instance.label = high
+com.ibm.wo.application.salesforce.CustomerPriority__cType.Low#instance.label = low
+com.ibm.wo.application.salesforce.CustomerPriority__cType.Medium#instance.label = medium
+
+# com.ibm.wo.application.salesforce.FamilyType
+com.ibm.wo.application.salesforce.FamilyType#concept.label = family type
+com.ibm.wo.application.salesforce.FamilyType.None#instance.label = none
+
+# com.ibm.wo.application.salesforce.IndustryType
+com.ibm.wo.application.salesforce.IndustryType#concept.label = industry type
+com.ibm.wo.application.salesforce.IndustryType.Agriculture#instance.label = agriculture
+com.ibm.wo.application.salesforce.IndustryType.Apparel#instance.label = apparel
+com.ibm.wo.application.salesforce.IndustryType.Banking#instance.label = banking
+com.ibm.wo.application.salesforce.IndustryType.Biotechnology#instance.label = biotechnology
+com.ibm.wo.application.salesforce.IndustryType.Chemicals#instance.label = chemicals
+com.ibm.wo.application.salesforce.IndustryType.Communications#instance.label = communications
+com.ibm.wo.application.salesforce.IndustryType.Construction#instance.label = construction
+com.ibm.wo.application.salesforce.IndustryType.Consulting#instance.label = consulting
+com.ibm.wo.application.salesforce.IndustryType.Education#instance.label = education
+com.ibm.wo.application.salesforce.IndustryType.Electronics#instance.label = electronics
+com.ibm.wo.application.salesforce.IndustryType.Energy#instance.label = energy
+com.ibm.wo.application.salesforce.IndustryType.Engineering#instance.label = engineering
+com.ibm.wo.application.salesforce.IndustryType.Entertainment#instance.label = entertainment
+com.ibm.wo.application.salesforce.IndustryType.Environmental#instance.label = environmental
+com.ibm.wo.application.salesforce.IndustryType.Finance#instance.label = finance
+com.ibm.wo.application.salesforce.IndustryType.Food&Beverage#instance.label = food & beverage
+com.ibm.wo.application.salesforce.IndustryType.Government#instance.label = government
+com.ibm.wo.application.salesforce.IndustryType.Healthcare#instance.label = healthcare
+com.ibm.wo.application.salesforce.IndustryType.Hospitality#instance.label = hospitality
+com.ibm.wo.application.salesforce.IndustryType.Insurance#instance.label = insurance
+com.ibm.wo.application.salesforce.IndustryType.Machinery#instance.label = machinery
+com.ibm.wo.application.salesforce.IndustryType.Manufacturing#instance.label = manufacturing
+com.ibm.wo.application.salesforce.IndustryType.Media#instance.label = media
+com.ibm.wo.application.salesforce.IndustryType.NotForProfit#instance.label = not for profit
+com.ibm.wo.application.salesforce.IndustryType.Other#instance.label = other
+com.ibm.wo.application.salesforce.IndustryType.Recreation#instance.label = recreation
+com.ibm.wo.application.salesforce.IndustryType.Retail#instance.label = retail
+com.ibm.wo.application.salesforce.IndustryType.Shipping#instance.label = shipping
+com.ibm.wo.application.salesforce.IndustryType.Technology#instance.label = technology
+com.ibm.wo.application.salesforce.IndustryType.Telecommunications#instance.label = telecommunications
+com.ibm.wo.application.salesforce.IndustryType.Transportation#instance.label = transportation
+com.ibm.wo.application.salesforce.IndustryType.Utilities#instance.label = utilities
+
+# com.ibm.wo.application.salesforce.OwnershipType
+com.ibm.wo.application.salesforce.OwnershipType#concept.label = ownership type
+com.ibm.wo.application.salesforce.OwnershipType.Other#instance.label = other
+com.ibm.wo.application.salesforce.OwnershipType.Private#instance.label = private
+com.ibm.wo.application.salesforce.OwnershipType.Public#instance.label = public
+com.ibm.wo.application.salesforce.OwnershipType.Subsidiary#instance.label = subsidiary
+
+# com.ibm.wo.application.salesforce.ProductClassType
+com.ibm.wo.application.salesforce.ProductClassType#concept.label = product class type
+com.ibm.wo.application.salesforce.ProductClassType.Bundle#instance.label = bundle
+com.ibm.wo.application.salesforce.ProductClassType.Set#instance.label = set
+com.ibm.wo.application.salesforce.ProductClassType.Simple#instance.label = simple
+com.ibm.wo.application.salesforce.ProductClassType.Variation#instance.label = variation
+com.ibm.wo.application.salesforce.ProductClassType.VariationParent#instance.label = variation parent
+
+# com.ibm.wo.application.salesforce.QuantityUnitOfMeasureType
+com.ibm.wo.application.salesforce.QuantityUnitOfMeasureType#concept.label = quantity unit of measure type
+com.ibm.wo.application.salesforce.QuantityUnitOfMeasureType.Each#instance.label = each
+
+# com.ibm.wo.application.salesforce.RatingType
+com.ibm.wo.application.salesforce.RatingType#concept.label = rating type
+com.ibm.wo.application.salesforce.RatingType.Bronze#instance.label = bronze
+com.ibm.wo.application.salesforce.RatingType.Gold#instance.label = gold
+com.ibm.wo.application.salesforce.RatingType.Silver#instance.label = silver
+
+# com.ibm.wo.application.salesforce.SLA__cType
+com.ibm.wo.application.salesforce.SLA__cType#concept.label = SLA  c type
+com.ibm.wo.application.salesforce.SLA__cType.Bronze#instance.label = bronze
+com.ibm.wo.application.salesforce.SLA__cType.Gold#instance.label = gold
+com.ibm.wo.application.salesforce.SLA__cType.Platinum#instance.label = platinum
+com.ibm.wo.application.salesforce.SLA__cType.Silver#instance.label = silver
+
+# com.ibm.wo.application.salesforce.StatusType
+com.ibm.wo.application.salesforce.StatusType#concept.label = status type
+com.ibm.wo.application.salesforce.StatusType.Activated#instance.label = activated
+com.ibm.wo.application.salesforce.StatusType.Draft#instance.label = draft
+
+# com.ibm.wo.application.salesforce.TypeType
+com.ibm.wo.application.salesforce.TypeType#concept.label = type type
+com.ibm.wo.application.salesforce.TypeType.ChannelPartner/Reseller#instance.label = channel partner / reseller
+com.ibm.wo.application.salesforce.TypeType.Customer-Channel#instance.label = customer - channel
+com.ibm.wo.application.salesforce.TypeType.Customer-Direct#instance.label = customer - direct
+com.ibm.wo.application.salesforce.TypeType.InstallationPartner#instance.label = installation partner
+com.ibm.wo.application.salesforce.TypeType.Other#instance.label = other
+com.ibm.wo.application.salesforce.TypeType.Prospect#instance.label = prospect
+com.ibm.wo.application.salesforce.TypeType.TechnologyPartner#instance.label = technology partner
+
+# com.ibm.wo.application.salesforce.TypeType_1
+com.ibm.wo.application.salesforce.TypeType_1#concept.label = type type 1
+com.ibm.wo.application.salesforce.TypeType_1.Base#instance.label = base
+com.ibm.wo.application.salesforce.TypeType_1.Bundle#instance.label = bundle
+com.ibm.wo.application.salesforce.TypeType_1.Set#instance.label = set
+
+# com.ibm.wo.application.salesforce.UpsellOpportunity__cType
+com.ibm.wo.application.salesforce.UpsellOpportunity__cType#concept.label = upsell opportunity  c type
+com.ibm.wo.application.salesforce.UpsellOpportunity__cType.Maybe#instance.label = maybe
+com.ibm.wo.application.salesforce.UpsellOpportunity__cType.No#instance.label = no
+com.ibm.wo.application.salesforce.UpsellOpportunity__cType.Yes#instance.label = yes
+
+# com.ibm.wo.application.salesforce.attributesType
+com.ibm.wo.application.salesforce.attributesType#concept.label = attributesType
+com.ibm.wo.application.salesforce.attributesType.attributesType(java.lang.String,java.lang.String)#phrase.navigation = a new {attributesType} where {0, Type} {1, Url}
+com.ibm.wo.application.salesforce.attributesType.type#phrase.action = set the Type of {this} to {Type}
+com.ibm.wo.application.salesforce.attributesType.type#phrase.navigation = {Type} of {this}
+com.ibm.wo.application.salesforce.attributesType.url#phrase.action = set the Url of {this} to {Url}
+com.ibm.wo.application.salesforce.attributesType.url#phrase.navigation = {Url} of {this}
+
+# com.ibm.wo.application.salesforce.instancesType
+com.ibm.wo.application.salesforce.instancesType#concept.label = instancesType
+com.ibm.wo.application.salesforce.instancesType.SLAExpirationDate__c#phrase.action = set the SLA Expiration Date of {this} to {SLA Expiration Date}
+com.ibm.wo.application.salesforce.instancesType.SLAExpirationDate__c#phrase.navigation = {SLA Expiration Date} of {this}
+com.ibm.wo.application.salesforce.instancesType.SLASerialNumber__c#phrase.action = set the SLA Serial Number of {this} to {SLA Serial Number}
+com.ibm.wo.application.salesforce.instancesType.SLASerialNumber__c#phrase.navigation = {SLA Serial Number} of {this}
+com.ibm.wo.application.salesforce.instancesType.SLA__c#phrase.action = set the SLA  c of {this} to {SLA  c}
+com.ibm.wo.application.salesforce.instancesType.SLA__c#phrase.clearer = clear the SLA  c of {this}
+com.ibm.wo.application.salesforce.instancesType.SLA__c#phrase.navigation = {SLA  c} of {this}
+com.ibm.wo.application.salesforce.instancesType.accountNumber#phrase.action = set the Account Number of {this} to {Account Number}
+com.ibm.wo.application.salesforce.instancesType.accountNumber#phrase.navigation = {Account Number} of {this}
+com.ibm.wo.application.salesforce.instancesType.accountSource#phrase.action = set the account source of {this} to {account source}
+com.ibm.wo.application.salesforce.instancesType.accountSource#phrase.clearer = clear the account source of {this}
+com.ibm.wo.application.salesforce.instancesType.accountSource#phrase.navigation = {account source} of {this}
+com.ibm.wo.application.salesforce.instancesType.active__c#phrase.action = set the active  c of {this} to {active  c}
+com.ibm.wo.application.salesforce.instancesType.active__c#phrase.clearer = clear the active  c of {this}
+com.ibm.wo.application.salesforce.instancesType.active__c#phrase.navigation = {active  c} of {this}
+com.ibm.wo.application.salesforce.instancesType.annualRevenue#phrase.action = set the Annual revenue of {this} to {Annual revenue}
+com.ibm.wo.application.salesforce.instancesType.annualRevenue#phrase.addition_setter = add {Annual revenue} to the Annual revenue of {this}
+com.ibm.wo.application.salesforce.instancesType.annualRevenue#phrase.navigation = {Annual revenue} of {this}
+com.ibm.wo.application.salesforce.instancesType.annualRevenue#phrase.subtraction_setter = subtract {Annual revenue} from the Annual revenue of {this}
+com.ibm.wo.application.salesforce.instancesType.attributes#phrase.action = set the attributes of {this} to {attributes}
+com.ibm.wo.application.salesforce.instancesType.attributes#phrase.clearer = clear the attributes of {this}
+com.ibm.wo.application.salesforce.instancesType.attributes#phrase.navigation = {attributes} of {this}
+com.ibm.wo.application.salesforce.instancesType.billingCity#phrase.action = set the Billing city of {this} to {Billing city}
+com.ibm.wo.application.salesforce.instancesType.billingCity#phrase.navigation = {Billing city} of {this}
+com.ibm.wo.application.salesforce.instancesType.billingCountry#phrase.action = set the Billing country of {this} to {Billing country}
+com.ibm.wo.application.salesforce.instancesType.billingCountry#phrase.navigation = {Billing country} of {this}
+com.ibm.wo.application.salesforce.instancesType.billingGeocodeAccuracy#phrase.action = set the billing geocode accuracy of {this} to {billing geocode accuracy}
+com.ibm.wo.application.salesforce.instancesType.billingGeocodeAccuracy#phrase.clearer = clear the billing geocode accuracy of {this}
+com.ibm.wo.application.salesforce.instancesType.billingGeocodeAccuracy#phrase.navigation = {billing geocode accuracy} of {this}
+com.ibm.wo.application.salesforce.instancesType.billingLatitude#phrase.action = set the Billing latitude of {this} to {Billing latitude}
+com.ibm.wo.application.salesforce.instancesType.billingLatitude#phrase.addition_setter = add {Billing latitude} to the Billing latitude of {this}
+com.ibm.wo.application.salesforce.instancesType.billingLatitude#phrase.navigation = {Billing latitude} of {this}
+com.ibm.wo.application.salesforce.instancesType.billingLatitude#phrase.subtraction_setter = subtract {Billing latitude} from the Billing latitude of {this}
+com.ibm.wo.application.salesforce.instancesType.billingLongitude#phrase.action = set the Billing longitude of {this} to {Billing longitude}
+com.ibm.wo.application.salesforce.instancesType.billingLongitude#phrase.addition_setter = add {Billing longitude} to the Billing longitude of {this}
+com.ibm.wo.application.salesforce.instancesType.billingLongitude#phrase.navigation = {Billing longitude} of {this}
+com.ibm.wo.application.salesforce.instancesType.billingLongitude#phrase.subtraction_setter = subtract {Billing longitude} from the Billing longitude of {this}
+com.ibm.wo.application.salesforce.instancesType.billingPostalCode#phrase.action = set the Billing zip or postal code of {this} to {Billing zip or postal code}
+com.ibm.wo.application.salesforce.instancesType.billingPostalCode#phrase.navigation = {Billing zip or postal code} of {this}
+com.ibm.wo.application.salesforce.instancesType.billingState#phrase.action = set the Billing State or province of {this} to {Billing State or province}
+com.ibm.wo.application.salesforce.instancesType.billingState#phrase.navigation = {Billing State or province} of {this}
+com.ibm.wo.application.salesforce.instancesType.billingStreet#phrase.action = set the Billing street of {this} to {Billing street}
+com.ibm.wo.application.salesforce.instancesType.billingStreet#phrase.navigation = {Billing street} of {this}
+com.ibm.wo.application.salesforce.instancesType.cleanStatus#phrase.action = set the clean status of {this} to {clean status}
+com.ibm.wo.application.salesforce.instancesType.cleanStatus#phrase.clearer = clear the clean status of {this}
+com.ibm.wo.application.salesforce.instancesType.cleanStatus#phrase.navigation = {clean status} of {this}
+com.ibm.wo.application.salesforce.instancesType.createdById#phrase.action = set the Created by ID of {this} to {Created by ID}
+com.ibm.wo.application.salesforce.instancesType.createdById#phrase.navigation = {Created by ID} of {this}
+com.ibm.wo.application.salesforce.instancesType.createdDate#phrase.action = set the Created date of {this} to {Created date}
+com.ibm.wo.application.salesforce.instancesType.createdDate#phrase.navigation = {Created date} of {this}
+com.ibm.wo.application.salesforce.instancesType.customerPriority__c#phrase.action = set the customer priority  c of {this} to {customer priority  c}
+com.ibm.wo.application.salesforce.instancesType.customerPriority__c#phrase.clearer = clear the customer priority  c of {this}
+com.ibm.wo.application.salesforce.instancesType.customerPriority__c#phrase.navigation = {customer priority  c} of {this}
+com.ibm.wo.application.salesforce.instancesType.dandbCompanyId#phrase.action = set the D&B Company ID of {this} to {D&B Company ID}
+com.ibm.wo.application.salesforce.instancesType.dandbCompanyId#phrase.navigation = {D&B Company ID} of {this}
+com.ibm.wo.application.salesforce.instancesType.description#phrase.action = set the Account description of {this} to {Account description}
+com.ibm.wo.application.salesforce.instancesType.description#phrase.navigation = {Account description} of {this}
+com.ibm.wo.application.salesforce.instancesType.dunsNumber#phrase.action = set the D-U-N-S Number of {this} to {D-U-N-S Number}
+com.ibm.wo.application.salesforce.instancesType.dunsNumber#phrase.navigation = {D-U-N-S Number} of {this}
+com.ibm.wo.application.salesforce.instancesType.fax#phrase.action = set the Account fax of {this} to {Account fax}
+com.ibm.wo.application.salesforce.instancesType.fax#phrase.navigation = {Account fax} of {this}
+com.ibm.wo.application.salesforce.instancesType.id#phrase.action = set the Account ID of {this} to {Account ID}
+com.ibm.wo.application.salesforce.instancesType.id#phrase.navigation = {Account ID} of {this}
+com.ibm.wo.application.salesforce.instancesType.industry#phrase.action = set the industry of {this} to {industry}
+com.ibm.wo.application.salesforce.instancesType.industry#phrase.clearer = clear the industry of {this}
+com.ibm.wo.application.salesforce.instancesType.industry#phrase.navigation = {industry} of {this}
+com.ibm.wo.application.salesforce.instancesType.instancesType(java.time.LocalDate,java.lang.String,com.ibm.wo.application.salesforce.SLA__cType,java.lang.String,com.ibm.wo.application.salesforce.AccountSourceType,com.ibm.wo.application.salesforce.Active__cType,double,com.ibm.wo.application.salesforce.attributesType,java.lang.String,java.lang.String,com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType,double,double,java.lang.String,java.lang.String,java.lang.String,com.ibm.wo.application.salesforce.CleanStatusType,java.lang.String,java.time.ZonedDateTime,com.ibm.wo.application.salesforce.CustomerPriority__cType,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.ibm.wo.application.salesforce.IndustryType,boolean,java.lang.String,java.lang.String,java.time.LocalDate,java.lang.String,java.time.ZonedDateTime,java.time.ZonedDateTime,java.time.ZonedDateTime,java.lang.String,java.lang.String,java.lang.String,java.lang.String,double,double,java.lang.String,java.lang.String,com.ibm.wo.application.salesforce.OwnershipType,java.lang.String,java.lang.String,java.lang.String,com.ibm.wo.application.salesforce.RatingType,java.lang.String,java.lang.String,com.ibm.wo.application.salesforce.BillingGeocodeAccuracyType,double,double,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.ZonedDateTime,java.lang.String,java.lang.String,com.ibm.wo.application.salesforce.TypeType,com.ibm.wo.application.salesforce.UpsellOpportunity__cType,java.lang.String,java.lang.String)#phrase.navigation = a new {instancesType} where {0, SLA Expiration Date} {1, SLA Serial Number} {2, SLA  c} {3, Account Number} {4, account source} {5, active  c} {6, Annual revenue} {7, attributes} {8, Billing city} {9, Billing country} {10, billing geocode accuracy} {11, Billing latitude} {12, Billing longitude} {13, Billing zip or postal code} {14, Billing State or province} {15, Billing street} {16, clean status} {17, Created by ID} {18, Created date} {19, customer priority  c} {20, D&B Company ID} {21, Account description} {22, D-U-N-S Number} {23, Account fax} {24, Account ID} {25, industry} {26, Deleted} {27, Data.com key} {28, Jigsaw company ID} {29, Last activity} {30, Last-modified ID} {31, Last-modified date} {32, Last-referenced date} {33, Last-viewed date} {34, Primary record ID} {35, NAICS Code} {36, NAICS Description} {37, Account name} {38, Employees} {39, Number of Locations} {40, Operating Hour ID} {41, Owner ID} {42, ownership} {43, Parent account ID} {44, Account phone} {45, Photo URL} {46, rating} {47, Shipping city} {48, Shipping country} {49, shipping geocode accuracy} {50, Shipping latitude} {51, Shipping longitude} {52, Shipping zip or postal Code} {53, Shipping state or province} {54, Shipping street} {55, SIC Code} {56, SIC description} {57, Account site} {58, System modstamp} {59, Ticker symbol} {60, Tradestyle} {61, type} {62, upsell opportunity  c} {63, Website} {64, Year Started}
+com.ibm.wo.application.salesforce.instancesType.isDeleted#phrase.action[0] = {this} gets Deleted only if {Deleted}
+com.ibm.wo.application.salesforce.instancesType.isDeleted#phrase.action[1] = make it {Deleted} that {this} is Deleted
+com.ibm.wo.application.salesforce.instancesType.isDeleted#phrase.action[1].deprecated = true
+com.ibm.wo.application.salesforce.instancesType.isDeleted#phrase.navigation = {this} is Deleted
+com.ibm.wo.application.salesforce.instancesType.isDeleted#phrase.negative_predicate = {this} is not Deleted
+com.ibm.wo.application.salesforce.instancesType.isDeleted#phrase.negative_predicate_setter = {this} does not get Deleted
+com.ibm.wo.application.salesforce.instancesType.isDeleted#phrase.positive_predicate_setter = {this} gets Deleted
+com.ibm.wo.application.salesforce.instancesType.jigsaw#phrase.action = set the Data.com key of {this} to {Data.com key}
+com.ibm.wo.application.salesforce.instancesType.jigsaw#phrase.navigation = {Data.com key} of {this}
+com.ibm.wo.application.salesforce.instancesType.jigsawCompanyId#phrase.action = set the Jigsaw company ID of {this} to {Jigsaw company ID}
+com.ibm.wo.application.salesforce.instancesType.jigsawCompanyId#phrase.navigation = {Jigsaw company ID} of {this}
+com.ibm.wo.application.salesforce.instancesType.lastActivityDate#phrase.action = set the Last activity of {this} to {Last activity}
+com.ibm.wo.application.salesforce.instancesType.lastActivityDate#phrase.navigation = {Last activity} of {this}
+com.ibm.wo.application.salesforce.instancesType.lastModifiedById#phrase.action = set the Last-modified ID of {this} to {Last-modified ID}
+com.ibm.wo.application.salesforce.instancesType.lastModifiedById#phrase.navigation = {Last-modified ID} of {this}
+com.ibm.wo.application.salesforce.instancesType.lastModifiedDate#phrase.action = set the Last-modified date of {this} to {Last-modified date}
+com.ibm.wo.application.salesforce.instancesType.lastModifiedDate#phrase.navigation = {Last-modified date} of {this}
+com.ibm.wo.application.salesforce.instancesType.lastReferencedDate#phrase.action = set the Last-referenced date of {this} to {Last-referenced date}
+com.ibm.wo.application.salesforce.instancesType.lastReferencedDate#phrase.navigation = {Last-referenced date} of {this}
+com.ibm.wo.application.salesforce.instancesType.lastViewedDate#phrase.action = set the Last-viewed date of {this} to {Last-viewed date}
+com.ibm.wo.application.salesforce.instancesType.lastViewedDate#phrase.navigation = {Last-viewed date} of {this}
+com.ibm.wo.application.salesforce.instancesType.masterRecordId#phrase.action = set the Primary record ID of {this} to {Primary record ID}
+com.ibm.wo.application.salesforce.instancesType.masterRecordId#phrase.navigation = {Primary record ID} of {this}
+com.ibm.wo.application.salesforce.instancesType.naicsCode#phrase.action = set the NAICS Code of {this} to {NAICS Code}
+com.ibm.wo.application.salesforce.instancesType.naicsCode#phrase.navigation = {NAICS Code} of {this}
+com.ibm.wo.application.salesforce.instancesType.naicsDesc#phrase.action = set the NAICS Description of {this} to {NAICS Description}
+com.ibm.wo.application.salesforce.instancesType.naicsDesc#phrase.navigation = {NAICS Description} of {this}
+com.ibm.wo.application.salesforce.instancesType.name#phrase.action = set the Account name of {this} to {Account name}
+com.ibm.wo.application.salesforce.instancesType.name#phrase.navigation = {Account name} of {this}
+com.ibm.wo.application.salesforce.instancesType.numberOfEmployees#phrase.action = set the Employees of {this} to {Employees}
+com.ibm.wo.application.salesforce.instancesType.numberOfEmployees#phrase.addition_setter = add {Employees} to the Employees of {this}
+com.ibm.wo.application.salesforce.instancesType.numberOfEmployees#phrase.navigation = {Employees} of {this}
+com.ibm.wo.application.salesforce.instancesType.numberOfEmployees#phrase.subtraction_setter = subtract {Employees} from the Employees of {this}
+com.ibm.wo.application.salesforce.instancesType.numberofLocations__c#phrase.action = set the Number of Locations of {this} to {Number of Locations}
+com.ibm.wo.application.salesforce.instancesType.numberofLocations__c#phrase.addition_setter = add {Number of Locations} to the Number of Locations of {this}
+com.ibm.wo.application.salesforce.instancesType.numberofLocations__c#phrase.navigation = {Number of Locations} of {this}
+com.ibm.wo.application.salesforce.instancesType.numberofLocations__c#phrase.subtraction_setter = subtract {Number of Locations} from the Number of Locations of {this}
+com.ibm.wo.application.salesforce.instancesType.operatingHoursId#phrase.action = set the Operating Hour ID of {this} to {Operating Hour ID}
+com.ibm.wo.application.salesforce.instancesType.operatingHoursId#phrase.navigation = {Operating Hour ID} of {this}
+com.ibm.wo.application.salesforce.instancesType.ownerId#phrase.action = set the Owner ID of {this} to {Owner ID}
+com.ibm.wo.application.salesforce.instancesType.ownerId#phrase.navigation = {Owner ID} of {this}
+com.ibm.wo.application.salesforce.instancesType.ownership#phrase.action = set the ownership of {this} to {ownership}
+com.ibm.wo.application.salesforce.instancesType.ownership#phrase.clearer = clear the ownership of {this}
+com.ibm.wo.application.salesforce.instancesType.ownership#phrase.navigation = {ownership} of {this}
+com.ibm.wo.application.salesforce.instancesType.parentId#phrase.action = set the Parent account ID of {this} to {Parent account ID}
+com.ibm.wo.application.salesforce.instancesType.parentId#phrase.navigation = {Parent account ID} of {this}
+com.ibm.wo.application.salesforce.instancesType.phone#phrase.action = set the Account phone of {this} to {Account phone}
+com.ibm.wo.application.salesforce.instancesType.phone#phrase.navigation = {Account phone} of {this}
+com.ibm.wo.application.salesforce.instancesType.photoUrl#phrase.action = set the Photo URL of {this} to {Photo URL}
+com.ibm.wo.application.salesforce.instancesType.photoUrl#phrase.navigation = {Photo URL} of {this}
+com.ibm.wo.application.salesforce.instancesType.rating#phrase.action = set the rating of {this} to {rating}
+com.ibm.wo.application.salesforce.instancesType.rating#phrase.clearer = clear the rating of {this}
+com.ibm.wo.application.salesforce.instancesType.rating#phrase.navigation = {rating} of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingCity#phrase.action = set the Shipping city of {this} to {Shipping city}
+com.ibm.wo.application.salesforce.instancesType.shippingCity#phrase.navigation = {Shipping city} of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingCountry#phrase.action = set the Shipping country of {this} to {Shipping country}
+com.ibm.wo.application.salesforce.instancesType.shippingCountry#phrase.navigation = {Shipping country} of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingGeocodeAccuracy#phrase.action = set the shipping geocode accuracy of {this} to {shipping geocode accuracy}
+com.ibm.wo.application.salesforce.instancesType.shippingGeocodeAccuracy#phrase.clearer = clear the shipping geocode accuracy of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingGeocodeAccuracy#phrase.navigation = {shipping geocode accuracy} of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingLatitude#phrase.action = set the Shipping latitude of {this} to {Shipping latitude}
+com.ibm.wo.application.salesforce.instancesType.shippingLatitude#phrase.addition_setter = add {Shipping latitude} to the Shipping latitude of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingLatitude#phrase.navigation = {Shipping latitude} of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingLatitude#phrase.subtraction_setter = subtract {Shipping latitude} from the Shipping latitude of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingLongitude#phrase.action = set the Shipping longitude of {this} to {Shipping longitude}
+com.ibm.wo.application.salesforce.instancesType.shippingLongitude#phrase.addition_setter = add {Shipping longitude} to the Shipping longitude of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingLongitude#phrase.navigation = {Shipping longitude} of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingLongitude#phrase.subtraction_setter = subtract {Shipping longitude} from the Shipping longitude of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingPostalCode#phrase.action = set the Shipping zip or postal Code of {this} to {Shipping zip or postal Code}
+com.ibm.wo.application.salesforce.instancesType.shippingPostalCode#phrase.navigation = {Shipping zip or postal Code} of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingState#phrase.action = set the Shipping state or province of {this} to {Shipping state or province}
+com.ibm.wo.application.salesforce.instancesType.shippingState#phrase.navigation = {Shipping state or province} of {this}
+com.ibm.wo.application.salesforce.instancesType.shippingStreet#phrase.action = set the Shipping street of {this} to {Shipping street}
+com.ibm.wo.application.salesforce.instancesType.shippingStreet#phrase.navigation = {Shipping street} of {this}
+com.ibm.wo.application.salesforce.instancesType.sic#phrase.action = set the SIC Code of {this} to {SIC Code}
+com.ibm.wo.application.salesforce.instancesType.sic#phrase.navigation = {SIC Code} of {this}
+com.ibm.wo.application.salesforce.instancesType.sicDesc#phrase.action = set the SIC description of {this} to {SIC description}
+com.ibm.wo.application.salesforce.instancesType.sicDesc#phrase.navigation = {SIC description} of {this}
+com.ibm.wo.application.salesforce.instancesType.site#phrase.action = set the Account site of {this} to {Account site}
+com.ibm.wo.application.salesforce.instancesType.site#phrase.navigation = {Account site} of {this}
+com.ibm.wo.application.salesforce.instancesType.systemModstamp#phrase.action = set the System modstamp of {this} to {System modstamp}
+com.ibm.wo.application.salesforce.instancesType.systemModstamp#phrase.navigation = {System modstamp} of {this}
+com.ibm.wo.application.salesforce.instancesType.tickerSymbol#phrase.action = set the Ticker symbol of {this} to {Ticker symbol}
+com.ibm.wo.application.salesforce.instancesType.tickerSymbol#phrase.navigation = {Ticker symbol} of {this}
+com.ibm.wo.application.salesforce.instancesType.tradestyle#phrase.action = set the Tradestyle of {this} to {Tradestyle}
+com.ibm.wo.application.salesforce.instancesType.tradestyle#phrase.navigation = {Tradestyle} of {this}
+com.ibm.wo.application.salesforce.instancesType.type#phrase.action = set the type of {this} to {type}
+com.ibm.wo.application.salesforce.instancesType.type#phrase.clearer = clear the type of {this}
+com.ibm.wo.application.salesforce.instancesType.type#phrase.navigation = {type} of {this}
+com.ibm.wo.application.salesforce.instancesType.upsellOpportunity__c#phrase.action = set the upsell opportunity  c of {this} to {upsell opportunity  c}
+com.ibm.wo.application.salesforce.instancesType.upsellOpportunity__c#phrase.clearer = clear the upsell opportunity  c of {this}
+com.ibm.wo.application.salesforce.instancesType.upsellOpportunity__c#phrase.navigation = {upsell opportunity  c} of {this}
+com.ibm.wo.application.salesforce.instancesType.website#phrase.action = set the Website of {this} to {Website}
+com.ibm.wo.application.salesforce.instancesType.website#phrase.navigation = {Website} of {this}
+com.ibm.wo.application.salesforce.instancesType.yearStarted#phrase.action = set the Year Started of {this} to {Year Started}
+com.ibm.wo.application.salesforce.instancesType.yearStarted#phrase.navigation = {Year Started} of {this}
+
+# com.ibm.wo.application.salesforce.instancesType_1
+com.ibm.wo.application.salesforce.instancesType_1#concept.label = instancesType_1
+com.ibm.wo.application.salesforce.instancesType_1.createdById#phrase.action = set the Created by ID of {this} to {Created by ID}
+com.ibm.wo.application.salesforce.instancesType_1.createdById#phrase.navigation = {Created by ID} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.createdDate#phrase.action = set the Created date of {this} to {Created date}
+com.ibm.wo.application.salesforce.instancesType_1.createdDate#phrase.navigation = {Created date} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.description#phrase.action = set the Product description of {this} to {Product description}
+com.ibm.wo.application.salesforce.instancesType_1.description#phrase.navigation = {Product description} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.displayUrl#phrase.action = set the Display URL of {this} to {Display URL}
+com.ibm.wo.application.salesforce.instancesType_1.displayUrl#phrase.navigation = {Display URL} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.externalDataSourceId#phrase.action = set the External data source ID of {this} to {External data source ID}
+com.ibm.wo.application.salesforce.instancesType_1.externalDataSourceId#phrase.navigation = {External data source ID} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.externalId#phrase.action = set the External ID of {this} to {External ID}
+com.ibm.wo.application.salesforce.instancesType_1.externalId#phrase.navigation = {External ID} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.family#phrase.action = set the family of {this} to {family}
+com.ibm.wo.application.salesforce.instancesType_1.family#phrase.clearer = clear the family of {this}
+com.ibm.wo.application.salesforce.instancesType_1.family#phrase.navigation = {family} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.id#phrase.action = set the Product ID of {this} to {Product ID}
+com.ibm.wo.application.salesforce.instancesType_1.id#phrase.navigation = {Product ID} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.instancesType_1(java.lang.String,java.time.ZonedDateTime,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.ibm.wo.application.salesforce.FamilyType,java.lang.String,boolean,boolean,boolean,java.lang.String,java.time.ZonedDateTime,java.time.ZonedDateTime,java.time.ZonedDateTime,java.lang.String,com.ibm.wo.application.salesforce.ProductClassType,java.lang.String,double,com.ibm.wo.application.salesforce.QuantityUnitOfMeasureType,java.lang.String,java.time.ZonedDateTime,com.ibm.wo.application.salesforce.TypeType_1)#phrase.navigation = a new {instancesType_1} where {0, Created by ID} {1, Created date} {2, Product description} {3, Display URL} {4, External data source ID} {5, External ID} {6, family} {7, Product ID} {8, Active} {9, Archived} {10, Deleted} {11, Last modified by ID} {12, Last modified date} {13, Last referenced date} {14, Last viewed date} {15, Product name} {16, product class} {17, Product code} {18, Product Amount} {19, quantity unit of measure} {20, Product SKU} {21, System modstamp} {22, type}
+com.ibm.wo.application.salesforce.instancesType_1.isActive#phrase.action[0] = {this} gets Active only if {Active}
+com.ibm.wo.application.salesforce.instancesType_1.isActive#phrase.action[1] = make it {Active} that {this} is Active
+com.ibm.wo.application.salesforce.instancesType_1.isActive#phrase.action[1].deprecated = true
+com.ibm.wo.application.salesforce.instancesType_1.isActive#phrase.navigation = {this} is Active
+com.ibm.wo.application.salesforce.instancesType_1.isActive#phrase.negative_predicate = {this} is not Active
+com.ibm.wo.application.salesforce.instancesType_1.isActive#phrase.negative_predicate_setter = {this} does not get Active
+com.ibm.wo.application.salesforce.instancesType_1.isActive#phrase.positive_predicate_setter = {this} gets Active
+com.ibm.wo.application.salesforce.instancesType_1.isArchived#phrase.action[0] = {this} gets Archived only if {Archived}
+com.ibm.wo.application.salesforce.instancesType_1.isArchived#phrase.action[1] = make it {Archived} that {this} is Archived
+com.ibm.wo.application.salesforce.instancesType_1.isArchived#phrase.action[1].deprecated = true
+com.ibm.wo.application.salesforce.instancesType_1.isArchived#phrase.navigation = {this} is Archived
+com.ibm.wo.application.salesforce.instancesType_1.isArchived#phrase.negative_predicate = {this} is not Archived
+com.ibm.wo.application.salesforce.instancesType_1.isArchived#phrase.negative_predicate_setter = {this} does not get Archived
+com.ibm.wo.application.salesforce.instancesType_1.isArchived#phrase.positive_predicate_setter = {this} gets Archived
+com.ibm.wo.application.salesforce.instancesType_1.isDeleted#phrase.action[0] = {this} gets Deleted only if {Deleted}
+com.ibm.wo.application.salesforce.instancesType_1.isDeleted#phrase.action[1] = make it {Deleted} that {this} is Deleted
+com.ibm.wo.application.salesforce.instancesType_1.isDeleted#phrase.action[1].deprecated = true
+com.ibm.wo.application.salesforce.instancesType_1.isDeleted#phrase.navigation = {this} is Deleted
+com.ibm.wo.application.salesforce.instancesType_1.isDeleted#phrase.negative_predicate = {this} is not Deleted
+com.ibm.wo.application.salesforce.instancesType_1.isDeleted#phrase.negative_predicate_setter = {this} does not get Deleted
+com.ibm.wo.application.salesforce.instancesType_1.isDeleted#phrase.positive_predicate_setter = {this} gets Deleted
+com.ibm.wo.application.salesforce.instancesType_1.lastModifiedById#phrase.action = set the Last modified by ID of {this} to {Last modified by ID}
+com.ibm.wo.application.salesforce.instancesType_1.lastModifiedById#phrase.navigation = {Last modified by ID} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.lastModifiedDate#phrase.action = set the Last modified date of {this} to {Last modified date}
+com.ibm.wo.application.salesforce.instancesType_1.lastModifiedDate#phrase.navigation = {Last modified date} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.lastReferencedDate#phrase.action = set the Last referenced date of {this} to {Last referenced date}
+com.ibm.wo.application.salesforce.instancesType_1.lastReferencedDate#phrase.navigation = {Last referenced date} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.lastViewedDate#phrase.action = set the Last viewed date of {this} to {Last viewed date}
+com.ibm.wo.application.salesforce.instancesType_1.lastViewedDate#phrase.navigation = {Last viewed date} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.name#phrase.action = set the Product name of {this} to {Product name}
+com.ibm.wo.application.salesforce.instancesType_1.name#phrase.navigation = {Product name} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.productClass#phrase.action = set the product class of {this} to {product class}
+com.ibm.wo.application.salesforce.instancesType_1.productClass#phrase.clearer = clear the product class of {this}
+com.ibm.wo.application.salesforce.instancesType_1.productClass#phrase.navigation = {product class} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.productCode#phrase.action = set the Product code of {this} to {Product code}
+com.ibm.wo.application.salesforce.instancesType_1.productCode#phrase.navigation = {Product code} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.product_Amount__c#phrase.action = set the Product Amount of {this} to {Product Amount}
+com.ibm.wo.application.salesforce.instancesType_1.product_Amount__c#phrase.addition_setter = add {Product Amount} to the Product Amount of {this}
+com.ibm.wo.application.salesforce.instancesType_1.product_Amount__c#phrase.navigation = {Product Amount} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.product_Amount__c#phrase.subtraction_setter = subtract {Product Amount} from the Product Amount of {this}
+com.ibm.wo.application.salesforce.instancesType_1.quantityUnitOfMeasure#phrase.action = set the quantity unit of measure of {this} to {quantity unit of measure}
+com.ibm.wo.application.salesforce.instancesType_1.quantityUnitOfMeasure#phrase.clearer = clear the quantity unit of measure of {this}
+com.ibm.wo.application.salesforce.instancesType_1.quantityUnitOfMeasure#phrase.navigation = {quantity unit of measure} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.stockKeepingUnit#phrase.action = set the Product SKU of {this} to {Product SKU}
+com.ibm.wo.application.salesforce.instancesType_1.stockKeepingUnit#phrase.navigation = {Product SKU} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.systemModstamp#phrase.action = set the System modstamp of {this} to {System modstamp}
+com.ibm.wo.application.salesforce.instancesType_1.systemModstamp#phrase.navigation = {System modstamp} of {this}
+com.ibm.wo.application.salesforce.instancesType_1.type#phrase.action = set the type of {this} to {type}
+com.ibm.wo.application.salesforce.instancesType_1.type#phrase.clearer = clear the type of {this}
+com.ibm.wo.application.salesforce.instancesType_1.type#phrase.navigation = {type} of {this}
+
+# com.ibm.wo.application.salesforce.nextType
+com.ibm.wo.application.salesforce.nextType#concept.label = nextType
+com.ibm.wo.application.salesforce.nextType.nextType(java.lang.String)#phrase.navigation = a new {nextType} where {0, next_page_token}
+com.ibm.wo.application.salesforce.nextType.next_page_token#phrase.action = set the next_page_token of {this} to {next_page_token}
+com.ibm.wo.application.salesforce.nextType.next_page_token#phrase.navigation = {next_page_token} of {this}
+
+# com.ibm.wo.application.salesforce.nextType_1
+com.ibm.wo.application.salesforce.nextType_1#concept.label = nextType_1
+com.ibm.wo.application.salesforce.nextType_1.nextType_1(java.lang.String)#phrase.navigation = a new {nextType_1} where {0, next_page_token}
+com.ibm.wo.application.salesforce.nextType_1.next_page_token#phrase.action = set the next_page_token of {this} to {next_page_token}
+com.ibm.wo.application.salesforce.nextType_1.next_page_token#phrase.navigation = {next_page_token} of {this}
+
+# reorder_automation.datamodel.Prediction
+reorder_automation.datamodel.Prediction#concept.label = prediction
+reorder_automation.datamodel.Prediction.Prediction(java.util.List)#phrase.navigation = a new {prediction} where {0, prediction}
+reorder_automation.datamodel.Prediction.addTo_predictions(double)#phrase.action = add {0} to the predictions of {this}
+reorder_automation.datamodel.Prediction.clear_predictions()#phrase.action = clear the predictions of {this}
+reorder_automation.datamodel.Prediction.predictions#phrase.action = set the predictions of {this} to {prediction}
+reorder_automation.datamodel.Prediction.predictions#phrase.navigation = {prediction} of {this}
+reorder_automation.datamodel.Prediction.removeFrom_predictions(double)#phrase.action = remove {0} from the predictions of {this}

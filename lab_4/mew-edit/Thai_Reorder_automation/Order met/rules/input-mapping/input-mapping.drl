@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>orderMet</name>
+  <uuid>a4c5072e-2319-4fbf-a02d-c6ce5e0d166e</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model input where
+		the product is product , 
+		the supplier is supplier , 
+		the reorder qty is reorder_qty , 
+		the value is value , 
+		the variable 5 is 'variable 5' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

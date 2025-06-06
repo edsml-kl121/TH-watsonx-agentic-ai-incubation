@@ -1,0 +1,10 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/BillingGeocodeAccuracyType.schema.json",
+  "x-ibm-json-name" : "BillingGeocodeAccuracyType",
+  "x-ibm-package-name" : "com.ibm.wo.application.salesforce",
+  "title" : "billing geocode accuracy type",
+  "x-ibm-original-json-name" : "retrievewithwhere_Account.BillingGeocodeAccuracyType",
+  "type" : "string",
+  "enum" : [ "Address", "Block", "City", "County", "ExtendedZip", "NearAddress", "Neighborhood", "State", "Street", "Unknown", "Zip" ]
+}

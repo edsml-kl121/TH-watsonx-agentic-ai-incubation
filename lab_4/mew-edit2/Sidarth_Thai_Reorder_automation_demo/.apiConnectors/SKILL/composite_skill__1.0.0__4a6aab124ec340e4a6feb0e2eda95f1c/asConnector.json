@@ -1,0 +1,98 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.3061cb5e-e87c-4616-a284-56e0882d6083",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "" ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.5e7fa3cb-cdeb-4dda-a1ef-b0e37ea2041e",
+      "declaredType" : "interface",
+      "id" : "_4c98ddfb-e8ea-42d2-b0cb-8406f19ef534",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.2e4231cc-7a40-4c4c-9d2a-65721342e82d" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "_a6aab124ec340e4a6feb0e2eda95f1c",
+              "name" : "_a6aab124ec340e4a6feb0e2eda95f1c",
+              "isCollection" : false,
+              "description" : "Successfully executed custom action",
+              "httpResponseCode" : "200",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_ded667c0-941e-4dbe-8fb7-fc06f1fbdfca",
+              "isOptional" : false,
+              "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/composite_skill/_a6aab124ec340e4a6feb0e2eda95f1c_200Type.schema.json",
+              "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/d9209fcf-0021-409d-bb49-6a0f08a7d623.xsd}_a6aab124ec340e4a6feb0e2eda95f1c_200Type"
+            } ],
+            "input" : [ {
+              "path" : "callbackUrl",
+              "name" : "callbackUrl",
+              "isCollection" : false,
+              "description" : "The location where the response will be sent",
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_d44ddf81-643d-4212-a804-5b50dcbfb891",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "Query",
+              "name" : "Query",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_1f209d97-9424-46ca-be38-c0f515d29282",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "4a6aab124ec340e4a6feb0e2eda95f1c",
+        "id" : "_1ed93239-5d2b-49eb-8f8c-48bedc19d661"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "skillId" : "composite_skill__1.0.0__4a6aab124ec340e4a6feb0e2eda95f1c",
+            "invocationType" : "SKILL",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.3061cb5e-e87c-4616-a284-56e0882d6083",
+            "displayVersion" : "head",
+            "name" : "Get Account and Pricebook from Name",
+            "project" : "composite_skill__1.0.0__4a6aab124ec340e4a6feb0e2eda95f1c",
+            "applicationId" : "composite_skill",
+            "canUseDefaultVersion" : true,
+            "type" : "workflow",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/d9209fcf-0021-409d-bb49-6a0f08a7d623Service}6023.609b3949-a7d1-4d67-804c-2604161b7fb5",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "Get Account and Pricebook from Name",
+          "interfaceRef" : "_4c98ddfb-e8ea-42d2-b0cb-8406f19ef534",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_35392392-fcfe-4f94-984e-b93bb4f56aad"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/d9209fcf-0021-409d-bb49-6a0f08a7d623Service",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_5ab30972-71e0-486d-a001-9006e9ad696f"
+  },
+  "poId" : "1.eea4056a-7238-469a-8a0d-4477991e5e71",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery11132546864941543828.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/d9209fcf-0021-409d-bb49-6a0f08a7d623.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/d9209fcf-0021-409d-bb49-6a0f08a7d623Service}4a6aab124ec340e4a6feb0e2eda95f1cRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/d9209fcf-0021-409d-bb49-6a0f08a7d623Service}4a6aab124ec340e4a6feb0e2eda95f1cResponseMsg" ]
+}

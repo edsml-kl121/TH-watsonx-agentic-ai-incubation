@@ -1,0 +1,163 @@
+{
+  "root_poid" : "1.c22d9e82-5533-4635-9a16-a6aaa2f67947",
+  "artifacts" : [ {
+    "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.5d291e9e-7c8b-42a8-b070-8b7b64560577",
+    "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+      "consumeDefaultVersion" : true
+    },
+    "type" : "BPMService",
+    "definitions" : {
+      "rootElement" : [ {
+        "documentation" : [ {
+          "content" : [ "646000EUAI/uab/SY_Reorder_automation/SY_Reorder_automation/No min order notification/master/84e97e3b0c" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "IFace.5e5f544e-c952-4ce1-99d0-e0c5c28e2a55",
+        "declaredType" : "interface",
+        "id" : "_0a9a68a7-e467-4ab6-96f7-8c04a1826e2a",
+        "operation" : [ {
+          "extensionElements" : {
+            "sfPOId" : [ "1.beb5b9ff-6f7c-4125-beab-9dc1b38746d5" ],
+            "businessSignature" : [ {
+              "output" : [ {
+                "path" : "generated_text",
+                "name" : "generated_text",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_71d0dbbd-6bed-4192-bc93-fbfde5ecbfcf",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "generated_token_count",
+                "name" : "generated_token_count",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_95840dd3-089d-4a82-8503-5fc13634167b",
+                "isOptional" : false,
+                "typeRefPO" : "integer",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}int"
+              }, {
+                "path" : "input_token_count",
+                "name" : "input_token_count",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_c9223fe4-a44d-466b-8a84-e1de9faeb037",
+                "isOptional" : false,
+                "typeRefPO" : "integer",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}int"
+              }, {
+                "path" : "stop_reason",
+                "name" : "stop_reason",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_5c75cc9b-b5ab-47cf-b5fb-37b428597dbc",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "error_code",
+                "name" : "error_code",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_8760ab8a-cb98-4aa5-806d-8dc5ac13c62f",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "error_message",
+                "name" : "error_message",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_2d69aed6-b80c-4e4d-92e1-0859d0f994a2",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              } ],
+              "input" : [ {
+                "path" : "order_qty",
+                "name" : "order_qty",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_fc28e7e7-a4b2-41bf-b181-b4c743b4c116",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              } ],
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+            } ]
+          },
+          "documentation" : [ {
+            "content" : [ "Execute NoMinOrderNotification-noMinOrderNotification" ],
+            "textFormat" : "text/plain"
+          } ],
+          "name" : "NoMinOrderNotification-noMinOrderNotification",
+          "id" : "_138156cb-35b9-484a-8db6-12220c9a65ab"
+        } ]
+      }, {
+        "extensionElements" : {
+          "externalService" : [ {
+            "automationServiceRestBinding" : {
+              "invocationType" : "LOCAL",
+              "designProjectFolder" : "SY_Reorder_automation",
+              "org" : "uab",
+              "bindingEnvVarSetRef" : "62.5d291e9e-7c8b-42a8-b070-8b7b64560577",
+              "displayVersion" : "head",
+              "name" : "local/NoMinOrderNotification-noMinOrderNotification",
+              "project" : "SY_Reorder_automation",
+              "componentName" : "SY_Reorder_automation",
+              "canUseDefaultVersion" : true,
+              "type" : "ADS",
+              "version" : "head",
+              "restBinding" : {
+                "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1711142-21c0-4bda-a4a6-5dcc8d58ae22Service}6023.39d1bcda-e3f3-4be0-bff7-afcff192e2ea",
+                "openAPIVersion" : "v3"
+              }
+            },
+            "cachingType" : false,
+            "name" : "/noMinOrderNotification",
+            "interfaceRef" : "_0a9a68a7-e467-4ab6-96f7-8c04a1826e2a",
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+            "id" : "_c6ecf6fe-e47e-4733-a44c-27b3dd84c045"
+          } ]
+        },
+        "declaredType" : "endPoint"
+      } ],
+      "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1711142-21c0-4bda-a4a6-5dcc8d58ae22Service",
+      "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+      "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+      "id" : "_66432add-1ddd-4f54-afcf-2ad2ace34727"
+    },
+    "poId" : "1.c22d9e82-5533-4635-9a16-a6aaa2f67947",
+    "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery4687396906317785902.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1711142-21c0-4bda-a4a6-5dcc8d58ae22.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1711142-21c0-4bda-a4a6-5dcc8d58ae22Service}NoMinOrderNotification-noMinOrderNotificationRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1711142-21c0-4bda-a4a6-5dcc8d58ae22Service}NoMinOrderNotification-noMinOrderNotificationResponseMsg" ]
+  }, {
+    "WSDL_DATA" : {
+      "repoUrl" : "repo://6023.39d1bcda-e3f3-4be0-bff7-afcff192e2ea/.wsdl",
+      "uid" : "6023.39d1bcda-e3f3-4be0-bff7-afcff192e2ea",
+      "referenceLocation" : [ {
+        "absoluteLocation" : "repo://6023.2f1eadc3-309a-4cb2-98e0-a732977d6966/5dcc8d58ae22.xsd",
+        "relativeLocation" : "/b1711142-21c0-4bda-a4a6-5dcc8d58ae22.xsd"
+      } ],
+      "data" : "{\"openapi\":\"3.0.1\",\"info\":{\"title\":\"646000EUAI/uab/SY_Reorder_automation/SY_Reorder_automation/No min order notification/master/84e97e3b0c\",\"description\":\"646000EUAI/uab/SY_Reorder_automation/SY_Reorder_automation/No min order notification/master/84e97e3b0c\",\"version\":\"head\",\"x-ibm-ads-decision-id\":\"646000EUAI/uab/SY_Reorder_automation/SY_Reorder_automation/No min order notification/master/84e97e3b0c\"},\"servers\":[{\"url\":\"https://dl.watson-orchestrate.ibm.com/asb/ads/rest-api/api/wo/automation/uab/SY_Reorder_automation/master/SY_Reorder_automation/SY_Reorder_automation%2FNo%20min%20order%20notification/deploymentSpaces/preview/decisions/646000EUAI%2Fuab%2FSY_Reorder_automation%2FSY_Reorder_automation%2FNo%20min%20order%20notification%2Fmaster%2F84e97e3b0c/operations\"}],\"security\":[{\"IBM-WO-JWT\":[]}],\"paths\":{\"/NoMinOrderNotification-noMinOrderNotification/execute\":{\"post\":{\"tags\":[\"646000EUAI/uab/SY_Reorder_automation/SY_Reorder_automation/No min order notification/master/84e97e3b0c\"],\"summary\":\"NoMinOrderNotification-noMinOrderNotification\",\"description\":\"Execute NoMinOrderNotification-noMinOrderNotification\",\"operationId\":\"NoMinOrderNotification-noMinOrderNotification\",\"requestBody\":{\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/NoMinOrderNotification-noMinOrderNotification_input\"}}}},\"responses\":{\"200\":{\"description\":\"Decision execution success\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/NoMinOrderNotification-noMinOrderNotification_output\"}}}},\"404\":{\"description\":\"A decision or decision operation was not found\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/BaseError\"}}}},\"500\":{\"description\":\"A runtime exception occurred while executing a decision\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/BaseError\"}}}}},\"x-ibm-uab-local-operation\":true}}},\"components\":{\"schemas\":{\"NoMinOrderNotification-noMinOrderNotification_input\":{\"type\":\"object\",\"properties\":{\"order_qty\":{\"type\":\"string\"}},\"x-ibm-parameter-wrapper\":true},\"NoMinOrderNotification-noMinOrderNotification_output\":{\"type\":\"object\",\"properties\":{\"generated_text\":{\"type\":\"string\"},\"generated_token_count\":{\"type\":\"integer\",\"format\":\"int32\"},\"input_token_count\":{\"type\":\"integer\",\"format\":\"int32\"},\"stop_reason\":{\"type\":\"string\"},\"error_code\":{\"type\":\"string\"},\"error_message\":{\"type\":\"string\"}},\"nullable\":true,\"x-ibm-parameter-wrapper\":true},\"BaseError\":{\"type\":\"object\",\"properties\":{\"output\":{\"type\":\"object\",\"description\":\"The output of the decision service archive.\",\"nullable\":true},\"incident\":{\"$ref\":\"#/components/schemas/Incident\"}},\"description\":\"The response when an error occurs\"},\"Incident\":{\"type\":\"object\",\"properties\":{\"incidentId\":{\"type\":\"string\",\"description\":\"A unique identifier for the incident\"},\"incidentCategory\":{\"type\":\"string\",\"description\":\"The category of the incident, for instance \\\"Decision not found\\\"\"},\"stackTrace\":{\"type\":\"string\",\"description\":\"An associated stack trace, if the decision runtime is configured to provide it. By default, the stack trace is null\"}},\"description\":\"The description of the failure\"}},\"securitySchemes\":{\"IBM-WO-JWT\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"IBM-Watsonx-Orchestrate-JWT\"}}}}",
+      "namespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1711142-21c0-4bda-a4a6-5dcc8d58ae22Service",
+      "type" : "swagger",
+      "url" : "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery4687396906317785902.json"
+    },
+    "type" : "BPMService",
+    "definitions" : "{\"openapi\":\"3.0.1\",\"info\":{\"title\":\"646000EUAI/uab/SY_Reorder_automation/SY_Reorder_automation/No min order notification/master/84e97e3b0c\",\"description\":\"646000EUAI/uab/SY_Reorder_automation/SY_Reorder_automation/No min order notification/master/84e97e3b0c\",\"version\":\"head\",\"x-ibm-ads-decision-id\":\"646000EUAI/uab/SY_Reorder_automation/SY_Reorder_automation/No min order notification/master/84e97e3b0c\"},\"servers\":[{\"url\":\"https://dl.watson-orchestrate.ibm.com/asb/ads/rest-api/api/wo/automation/uab/SY_Reorder_automation/master/SY_Reorder_automation/SY_Reorder_automation%2FNo%20min%20order%20notification/deploymentSpaces/preview/decisions/646000EUAI%2Fuab%2FSY_Reorder_automation%2FSY_Reorder_automation%2FNo%20min%20order%20notification%2Fmaster%2F84e97e3b0c/operations\"}],\"security\":[{\"IBM-WO-JWT\":[]}],\"paths\":{\"/NoMinOrderNotification-noMinOrderNotification/execute\":{\"post\":{\"tags\":[\"646000EUAI/uab/SY_Reorder_automation/SY_Reorder_automation/No min order notification/master/84e97e3b0c\"],\"summary\":\"NoMinOrderNotification-noMinOrderNotification\",\"description\":\"Execute NoMinOrderNotification-noMinOrderNotification\",\"operationId\":\"NoMinOrderNotification-noMinOrderNotification\",\"requestBody\":{\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/NoMinOrderNotification-noMinOrderNotification_input\"}}}},\"responses\":{\"200\":{\"description\":\"Decision execution success\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/NoMinOrderNotification-noMinOrderNotification_output\"}}}},\"404\":{\"description\":\"A decision or decision operation was not found\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/BaseError\"}}}},\"500\":{\"description\":\"A runtime exception occurred while executing a decision\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/BaseError\"}}}}},\"x-ibm-uab-local-operation\":true}}},\"components\":{\"schemas\":{\"NoMinOrderNotification-noMinOrderNotification_input\":{\"type\":\"object\",\"properties\":{\"order_qty\":{\"type\":\"string\"}},\"x-ibm-parameter-wrapper\":true},\"NoMinOrderNotification-noMinOrderNotification_output\":{\"type\":\"object\",\"properties\":{\"generated_text\":{\"type\":\"string\"},\"generated_token_count\":{\"type\":\"integer\",\"format\":\"int32\"},\"input_token_count\":{\"type\":\"integer\",\"format\":\"int32\"},\"stop_reason\":{\"type\":\"string\"},\"error_code\":{\"type\":\"string\"},\"error_message\":{\"type\":\"string\"}},\"nullable\":true,\"x-ibm-parameter-wrapper\":true},\"BaseError\":{\"type\":\"object\",\"properties\":{\"output\":{\"type\":\"object\",\"description\":\"The output of the decision service archive.\",\"nullable\":true},\"incident\":{\"$ref\":\"#/components/schemas/Incident\"}},\"description\":\"The response when an error occurs\"},\"Incident\":{\"type\":\"object\",\"properties\":{\"incidentId\":{\"type\":\"string\",\"description\":\"A unique identifier for the incident\"},\"incidentCategory\":{\"type\":\"string\",\"description\":\"The category of the incident, for instance \\\"Decision not found\\\"\"},\"stackTrace\":{\"type\":\"string\",\"description\":\"An associated stack trace, if the decision runtime is configured to provide it. By default, the stack trace is null\"}},\"description\":\"The description of the failure\"}},\"securitySchemes\":{\"IBM-WO-JWT\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"IBM-Watsonx-Orchestrate-JWT\"}}}}",
+    "poId" : "6023.39d1bcda-e3f3-4be0-bff7-afcff192e2ea"
+  }, {
+    "WSDL_DATA" : {
+      "repoUrl" : "repo://6023.2f1eadc3-309a-4cb2-98e0-a732977d6966/5dcc8d58ae22.xsd",
+      "uid" : "6023.2f1eadc3-309a-4cb2-98e0-a732977d6966",
+      "referenceLocation" : [ ],
+      "data" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1711142-21c0-4bda-a4a6-5dcc8d58ae22.xsd\" xmlns:ibmbpm=\"http://lombardi.ibm.com/schema/\" targetNamespace=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1711142-21c0-4bda-a4a6-5dcc8d58ae22.xsd\">\n  <xsd:element name=\"NoMinOrderNotification_noMinOrderNotificationRequest\" type=\"NoMinOrderNotification_noMinOrderNotificationRequest\"/>\n  <xsd:element name=\"NoMinOrderNotification_noMinOrderNotificationResponse\" type=\"NoMinOrderNotification_noMinOrderNotificationResponse\"/>\n  <xsd:complexType name=\"NoMinOrderNotification-noMinOrderNotification_input\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"order_qty\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"NoMinOrderNotification-noMinOrderNotification_output\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"generated_text\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"generated_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"input_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"stop_reason\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_code\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"NoMinOrderNotification_noMinOrderNotificationRequest\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"order_qty\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"NoMinOrderNotification_noMinOrderNotificationResponse\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"generated_text\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"generated_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"input_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"stop_reason\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_code\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n</xsd:schema>\n",
+      "namespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1711142-21c0-4bda-a4a6-5dcc8d58ae22.xsd",
+      "type" : "xsd",
+      "url" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1711142-21c0-4bda-a4a6-5dcc8d58ae22.xsd"
+    },
+    "type" : "BPMService",
+    "definitions" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1711142-21c0-4bda-a4a6-5dcc8d58ae22.xsd\" xmlns:ibmbpm=\"http://lombardi.ibm.com/schema/\" targetNamespace=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1711142-21c0-4bda-a4a6-5dcc8d58ae22.xsd\">\n  <xsd:element name=\"NoMinOrderNotification_noMinOrderNotificationRequest\" type=\"NoMinOrderNotification_noMinOrderNotificationRequest\"/>\n  <xsd:element name=\"NoMinOrderNotification_noMinOrderNotificationResponse\" type=\"NoMinOrderNotification_noMinOrderNotificationResponse\"/>\n  <xsd:complexType name=\"NoMinOrderNotification-noMinOrderNotification_input\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"order_qty\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"NoMinOrderNotification-noMinOrderNotification_output\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"generated_text\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"generated_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"input_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"stop_reason\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_code\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"NoMinOrderNotification_noMinOrderNotificationRequest\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"order_qty\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"NoMinOrderNotification_noMinOrderNotificationResponse\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"generated_text\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"generated_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"input_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"stop_reason\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_code\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n</xsd:schema>\n",
+    "poId" : "6023.2f1eadc3-309a-4cb2-98e0-a732977d6966"
+  } ]
+}

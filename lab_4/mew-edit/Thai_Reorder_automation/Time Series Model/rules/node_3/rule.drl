@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>rule</name>
+  <uuid>db20c48e-ddb0-4e36-88cd-3fd615af043a</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to the first element in the predictions ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

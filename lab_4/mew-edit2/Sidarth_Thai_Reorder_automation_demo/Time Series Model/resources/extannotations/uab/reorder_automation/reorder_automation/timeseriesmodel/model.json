@@ -1,0 +1,172 @@
+{
+  "metadata" : {
+    "id" : "2d33be6e-90be-4277-abc1-ec6a717fe4d0",
+    "name" : "Auto AI - P10 BATS - Model",
+    "modified_at" : "2025-03-10T13:56:45.442Z",
+    "created_at" : "2025-03-10T13:56:43.867Z",
+    "owner" : "IBMid-6950006UDX",
+    "space_id" : "c2ce1449-db08-47c7-87c3-edd0ac75ad99",
+    "resource_key" : "a47edfaf-2655-4b27-87a6-44d6ed49cb63"
+  },
+  "entity" : {
+    "label_column" : "",
+    "content_import_state" : "completed",
+    "metrics" : [ {
+      "timestamp" : "2025-03-10T13:42:09.000Z",
+      "context" : {
+        "phase" : "after_final_pipelines_generation",
+        "intermediate_model" : {
+          "composition_steps" : [ ],
+          "duration" : 2,
+          "location" : {
+            "model" : "auto_ml/001c037c-8ca9-4d9f-8891-75ae52f31dcd/wml_data/dae84472-f1b0-436c-87ac-a6393c43d81a/data/autoai-ts/after_final_pipelines_generation/P10/model.gzip",
+            "pipeline" : "auto_ml/001c037c-8ca9-4d9f-8891-75ae52f31dcd/wml_data/dae84472-f1b0-436c-87ac-a6393c43d81a/data/autoai-ts/after_final_pipelines_generation/P10/pipeline.json",
+            "pipeline_model" : "auto_ml/001c037c-8ca9-4d9f-8891-75ae52f31dcd/wml_data/dae84472-f1b0-436c-87ac-a6393c43d81a/data/autoai-ts/after_final_pipelines_generation/P10/pipeline-model.json"
+          },
+          "name" : "P10",
+          "notebook_location" : "auto_ml/001c037c-8ca9-4d9f-8891-75ae52f31dcd/wml_data/dae84472-f1b0-436c-87ac-a6393c43d81a/data/autoai-ts/after_final_pipelines_generation/P10/v1/notebook.ipynb",
+          "pipeline_nodes" : [ "BATS" ],
+          "process" : "after_final_pipelines_generation",
+          "schema_location" : "auto_ml/001c037c-8ca9-4d9f-8891-75ae52f31dcd/wml_data/dae84472-f1b0-436c-87ac-a6393c43d81a/data/autoai-ts/after_final_pipelines_generation/P10/schema.json"
+        },
+        "timeseries" : {
+          "allocation" : 1,
+          "allocation_rows" : 14,
+          "autoai_ts_model_type" : "non-exogenous",
+          "daub_status_location" : "auto_ml/001c037c-8ca9-4d9f-8891-75ae52f31dcd/wml_data/dae84472-f1b0-436c-87ac-a6393c43d81a/data/autoai-ts/after_final_pipelines_generation/P10/daub_status.json",
+          "estimator" : "SmallTimeSeriesDataDAUBPipeline",
+          "feature_columns" : [ "Quantity", "Sales" ],
+          "gap_len" : 0,
+          "id" : "P10",
+          "input" : {
+            "columns" : 3,
+            "duplicated_rows_count" : 0,
+            "rows" : 14
+          },
+          "lookback_window" : 3,
+          "num_backtest" : 4,
+          "output" : {
+            "columns" : 3,
+            "duplicated_rows_count" : 0,
+            "rows" : 14
+          },
+          "phase" : "after_final_pipelines_generation",
+          "pipeline_name" : "Bats",
+          "prediction_horizon" : 3,
+          "target_columns" : [ "Quantity", "Sales" ],
+          "timestamp_column" : "Order Date",
+          "winners" : [ "P3", "P5", "P10" ]
+        },
+        "prediction_type" : "forecasting"
+      },
+      "ts_metrics" : {
+        "holdout" : {
+          "avg_r2" : -21.76614583681793,
+          "neg_avg_symmetric_mean_absolute_percentage_error" : -8.000490010821968,
+          "neg_mean_absolute_error" : [ -58.6749109594698, -65259.695352372364 ],
+          "neg_root_mean_squared_error" : [ -80.00418097243036, -67266.49797414386 ],
+          "neg_symmetric_mean_absolute_percentage_error" : [ -1.7045948372427924, -14.296385184401144 ],
+          "r2" : [ 0.7155258234191384, -44.247817497054996 ]
+        },
+        "training" : {
+          "neg_symmetric_mean_absolute_percentage_error" : -10.819751870529236
+        }
+      }
+    } ],
+    "type" : "wml-hybrid_0.1",
+    "schemas" : {
+      "input" : [ {
+        "id" : "auto_ai_ts_input_schema",
+        "fields" : [ {
+          "name" : "Quantity",
+          "type" : "integer",
+          "nullable" : true,
+          "metadata" : {
+            "modeling_role" : "both"
+          }
+        }, {
+          "name" : "Sales",
+          "type" : "integer",
+          "nullable" : true,
+          "metadata" : {
+            "modeling_role" : "both"
+          }
+        } ]
+      } ],
+      "output" : [ ]
+    },
+    "pipeline" : {
+      "id" : "3f9b749f-38d5-4e8c-a020-cd569b992504"
+    },
+    "data_preprocessing" : [ {
+      "input" : {
+        "columns" : 3
+      },
+      "output" : {
+        "columns" : 3,
+        "rows" : 14
+      },
+      "props" : {
+        "type" : "truncate"
+      },
+      "stage" : "sampling"
+    }, {
+      "input" : {
+        "columns" : 3,
+        "rows" : 14
+      },
+      "output" : {
+        "columns" : 3,
+        "rows" : 14
+      },
+      "props" : {
+        "duplicated_rows_count" : 0
+      },
+      "stage" : "cleansing"
+    } ],
+    "training_id" : "dae84472-f1b0-436c-87ac-a6393c43d81a",
+    "software_spec" : {
+      "id" : "8c1a58c6-62b5-4dc4-987a-df751c2756b6",
+      "name" : "hybrid_0.1"
+    },
+    "test_data_references" : [ ],
+    "training_data_references" : [ {
+      "connection" : { },
+      "id" : "xtralife.csv",
+      "location" : {
+        "href" : "/v2/assets/5d969a4d-1246-4ab5-b7ae-83ec933fee04?project_id=dbcf1327-2b8b-444d-81e3-3194e0c4c20e",
+        "id" : "5d969a4d-1246-4ab5-b7ae-83ec933fee04",
+        "project_id" : "dbcf1327-2b8b-444d-81e3-3194e0c4c20e",
+        "userfs" : "false"
+      },
+      "schema" : {
+        "fields" : [ {
+          "metadata" : {
+            "modeling_role" : "both"
+          },
+          "name" : "Quantity",
+          "type" : "integer"
+        }, {
+          "metadata" : {
+            "modeling_role" : "both"
+          },
+          "name" : "Sales",
+          "type" : "integer"
+        } ],
+        "id" : "auto_ai_ts_input_schema"
+      },
+      "type" : "data_asset"
+    } ],
+    "hybrid_pipeline_software_specs" : [ {
+      "id" : "7d222e1d-b062-5740-b34a-453a63755976",
+      "name" : "autoai-ts_rt24.1-py3.11"
+    } ]
+  },
+  "system" : {
+    "warnings" : [ ]
+  },
+  "id" : "2d33be6e-90be-4277-abc1-ec6a717fe4d0",
+  "name" : "Auto AI - P10 BATS - Model",
+  "trainedAt" : "2025-03-10T13:56:43.867Z",
+  "modifiedAt" : "2025-03-10T13:56:45.442Z"
+}

@@ -1,0 +1,131 @@
+{
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.9a6e150e-29b4-4971-9a0b-c342331a92b7",
+  "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+    "consumeDefaultVersion" : true
+  },
+  "type" : "BPMService",
+  "definitions" : {
+    "rootElement" : [ {
+      "documentation" : [ {
+        "content" : [ "646000EUAI/uab/Reorder_automation/Reorder_automation/No min order notification/master/e27f0e3b0c" ],
+        "textFormat" : "text/plain"
+      } ],
+      "name" : "IFace.9b55d70e-1fb9-49a0-9231-8e447361b9c9",
+      "declaredType" : "interface",
+      "id" : "_fdd5d4e0-8e61-41a6-b398-529c54785c9c",
+      "operation" : [ {
+        "extensionElements" : {
+          "sfPOId" : [ "1.06da9b8d-fd42-479b-a7cd-cca8ce8809bf" ],
+          "businessSignature" : [ {
+            "output" : [ {
+              "path" : "generated_text",
+              "name" : "generated_text",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_abc17cd1-88d2-49de-bd9f-63224ada50c8",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "generated_token_count",
+              "name" : "generated_token_count",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_e8ecc57b-39da-446c-8b4e-5774b157cd43",
+              "isOptional" : false,
+              "typeRefPO" : "integer",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}int"
+            }, {
+              "path" : "input_token_count",
+              "name" : "input_token_count",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_04f923ee-29de-4b6b-9455-ff007fd03c1d",
+              "isOptional" : false,
+              "typeRefPO" : "integer",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}int"
+            }, {
+              "path" : "stop_reason",
+              "name" : "stop_reason",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_ca1693b0-0c50-426e-9e6b-3a8d9d441724",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "error_code",
+              "name" : "error_code",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_ff18be7c-482b-4082-ae54-406df3f464ab",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            }, {
+              "path" : "error_message",
+              "name" : "error_message",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_238a2ee1-9259-46cb-8775-7f4bf2f1a3ca",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "input" : [ {
+              "path" : "order_qty",
+              "name" : "order_qty",
+              "isCollection" : false,
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+              "id" : "_a7418867-894f-4443-b109-4344ba35d87e",
+              "isOptional" : false,
+              "typeRefPO" : "string",
+              "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+            } ],
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+          } ]
+        },
+        "documentation" : [ {
+          "content" : [ "Execute NoMinOrderNotification-noMinOrderNotification" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "NoMinOrderNotification-noMinOrderNotification",
+        "id" : "_af08c2a0-4fd7-4e7f-a021-34f8b68c00a5"
+      } ]
+    }, {
+      "extensionElements" : {
+        "externalService" : [ {
+          "automationServiceRestBinding" : {
+            "invocationType" : "LOCAL",
+            "designProjectFolder" : "Reorder_automation",
+            "org" : "uab",
+            "bindingEnvVarSetRef" : "62.9a6e150e-29b4-4971-9a0b-c342331a92b7",
+            "displayVersion" : "head",
+            "name" : "local/NoMinOrderNotification-noMinOrderNotification",
+            "project" : "Reorder_automation",
+            "componentName" : "Reorder_automation",
+            "canUseDefaultVersion" : true,
+            "type" : "ADS",
+            "version" : "head",
+            "restBinding" : {
+              "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/8b23c2a7-5489-402a-8a07-0e1139d7e007Service}6023.1065d7d8-5504-4fc7-95d8-bc11b740fc24",
+              "openAPIVersion" : "v3"
+            }
+          },
+          "cachingType" : false,
+          "name" : "/noMinOrderNotification",
+          "interfaceRef" : "_fdd5d4e0-8e61-41a6-b398-529c54785c9c",
+          "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+          "id" : "_b9dec63c-83b0-496d-a9c4-5f3d282941d2"
+        } ]
+      },
+      "declaredType" : "endPoint"
+    } ],
+    "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/8b23c2a7-5489-402a-8a07-0e1139d7e007Service",
+    "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+    "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+    "id" : "_f4f0d6ab-734a-4d80-a266-d30f5677b3de"
+  },
+  "poId" : "1.e04e9aa0-c803-43a8-bbaa-92f392c9cca8",
+  "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery804621540554572761.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/8b23c2a7-5489-402a-8a07-0e1139d7e007.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/8b23c2a7-5489-402a-8a07-0e1139d7e007Service}NoMinOrderNotification-noMinOrderNotificationRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/8b23c2a7-5489-402a-8a07-0e1139d7e007Service}NoMinOrderNotification-noMinOrderNotificationResponseMsg" ]
+}

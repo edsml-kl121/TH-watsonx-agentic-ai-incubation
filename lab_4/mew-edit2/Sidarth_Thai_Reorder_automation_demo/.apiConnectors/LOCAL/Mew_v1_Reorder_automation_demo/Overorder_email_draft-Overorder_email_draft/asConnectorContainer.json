@@ -1,0 +1,181 @@
+{
+  "root_poid" : "1.df86ac77-1721-4fcb-b19b-e97a04e1e056",
+  "artifacts" : [ {
+    "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.8edbb60f-b1b2-42bb-b4ab-1a30da64dd27",
+    "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+      "consumeDefaultVersion" : true
+    },
+    "type" : "BPMService",
+    "definitions" : {
+      "rootElement" : [ {
+        "documentation" : [ {
+          "content" : [ "646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "IFace.7dbd50c4-bec1-4066-ae28-b696f4e6b6bf",
+        "declaredType" : "interface",
+        "id" : "_d3ac3fe8-ea5d-4360-8f3e-51251f5b73e5",
+        "operation" : [ {
+          "extensionElements" : {
+            "sfPOId" : [ "1.76300130-a9fc-4100-b80d-30987f828a45" ],
+            "businessSignature" : [ {
+              "output" : [ {
+                "path" : "generated_text",
+                "name" : "generated_text",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_13f1f6c7-024c-4879-a4e3-78f72e4dfd8d",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "generated_token_count",
+                "name" : "generated_token_count",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_2cd41d70-6dd1-4861-a786-530bdfd30432",
+                "isOptional" : false,
+                "typeRefPO" : "integer",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}int"
+              }, {
+                "path" : "input_token_count",
+                "name" : "input_token_count",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_ec785fda-2a8a-4425-a0c8-a69a2f773cdd",
+                "isOptional" : false,
+                "typeRefPO" : "integer",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}int"
+              }, {
+                "path" : "stop_reason",
+                "name" : "stop_reason",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_ef742446-4fb8-4dfa-8ec6-6ee63dae8e95",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "error_code",
+                "name" : "error_code",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_f8ff37b0-e268-42fb-825c-c2d09096dbc4",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "error_message",
+                "name" : "error_message",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_f33d768d-2f29-41fc-b82f-6137f92b4742",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              } ],
+              "input" : [ {
+                "path" : "reorder_qty",
+                "name" : "reorder_qty",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_2be04bc2-14ab-4bd6-924a-6332a9a44eac",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "value",
+                "name" : "value",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_ff315bbe-70d9-400d-8fdf-0f70a2fad0f2",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              }, {
+                "path" : "supplier",
+                "name" : "supplier",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_736a71b0-ce74-449a-af6f-7a68738a74c6",
+                "isOptional" : false,
+                "typeRefPO" : "string",
+                "typeRef" : "{http://www.w3.org/2001/XMLSchema}string"
+              } ],
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+            } ]
+          },
+          "documentation" : [ {
+            "content" : [ "Execute Overorder_email_draft-Overorder_email_draft" ],
+            "textFormat" : "text/plain"
+          } ],
+          "name" : "Overorder_email_draft-Overorder_email_draft",
+          "id" : "_47927bc5-0763-41ba-adf2-40b30c1178ea"
+        } ]
+      }, {
+        "extensionElements" : {
+          "externalService" : [ {
+            "automationServiceRestBinding" : {
+              "invocationType" : "LOCAL",
+              "designProjectFolder" : "Mew_v1_Reorder_automation_demo",
+              "org" : "uab",
+              "bindingEnvVarSetRef" : "62.8edbb60f-b1b2-42bb-b4ab-1a30da64dd27",
+              "displayVersion" : "head",
+              "name" : "local/Overorder_email_draft-Overorder_email_draft",
+              "project" : "Mew_v1_Reorder_automation_demo",
+              "componentName" : "Mew_v1_Reorder_automation_demo",
+              "canUseDefaultVersion" : true,
+              "type" : "ADS",
+              "version" : "head",
+              "restBinding" : {
+                "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/53028583-42f4-4748-ae51-b5a34432785cService}6023.05cc7250-d858-4de4-8646-9958bf0f4e86",
+                "openAPIVersion" : "v3"
+              }
+            },
+            "cachingType" : false,
+            "name" : "/Overorder_email_draft",
+            "interfaceRef" : "_d3ac3fe8-ea5d-4360-8f3e-51251f5b73e5",
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+            "id" : "_7a3d5eff-1db2-4a74-8b97-693b4d823022"
+          } ]
+        },
+        "declaredType" : "endPoint"
+      } ],
+      "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/53028583-42f4-4748-ae51-b5a34432785cService",
+      "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+      "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+      "id" : "_ec80e0c1-48ca-4c97-8bed-58b0f471ff84"
+    },
+    "poId" : "1.df86ac77-1721-4fcb-b19b-e97a04e1e056",
+    "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery10699026259828560216.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/53028583-42f4-4748-ae51-b5a34432785c.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/53028583-42f4-4748-ae51-b5a34432785cService}Overorder_email_draft-Overorder_email_draftRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/53028583-42f4-4748-ae51-b5a34432785cService}Overorder_email_draft-Overorder_email_draftResponseMsg" ]
+  }, {
+    "WSDL_DATA" : {
+      "repoUrl" : "repo://6023.05cc7250-d858-4de4-8646-9958bf0f4e86/.wsdl",
+      "uid" : "6023.05cc7250-d858-4de4-8646-9958bf0f4e86",
+      "referenceLocation" : [ {
+        "absoluteLocation" : "repo://6023.bbd64cbf-f09f-4df5-a2bc-52b5f461c882/b5a34432785c.xsd",
+        "relativeLocation" : "/53028583-42f4-4748-ae51-b5a34432785c.xsd"
+      } ],
+      "data" : "{\"openapi\":\"3.0.1\",\"info\":{\"title\":\"646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c\",\"description\":\"646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c\",\"version\":\"head\",\"x-ibm-ads-decision-id\":\"646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c\"},\"servers\":[{\"url\":\"https://eu-central-1.dl.watson-orchestrate.ibm.com/asb/ads/rest-api/api/wo/automation/uab/Mew_v1_Reorder_automation_demo/master/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo%2FOverorder_email_draft/deploymentSpaces/preview/decisions/646001GOU5%2Fuab%2FMew_v1_Reorder_automation_demo%2FMew_v1_Reorder_automation_demo%2FOverorder_email_draft%2Fmaster%2Fda4aee3b0c/operations\"}],\"security\":[{\"IBM-WO-JWT\":[]}],\"paths\":{\"/Overorder_email_draft-Overorder_email_draft/execute\":{\"post\":{\"tags\":[\"646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c\"],\"summary\":\"Overorder_email_draft-Overorder_email_draft\",\"description\":\"Execute Overorder_email_draft-Overorder_email_draft\",\"operationId\":\"Overorder_email_draft-Overorder_email_draft\",\"requestBody\":{\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/Overorder__email__draft-Overorder__email__draft_input\"}}}},\"responses\":{\"200\":{\"description\":\"Decision execution success\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/Overorder__email__draft-Overorder__email__draft_output\"}}}},\"404\":{\"description\":\"A decision or decision operation was not found\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/BaseError\"}}}},\"500\":{\"description\":\"A runtime exception occurred while executing a decision\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/BaseError\"}}}}},\"x-ibm-uab-local-operation\":true}}},\"components\":{\"schemas\":{\"BaseError\":{\"type\":\"object\",\"properties\":{\"output\":{\"type\":\"object\",\"description\":\"The output of the decision service archive.\",\"nullable\":true},\"incident\":{\"$ref\":\"#/components/schemas/Incident\"}},\"description\":\"The response when an error occurs\"},\"Incident\":{\"type\":\"object\",\"properties\":{\"incidentId\":{\"type\":\"string\",\"description\":\"A unique identifier for the incident\"},\"incidentCategory\":{\"type\":\"string\",\"description\":\"The category of the incident, for instance \\\"Decision not found\\\"\"},\"stackTrace\":{\"type\":\"string\",\"description\":\"An associated stack trace, if the decision runtime is configured to provide it. By default, the stack trace is null\"}},\"description\":\"The description of the failure\"},\"Overorder__email__draft-Overorder__email__draft_input\":{\"type\":\"object\",\"properties\":{\"reorder_qty\":{\"type\":\"string\"},\"value\":{\"type\":\"string\"},\"supplier\":{\"type\":\"string\"}},\"x-ibm-parameter-wrapper\":true},\"Overorder__email__draft-Overorder__email__draft_output\":{\"type\":\"object\",\"properties\":{\"generated_text\":{\"type\":\"string\"},\"generated_token_count\":{\"type\":\"integer\",\"format\":\"int32\"},\"input_token_count\":{\"type\":\"integer\",\"format\":\"int32\"},\"stop_reason\":{\"type\":\"string\"},\"error_code\":{\"type\":\"string\"},\"error_message\":{\"type\":\"string\"}},\"nullable\":true,\"x-ibm-parameter-wrapper\":true}},\"securitySchemes\":{\"IBM-WO-JWT\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"IBM-Watsonx-Orchestrate-JWT\"}}}}",
+      "namespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/53028583-42f4-4748-ae51-b5a34432785cService",
+      "type" : "swagger",
+      "url" : "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery10699026259828560216.json"
+    },
+    "type" : "BPMService",
+    "definitions" : "{\"openapi\":\"3.0.1\",\"info\":{\"title\":\"646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c\",\"description\":\"646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c\",\"version\":\"head\",\"x-ibm-ads-decision-id\":\"646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c\"},\"servers\":[{\"url\":\"https://eu-central-1.dl.watson-orchestrate.ibm.com/asb/ads/rest-api/api/wo/automation/uab/Mew_v1_Reorder_automation_demo/master/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo%2FOverorder_email_draft/deploymentSpaces/preview/decisions/646001GOU5%2Fuab%2FMew_v1_Reorder_automation_demo%2FMew_v1_Reorder_automation_demo%2FOverorder_email_draft%2Fmaster%2Fda4aee3b0c/operations\"}],\"security\":[{\"IBM-WO-JWT\":[]}],\"paths\":{\"/Overorder_email_draft-Overorder_email_draft/execute\":{\"post\":{\"tags\":[\"646001GOU5/uab/Mew_v1_Reorder_automation_demo/Mew_v1_Reorder_automation_demo/Overorder_email_draft/master/da4aee3b0c\"],\"summary\":\"Overorder_email_draft-Overorder_email_draft\",\"description\":\"Execute Overorder_email_draft-Overorder_email_draft\",\"operationId\":\"Overorder_email_draft-Overorder_email_draft\",\"requestBody\":{\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/Overorder__email__draft-Overorder__email__draft_input\"}}}},\"responses\":{\"200\":{\"description\":\"Decision execution success\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/Overorder__email__draft-Overorder__email__draft_output\"}}}},\"404\":{\"description\":\"A decision or decision operation was not found\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/BaseError\"}}}},\"500\":{\"description\":\"A runtime exception occurred while executing a decision\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/BaseError\"}}}}},\"x-ibm-uab-local-operation\":true}}},\"components\":{\"schemas\":{\"BaseError\":{\"type\":\"object\",\"properties\":{\"output\":{\"type\":\"object\",\"description\":\"The output of the decision service archive.\",\"nullable\":true},\"incident\":{\"$ref\":\"#/components/schemas/Incident\"}},\"description\":\"The response when an error occurs\"},\"Incident\":{\"type\":\"object\",\"properties\":{\"incidentId\":{\"type\":\"string\",\"description\":\"A unique identifier for the incident\"},\"incidentCategory\":{\"type\":\"string\",\"description\":\"The category of the incident, for instance \\\"Decision not found\\\"\"},\"stackTrace\":{\"type\":\"string\",\"description\":\"An associated stack trace, if the decision runtime is configured to provide it. By default, the stack trace is null\"}},\"description\":\"The description of the failure\"},\"Overorder__email__draft-Overorder__email__draft_input\":{\"type\":\"object\",\"properties\":{\"reorder_qty\":{\"type\":\"string\"},\"value\":{\"type\":\"string\"},\"supplier\":{\"type\":\"string\"}},\"x-ibm-parameter-wrapper\":true},\"Overorder__email__draft-Overorder__email__draft_output\":{\"type\":\"object\",\"properties\":{\"generated_text\":{\"type\":\"string\"},\"generated_token_count\":{\"type\":\"integer\",\"format\":\"int32\"},\"input_token_count\":{\"type\":\"integer\",\"format\":\"int32\"},\"stop_reason\":{\"type\":\"string\"},\"error_code\":{\"type\":\"string\"},\"error_message\":{\"type\":\"string\"}},\"nullable\":true,\"x-ibm-parameter-wrapper\":true}},\"securitySchemes\":{\"IBM-WO-JWT\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"IBM-Watsonx-Orchestrate-JWT\"}}}}",
+    "poId" : "6023.05cc7250-d858-4de4-8646-9958bf0f4e86"
+  }, {
+    "WSDL_DATA" : {
+      "repoUrl" : "repo://6023.bbd64cbf-f09f-4df5-a2bc-52b5f461c882/b5a34432785c.xsd",
+      "uid" : "6023.bbd64cbf-f09f-4df5-a2bc-52b5f461c882",
+      "referenceLocation" : [ ],
+      "data" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/53028583-42f4-4748-ae51-b5a34432785c.xsd\" xmlns:ibmbpm=\"http://lombardi.ibm.com/schema/\" targetNamespace=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/53028583-42f4-4748-ae51-b5a34432785c.xsd\">\n  <xsd:element name=\"Overorder_email_draft_Overorder_email_draftRequest\" type=\"Overorder_email_draft_Overorder_email_draftRequest\"/>\n  <xsd:element name=\"Overorder_email_draft_Overorder_email_draftResponse\" type=\"Overorder_email_draft_Overorder_email_draftResponse\"/>\n  <xsd:complexType name=\"Overorder__email__draft-Overorder__email__draft_input\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"reorder_qty\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"value\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"supplier\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"Overorder__email__draft-Overorder__email__draft_output\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"generated_text\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"generated_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"input_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"stop_reason\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_code\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"Overorder_email_draft_Overorder_email_draftRequest\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"reorder_qty\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"value\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"supplier\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"Overorder_email_draft_Overorder_email_draftResponse\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"generated_text\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"generated_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"input_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"stop_reason\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_code\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n</xsd:schema>\n",
+      "namespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/53028583-42f4-4748-ae51-b5a34432785c.xsd",
+      "type" : "xsd",
+      "url" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/53028583-42f4-4748-ae51-b5a34432785c.xsd"
+    },
+    "type" : "BPMService",
+    "definitions" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/53028583-42f4-4748-ae51-b5a34432785c.xsd\" xmlns:ibmbpm=\"http://lombardi.ibm.com/schema/\" targetNamespace=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/53028583-42f4-4748-ae51-b5a34432785c.xsd\">\n  <xsd:element name=\"Overorder_email_draft_Overorder_email_draftRequest\" type=\"Overorder_email_draft_Overorder_email_draftRequest\"/>\n  <xsd:element name=\"Overorder_email_draft_Overorder_email_draftResponse\" type=\"Overorder_email_draft_Overorder_email_draftResponse\"/>\n  <xsd:complexType name=\"Overorder__email__draft-Overorder__email__draft_input\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"reorder_qty\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"value\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"supplier\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"Overorder__email__draft-Overorder__email__draft_output\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"generated_text\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"generated_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"input_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"stop_reason\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_code\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"Overorder_email_draft_Overorder_email_draftRequest\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"reorder_qty\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"value\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"supplier\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"Overorder_email_draft_Overorder_email_draftResponse\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"generated_text\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"generated_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"input_token_count\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\" optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"stop_reason\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_code\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n      <xsd:element minOccurs=\"0\" name=\"error_message\" type=\"xsd:string\">\n        <xsd:annotation optional=\"true\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n</xsd:schema>\n",
+    "poId" : "6023.bbd64cbf-f09f-4df5-a2bc-52b5f461c882"
+  } ]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "$id" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/salesforce/ProductClassType.schema.json",
+  "x-ibm-json-name" : "ProductClassType",
+  "x-ibm-package-name" : "com.ibm.wo.application.salesforce",
+  "title" : "product class type",
+  "x-ibm-original-json-name" : "retrievewithwhere_Product2.ProductClassType",
+  "type" : "string",
+  "enum" : [ "Bundle", "Set", "Simple", "Variation", "VariationParent" ]
+}

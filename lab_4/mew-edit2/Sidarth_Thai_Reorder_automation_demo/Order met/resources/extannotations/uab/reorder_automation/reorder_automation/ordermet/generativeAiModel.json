@@ -1,0 +1,39 @@
+{
+  "prompt" : {
+    "input" : "Generate a short message to notify the member of the procurement team that they can proceed with the order. Include the order details in the message.\n\nOrder details:\nProduct: {{product}}\nSupplier name:{{supplier}}\nOrder Qty: {{reorder_qty}}\nOrder value: {{value}}\n\nOnly output the message and nothing else. ตอบเป็นภาษาไทย\n",
+    "variables" : [ {
+      "id" : 1,
+      "name" : "product",
+      "type" : "string",
+      "default_value" : "nature"
+    }, {
+      "id" : 2,
+      "name" : "supplier",
+      "type" : "string",
+      "default_value" : "Excelentia"
+    }, {
+      "id" : 3,
+      "name" : "reorder_qty",
+      "type" : "string",
+      "default_value" : "1000"
+    }, {
+      "id" : 4,
+      "name" : "value",
+      "type" : "string",
+      "default_value" : "100"
+    }, {
+      "id" : 5,
+      "name" : "variable 5",
+      "type" : "string",
+      "default_value" : ""
+    } ],
+    "examples" : [ ],
+    "instruction" : "Generate a short message following the instructions"
+  },
+  "parameters" : {
+    "max_new_tokens" : 500,
+    "min_new_tokens" : 1,
+    "stop_sequences" : [ ]
+  },
+  "model_id" : "meta-llama/llama-3-3-70b-instruct"
+}

@@ -1,0 +1,120 @@
+{
+  "root_poid" : "1.1756bff2-0bd9-4c1a-a84d-52db0023ca14",
+  "artifacts" : [ {
+    "META_AUTOMATION_SERVICE_REST_BINDING_VALUES_REF_ID" : "62.3e34499b-6099-44a5-80ee-e1e87fc6232c",
+    "META_AUTOMATION_SERVICE_REST_BINDING_VALUES" : {
+      "consumeDefaultVersion" : true
+    },
+    "type" : "BPMService",
+    "definitions" : {
+      "rootElement" : [ {
+        "documentation" : [ {
+          "content" : [ "API that takes historic sales and forecasts to calculate an optimal reorder quantity" ],
+          "textFormat" : "text/plain"
+        } ],
+        "name" : "IFace.8deecff4-8130-459a-9623-c6956be30cc3",
+        "declaredType" : "interface",
+        "id" : "_164cb684-fc6f-412b-b3ef-9099cdd48f3b",
+        "operation" : [ {
+          "extensionElements" : {
+            "sfPOId" : [ "1.cf20aff5-3ea2-45a8-a5ae-24a2d551b839" ],
+            "businessSignature" : [ {
+              "output" : [ {
+                "path" : "reorderQuantity",
+                "name" : "reorderQuantity",
+                "isCollection" : false,
+                "description" : "Successful execution",
+                "httpResponseCode" : "200",
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_d58f3991-0f42-4e5e-bb7b-cb3d5a2b6b7c",
+                "isOptional" : false,
+                "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8/reorderQuantity_200Type.schema.json",
+                "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd}reorderQuantity_200Type"
+              } ],
+              "input" : [ {
+                "path" : "body",
+                "name" : "body",
+                "isCollection" : false,
+                "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TParameter",
+                "id" : "_9a9d7566-9214-41ab-94ba-4f5a2ffa5b54",
+                "isOptional" : false,
+                "typeRefPO" : "http://ibm.com/dba/projects/reorder_automation:dataModel/com/ibm/wo/application/HASHdb7910c50e43d08b6bcd1fcb8129b347_app_0b37d9b456a346519a8a7f3db04747e8/bodyType.schema.json",
+                "typeRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd}bodyType"
+              } ],
+              "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextauth.TSignature"
+            } ]
+          },
+          "documentation" : [ {
+            "content" : [ "API that takes historic sales and forecasts to calculate an optimal reorder quantity" ],
+            "textFormat" : "text/plain"
+          } ],
+          "name" : "reorderQuantity",
+          "id" : "_9c719fb5-c2de-4117-b32c-cf4cc97a4339"
+        } ]
+      }, {
+        "extensionElements" : {
+          "externalService" : [ {
+            "automationServiceRestBinding" : {
+              "skillId" : "Thai-Calculate-Reorder-Quantity__1.0.0__reorderQuantity",
+              "invocationType" : "SKILL",
+              "org" : "uab",
+              "bindingEnvVarSetRef" : "62.3e34499b-6099-44a5-80ee-e1e87fc6232c",
+              "displayVersion" : "head",
+              "name" : "Thai Calculate Reorder Quantity",
+              "project" : "Thai-Calculate-Reorder-Quantity__1.0.0__reorderQuantity",
+              "applicationId" : "app-0b37d9b456a346519a8a7f3db04747e8",
+              "canUseDefaultVersion" : true,
+              "type" : "workflow",
+              "version" : "head",
+              "restBinding" : {
+                "swaggerRef" : "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1f88283-0bfd-4eb2-8277-c94b48f0924eService}6023.879e3df9-219f-4bfd-a920-608129a0e580",
+                "openAPIVersion" : "v3"
+              }
+            },
+            "cachingType" : false,
+            "name" : "Thai Calculate Reorder Quantity",
+            "interfaceRef" : "_164cb684-fc6f-412b-b3ef-9099cdd48f3b",
+            "declaredType" : "com.ibm.bpmsdk.model.bpmn20.ibmextservice.TExternalService",
+            "id" : "_f77748a0-f772-489c-bff7-4b01f4fb714b"
+          } ]
+        },
+        "declaredType" : "endPoint"
+      } ],
+      "targetNamespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1f88283-0bfd-4eb2-8277-c94b48f0924eService",
+      "typeLanguage" : "http://www.w3.org/2001/XMLSchema",
+      "expressionLanguage" : "http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript",
+      "id" : "_194db875-beb8-4ea1-a9b6-5a9a7b596e7b"
+    },
+    "poId" : "1.1756bff2-0bd9-4c1a-a84d-52db0023ca14",
+    "REFERENCES" : [ "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery11922460033488785987.json", "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1f88283-0bfd-4eb2-8277-c94b48f0924eService}reorderQuantityRequestMsg", "{http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1f88283-0bfd-4eb2-8277-c94b48f0924eService}reorderQuantityResponseMsg" ]
+  }, {
+    "WSDL_DATA" : {
+      "repoUrl" : "repo://6023.879e3df9-219f-4bfd-a920-608129a0e580/.wsdl",
+      "uid" : "6023.879e3df9-219f-4bfd-a920-608129a0e580",
+      "referenceLocation" : [ {
+        "absoluteLocation" : "repo://6023.c9a9382c-d77f-4560-8754-dcd9b5d0c685/c94b48f0924e.xsd",
+        "relativeLocation" : "/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd"
+      } ],
+      "data" : "{\"openapi\":\"3.0.1\",\"info\":{\"title\":\"Thai Calculate Reorder Quantity\",\"description\":\"API that takes historic sales and forecasts to calculate an optimal reorder quantity\",\"version\":\"1.0.0\",\"x-ibm-skill-type\":\"imported\",\"x-ibm-annotations\":\"true\",\"x-ibm-skill-subtype\":\"public\",\"x-ibm-application-id\":\"app-0b37d9b456a346519a8a7f3db04747e8\",\"x-ibm-application-name\":\"Thai Calculate Reorder Quantity\"},\"servers\":[{\"url\":\"https://eu-central-1.dl.watson-orchestrate.ibm.com/asb/uabskillproxy\"}],\"security\":[{\"IBM-WO-JWT\":[]}],\"paths\":{\"/invoke/skill/Thai-Calculate-Reorder-Quantity__1.0.0__reorderQuantity\":{\"post\":{\"summary\":\"Optimal Reorder Quantity\",\"description\":\"API that takes historic sales and forecasts to calculate an optimal reorder quantity\",\"operationId\":\"reorderQuantity\",\"requestBody\":{\"content\":{\"application/json\":{\"schema\":{\"required\":[\"current_inventory\",\"forecast\",\"historic_data\"],\"type\":\"object\",\"properties\":{\"forecast\":{\"type\":\"integer\",\"description\":\"Forecast Quantity next month\",\"x-ibm-order\":1,\"x-ibm-multiline\":\"false\"},\"historic_data\":{\"type\":\"integer\",\"description\":\"Quantity sold last month\",\"x-ibm-order\":2,\"x-ibm-multiline\":\"false\"},\"current_inventory\":{\"type\":\"number\",\"description\":\"Current Inventory\",\"x-ibm-order\":3,\"x-ibm-multiline\":\"false\"}}}}},\"required\":true},\"responses\":{\"200\":{\"description\":\"Successful execution\",\"content\":{\"application/json\":{\"schema\":{\"required\":[\"reasoning\",\"reorder_quantity\"],\"type\":\"object\",\"properties\":{\"reasoning\":{\"type\":\"string\",\"x-ibm-order\":2},\"reorder_quantity\":{\"type\":\"integer\",\"x-ibm-order\":3}}}}}},\"500\":{\"description\":\"Internal server error\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"detail\":{\"type\":\"string\",\"description\":\"Error message.\"}}}}}}},\"x-ibm-nl-entities\":{\"entities\":[]},\"x-ibm-next-actions\":[],\"x-ibm-nl-intent-examples\":[\"Optimal Reorder Quantity\",\"API that takes historic sales and forecasts to calculate an optimal reorder quantity\"],\"x-ibm-conversational-skill\":true}}},\"components\":{\"schemas\":{\"ReorderRequest\":{\"required\":[\"current_inventory\",\"forecast\",\"historic_data\"],\"type\":\"object\",\"properties\":{\"forecast\":{\"type\":\"integer\",\"description\":\"Forecast Quantity next month\"},\"historic_data\":{\"type\":\"integer\",\"description\":\"Quantity sold last month\"},\"current_inventory\":{\"type\":\"number\",\"description\":\"Current Inventory\"}}},\"ReorderResponse\":{\"required\":[\"reasoning\",\"reorder_quantity\"],\"type\":\"object\",\"properties\":{\"reasoning\":{\"type\":\"string\"},\"reorder_quantity\":{\"type\":\"integer\"}}}},\"securitySchemes\":{\"IBM-WO-JWT\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"IBM-Watsonx-Orchestrate-JWT\"}}}}",
+      "namespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/b1f88283-0bfd-4eb2-8277-c94b48f0924eService",
+      "type" : "swagger",
+      "url" : "file:/opt/ibm/wlp/output/defaultServer/temp/automationServiceDiscovery11922460033488785987.json"
+    },
+    "type" : "BPMService",
+    "definitions" : "{\"openapi\":\"3.0.1\",\"info\":{\"title\":\"Thai Calculate Reorder Quantity\",\"description\":\"API that takes historic sales and forecasts to calculate an optimal reorder quantity\",\"version\":\"1.0.0\",\"x-ibm-skill-type\":\"imported\",\"x-ibm-annotations\":\"true\",\"x-ibm-skill-subtype\":\"public\",\"x-ibm-application-id\":\"app-0b37d9b456a346519a8a7f3db04747e8\",\"x-ibm-application-name\":\"Thai Calculate Reorder Quantity\"},\"servers\":[{\"url\":\"https://eu-central-1.dl.watson-orchestrate.ibm.com/asb/uabskillproxy\"}],\"security\":[{\"IBM-WO-JWT\":[]}],\"paths\":{\"/invoke/skill/Thai-Calculate-Reorder-Quantity__1.0.0__reorderQuantity\":{\"post\":{\"summary\":\"Optimal Reorder Quantity\",\"description\":\"API that takes historic sales and forecasts to calculate an optimal reorder quantity\",\"operationId\":\"reorderQuantity\",\"requestBody\":{\"content\":{\"application/json\":{\"schema\":{\"required\":[\"current_inventory\",\"forecast\",\"historic_data\"],\"type\":\"object\",\"properties\":{\"forecast\":{\"type\":\"integer\",\"description\":\"Forecast Quantity next month\",\"x-ibm-order\":1,\"x-ibm-multiline\":\"false\"},\"historic_data\":{\"type\":\"integer\",\"description\":\"Quantity sold last month\",\"x-ibm-order\":2,\"x-ibm-multiline\":\"false\"},\"current_inventory\":{\"type\":\"number\",\"description\":\"Current Inventory\",\"x-ibm-order\":3,\"x-ibm-multiline\":\"false\"}}}}},\"required\":true},\"responses\":{\"200\":{\"description\":\"Successful execution\",\"content\":{\"application/json\":{\"schema\":{\"required\":[\"reasoning\",\"reorder_quantity\"],\"type\":\"object\",\"properties\":{\"reasoning\":{\"type\":\"string\",\"x-ibm-order\":2},\"reorder_quantity\":{\"type\":\"integer\",\"x-ibm-order\":3}}}}}},\"500\":{\"description\":\"Internal server error\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"detail\":{\"type\":\"string\",\"description\":\"Error message.\"}}}}}}},\"x-ibm-nl-entities\":{\"entities\":[]},\"x-ibm-next-actions\":[],\"x-ibm-nl-intent-examples\":[\"Optimal Reorder Quantity\",\"API that takes historic sales and forecasts to calculate an optimal reorder quantity\"],\"x-ibm-conversational-skill\":true}}},\"components\":{\"schemas\":{\"ReorderRequest\":{\"required\":[\"current_inventory\",\"forecast\",\"historic_data\"],\"type\":\"object\",\"properties\":{\"forecast\":{\"type\":\"integer\",\"description\":\"Forecast Quantity next month\"},\"historic_data\":{\"type\":\"integer\",\"description\":\"Quantity sold last month\"},\"current_inventory\":{\"type\":\"number\",\"description\":\"Current Inventory\"}}},\"ReorderResponse\":{\"required\":[\"reasoning\",\"reorder_quantity\"],\"type\":\"object\",\"properties\":{\"reasoning\":{\"type\":\"string\"},\"reorder_quantity\":{\"type\":\"integer\"}}}},\"securitySchemes\":{\"IBM-WO-JWT\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"IBM-Watsonx-Orchestrate-JWT\"}}}}",
+    "poId" : "6023.879e3df9-219f-4bfd-a920-608129a0e580"
+  }, {
+    "WSDL_DATA" : {
+      "repoUrl" : "repo://6023.c9a9382c-d77f-4560-8754-dcd9b5d0c685/c94b48f0924e.xsd",
+      "uid" : "6023.c9a9382c-d77f-4560-8754-dcd9b5d0c685",
+      "referenceLocation" : [ ],
+      "data" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd\" xmlns:ibmbpm=\"http://lombardi.ibm.com/schema/\" targetNamespace=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd\">\n  <xsd:element name=\"reorderQuantityRequest\" type=\"reorderQuantityRequest\"/>\n  <xsd:element name=\"reorderQuantityResponse\" type=\"reorderQuantityResponse\"/>\n  <xsd:complexType name=\"reorderQuantityRequest\">\n    <xsd:sequence>\n      <xsd:element name=\"body\" type=\"bodyType\" xpathBeforeFlattening=\"/xsd:schema/xsd:complexType[@name='reorderQuantityRequest']/xsd:sequence/xsd:element[@name='body']\"/>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"reorderQuantityResponse\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"reorderQuantity\" type=\"reorderQuantity_200Type\" xpathBeforeFlattening=\"/xsd:schema/xsd:complexType[@name='reorderQuantityResponse']/xsd:sequence/xsd:element[@name='reorderQuantity']\">\n        <xsd:annotation alternateOldName=\"reorderQuantity_200\" optional=\"true\" responseCode=\"200\">\n          <xsd:documentation>Successful execution</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"bodyType\">\n    <xsd:sequence>\n      <xsd:element name=\"forecast\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\">\n          <xsd:documentation>Forecast Quantity next month</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n      <xsd:element name=\"historic_data\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\">\n          <xsd:documentation>Quantity sold last month</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n      <xsd:element name=\"current_inventory\" type=\"xsd:double\">\n        <xsd:annotation format=\"double\">\n          <xsd:documentation>Current Inventory</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"reorderQuantity_200Type\">\n    <xsd:sequence>\n      <xsd:element name=\"reasoning\" type=\"xsd:string\"/>\n      <xsd:element name=\"reorder_quantity\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n</xsd:schema>\n",
+      "namespace" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd",
+      "type" : "xsd",
+      "url" : "http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd"
+    },
+    "type" : "BPMService",
+    "definitions" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd\" xmlns:ibmbpm=\"http://lombardi.ibm.com/schema/\" targetNamespace=\"http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/externalservice/swagger/xsd/b1f88283-0bfd-4eb2-8277-c94b48f0924e.xsd\">\n  <xsd:element name=\"reorderQuantityRequest\" type=\"reorderQuantityRequest\"/>\n  <xsd:element name=\"reorderQuantityResponse\" type=\"reorderQuantityResponse\"/>\n  <xsd:complexType name=\"reorderQuantityRequest\">\n    <xsd:sequence>\n      <xsd:element name=\"body\" type=\"bodyType\" xpathBeforeFlattening=\"/xsd:schema/xsd:complexType[@name='reorderQuantityRequest']/xsd:sequence/xsd:element[@name='body']\"/>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"reorderQuantityResponse\">\n    <xsd:sequence>\n      <xsd:element minOccurs=\"0\" name=\"reorderQuantity\" type=\"reorderQuantity_200Type\" xpathBeforeFlattening=\"/xsd:schema/xsd:complexType[@name='reorderQuantityResponse']/xsd:sequence/xsd:element[@name='reorderQuantity']\">\n        <xsd:annotation alternateOldName=\"reorderQuantity_200\" optional=\"true\" responseCode=\"200\">\n          <xsd:documentation>Successful execution</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"bodyType\">\n    <xsd:sequence>\n      <xsd:element name=\"forecast\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\">\n          <xsd:documentation>Forecast Quantity next month</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n      <xsd:element name=\"historic_data\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\">\n          <xsd:documentation>Quantity sold last month</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n      <xsd:element name=\"current_inventory\" type=\"xsd:double\">\n        <xsd:annotation format=\"double\">\n          <xsd:documentation>Current Inventory</xsd:documentation>\n        </xsd:annotation>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n  <xsd:complexType name=\"reorderQuantity_200Type\">\n    <xsd:sequence>\n      <xsd:element name=\"reasoning\" type=\"xsd:string\"/>\n      <xsd:element name=\"reorder_quantity\" type=\"xsd:int\">\n        <xsd:annotation format=\"int32\"/>\n      </xsd:element>\n    </xsd:sequence>\n  </xsd:complexType>\n</xsd:schema>\n",
+    "poId" : "6023.c9a9382c-d77f-4560-8754-dcd9b5d0c685"
+  } ]
+}
